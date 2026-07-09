@@ -44,7 +44,7 @@ export const ArticleViewModal: React.FC<ArticleViewModalProps> = ({
   const translation = isMarathi ? MARATHI_ARTICLES_TRANSLATIONS[article.id] : null;
 
   const displayedTitle = isMarathi ? (translation?.title || article.marathiTitle || article.title) : article.title;
-  const displayedSubtitle = isMarathi ? (translation?.subtitle || article.subtitle) : article.subtitle;
+  const displayedSubtitle = isMarathi ? (translation?.subtitle || article.marathiSubtitle || article.subtitle) : article.subtitle;
   const displayedBody = isMarathi ? (translation?.body || article.marathiBody || article.body) : article.body;
   const displayedAuthor = isMarathi ? (translation?.author || article.author) : article.author;
   const displayedSource = isMarathi ? (article.marathiSource || 'nashik24x7.com') : 'nashik24x7.com';

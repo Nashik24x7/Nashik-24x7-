@@ -35,7 +35,7 @@ export const ArticleCard: React.FC<ArticleCardProps> = ({
 
   // Bilingual Display helpers
   const displayedTitle = isMarathi ? (translation?.title || article.marathiTitle || article.title) : article.title;
-  const displayedSubtitle = isMarathi ? (translation?.subtitle || article.subtitle) : article.subtitle;
+  const displayedSubtitle = isMarathi ? (translation?.subtitle || article.marathiSubtitle || article.subtitle) : article.subtitle;
   const displayedSource = isMarathi ? (article.marathiSource || 'nashik24x7.com') : 'nashik24x7.com';
 
   const getCategoryLabel = (cat: string) => {

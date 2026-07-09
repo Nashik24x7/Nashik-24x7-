@@ -33,6 +33,8 @@ export interface NewsArticle {
   likes: number;
   comments: ArticleComment[];
   marathiTitle?: string;
+  marathiSubtitle?: string;
+  marathiBody?: string;
   marathiSource?: 'lokmat.com' | 'esakal.com' | 'loksatta.com' | 'nashik24x7.com';
   simulatedDayIndex?: number;
 }
