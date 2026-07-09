@@ -75,7 +75,18 @@ export default function App() {
     const saved = localStorage.getItem('nashik_times_articles');
     if (saved) {
       try {
-        return JSON.parse(saved);
+        const parsed = JSON.parse(saved) as NewsArticle[];
+        // Merge latest DEFAULT_ARTICLES fields to ensure fields like marathiSubtitle/marathiBody are present
+        return parsed.map(pArt => {
+          const defaultArt = DEFAULT_ARTICLES.find(d => d.id === pArt.id);
+          if (defaultArt) {
+            return {
+              ...pArt,
+              ...defaultArt
+            };
+          }
+          return pArt;
+        });
       } catch (err) {
         console.error('Failed to parse localStorage articles, restoring fallback:', err);
       }

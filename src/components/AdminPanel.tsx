@@ -73,6 +73,9 @@ export const AdminPanel: React.FC<AdminPanelProps> = ({
   const [formIsLead, setFormIsLead] = useState(false);
   const [formIsBreaking, setFormIsBreaking] = useState(false);
   const [formIsEditorial, setFormIsEditorial] = useState(false);
+  const [formMarathiTitle, setFormMarathiTitle] = useState('');
+  const [formMarathiSubtitle, setFormMarathiSubtitle] = useState('');
+  const [formMarathiBody, setFormMarathiBody] = useState('');
   const [submitSuccess, setSubmitSuccess] = useState('');
 
   // Search inside manage tab
@@ -111,6 +114,11 @@ export const AdminPanel: React.FC<AdminPanelProps> = ({
       setFormAuthor(data.author || 'Nashik Times Editorial');
       setFormReadTime(data.readTime || 5);
       
+      // Populate Marathi fields
+      setFormMarathiTitle(data.marathiTitle || data.title || '');
+      setFormMarathiSubtitle(data.marathiSubtitle || data.subtitle || '');
+      setFormMarathiBody(data.marathiBody || data.body || '');
+      
       setAiSuccessMessage(`Gemini AI successfully drafted "${data.title || 'the article'}". The editor form has been populated below automatically!`);
       setAiTopic('');
     } catch (err: any) {
@@ -133,6 +141,19 @@ Local division operators highlighted that projects of high densities require imm
       setFormImageUrl(IMAGE_PRESETS[0].url);
       setFormAuthor('Staff Correspondent');
       setFormReadTime(4);
+      
+      const offlineTitleMr = `नाशिक खोऱ्यासाठी ${aiTopic.trim()} प्रकल्पाच्या विस्ताराला मंजुरी`;
+      const offlineSubtitleMr = `सातपूर आणि निफाडसाठी सविस्तर अंमलबजावणी आराखडा नाशिक मनपाकडून प्रसिद्ध.`;
+      const offlineBodyMr = `नाशिक — सखोल विचारमंथनानंतर, नाशिकमधील स्थानिक नियोजन आयोग आणि मनपा प्रशासनाने "${aiTopic.trim()}" साठी सर्वसमावेशक विकास आराखडा जाहीर केला आहे. पुढील आठवड्यात या आराखड्याचा अंतिम आढावा घेतला जाणार असून, गंगापूर आणि सातपूर पट्ट्यातील पायाभूत सुविधांच्या जुन्या अडचणी सोडवणे हा यामागचा मुख्य उद्देश आहे.
+
+विविध विभागांमध्ये तातडीच्या सहकार्याची आवश्यकता असून द्वारका चौक किंवा निफाड येथील घाऊक बाजारपेठेसारख्या गर्दीच्या भागांना निधी वाटपात विशेष प्राधान्य दिले जाईल.
+
+"नाशिकचे आधुनिक कृषी-औद्योगिक हबमध्ये रुपांतर करण्याच्या दृष्टीने हा एक मैलाचा दगड आहे," असे एका विभागीय संचालकांनी सांगितले.`;
+
+      setFormMarathiTitle(offlineTitleMr);
+      setFormMarathiSubtitle(offlineSubtitleMr);
+      setFormMarathiBody(offlineBodyMr);
+      
       setAiSuccessMessage('Draft created locally (offline safety model activated)! Form auto-filled below.');
     } finally {
       setIsAiGenerating(false);
@@ -185,6 +206,9 @@ Local division operators highlighted that projects of high densities require imm
       isLead: formIsLead,
       isBreaking: formIsBreaking,
       isEditorial: formIsEditorial,
+      marathiTitle: formMarathiTitle.trim() || formTitle.trim(),
+      marathiSubtitle: formMarathiSubtitle.trim() || formSubtitle.trim(),
+      marathiBody: formMarathiBody.trim() || finalBody,
       date: new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })
     };
 
@@ -214,6 +238,9 @@ Local division operators highlighted that projects of high densities require imm
     setFormIsLead(false);
     setFormIsBreaking(false);
     setFormIsEditorial(false);
+    setFormMarathiTitle('');
+    setFormMarathiSubtitle('');
+    setFormMarathiBody('');
 
     // Fade notification
     setTimeout(() => setSubmitSuccess(''), 4000);
@@ -231,6 +258,9 @@ Local division operators highlighted that projects of high densities require imm
     setFormIsLead(!!article.isLead);
     setFormIsBreaking(!!article.isBreaking);
     setFormIsEditorial(!!article.isEditorial);
+    setFormMarathiTitle(article.marathiTitle || '');
+    setFormMarathiSubtitle(article.marathiSubtitle || '');
+    setFormMarathiBody(article.marathiBody || '');
     setActiveTab('write');
   };
 
@@ -245,6 +275,9 @@ Local division operators highlighted that projects of high densities require imm
     setFormIsLead(false);
     setFormIsBreaking(false);
     setFormIsEditorial(false);
+    setFormMarathiTitle('');
+    setFormMarathiSubtitle('');
+    setFormMarathiBody('');
   };
 
   // Compute live KPIs
@@ -464,33 +497,63 @@ Local division operators highlighted that projects of high densities require imm
               </div>
 
               {/* 2nd: Title Section / Headline Box */}
-              <div>
-                <label className="block text-xs font-mono font-semibold text-gray-700 uppercase mb-1">
-                  2. News Banner Headline <span className="text-red-600">*</span>
-                </label>
-                <input
-                  type="text"
-                  placeholder="e.g. Nashik Airport Expansion Ready for International Cargo Flighter Operations"
-                  value={formTitle}
-                  onChange={(e) => setFormTitle(e.target.value)}
-                  className="w-full px-3 py-2 text-sm border border-gray-300 rounded font-serif text-gray-900 focus:outline-none focus:ring-1 focus:ring-gray-950 focus:border-gray-950"
-                  required
-                />
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                  <label className="block text-xs font-mono font-semibold text-gray-700 uppercase mb-1">
+                    2. News Banner Headline (English) <span className="text-red-600">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    placeholder="e.g. Nashik Airport Expansion Ready for International Cargo Operations"
+                    value={formTitle}
+                    onChange={(e) => setFormTitle(e.target.value)}
+                    className="w-full px-3 py-2 text-sm border border-gray-300 rounded font-serif text-gray-900 focus:outline-none focus:ring-1 focus:ring-gray-950 focus:border-gray-950"
+                    required
+                  />
+                </div>
+                <div>
+                  <label className="block text-xs font-mono font-semibold text-amber-900 uppercase mb-1">
+                    News Banner Headline (मराठी अनुवाद) <span className="text-amber-700">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    placeholder="उदा. नाशिक विमानतळ विस्तारीकरण आंतरराष्ट्रीय मालवाहू सेवेसाठी सज्ज"
+                    value={formMarathiTitle}
+                    onChange={(e) => setFormMarathiTitle(e.target.value)}
+                    className="w-full px-3 py-2 text-sm border border-gray-300 rounded font-serif text-gray-900 focus:outline-none focus:ring-1 focus:ring-amber-950 focus:border-amber-950"
+                    required
+                  />
+                </div>
               </div>
 
               {/* 3rd: Subtitle / Summarized Summary Box */}
-              <div>
-                <label className="block text-xs font-mono font-semibold text-gray-700 uppercase mb-1">
-                  3. News Summary / Digest <span className="text-red-600">*</span>
-                </label>
-                <textarea
-                  placeholder="Provide a brief, compelling one-sentence or two-sentence digest of the news item to draw readership."
-                  value={formSubtitle}
-                  onChange={(e) => setFormSubtitle(e.target.value)}
-                  rows={2}
-                  className="w-full px-3 py-2 text-sm border border-gray-300 rounded font-serif text-gray-900 focus:outline-none focus:ring-1 focus:ring-gray-950 focus:border-gray-950"
-                  required
-                ></textarea>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                  <label className="block text-xs font-mono font-semibold text-gray-700 uppercase mb-1">
+                    3. News Summary / Digest (English) <span className="text-red-600">*</span>
+                  </label>
+                  <textarea
+                    placeholder="Provide a brief, compelling one-sentence or two-sentence digest of the news item to draw readership."
+                    value={formSubtitle}
+                    onChange={(e) => setFormSubtitle(e.target.value)}
+                    rows={2}
+                    className="w-full px-3 py-2 text-sm border border-gray-300 rounded font-serif text-gray-900 focus:outline-none focus:ring-1 focus:ring-gray-950 focus:border-gray-950"
+                    required
+                  ></textarea>
+                </div>
+                <div>
+                  <label className="block text-xs font-mono font-semibold text-amber-900 uppercase mb-1">
+                    News Summary / Digest (मराठी अनुवाद) <span className="text-amber-700">*</span>
+                  </label>
+                  <textarea
+                    placeholder="वाचकांचे लक्ष वेधून घेण्यासाठी बातमीचा थोडक्यात मराठी सारांश द्या."
+                    value={formMarathiSubtitle}
+                    onChange={(e) => setFormMarathiSubtitle(e.target.value)}
+                    rows={2}
+                    className="w-full px-3 py-2 text-sm border border-gray-300 rounded font-serif text-gray-900 focus:outline-none focus:ring-1 focus:ring-amber-950 focus:border-amber-950"
+                    required
+                  ></textarea>
+                </div>
               </div>
 
               {/* 4th: Section Category Selection and Desk Credit Grid */}
@@ -550,18 +613,33 @@ Local division operators highlighted that projects of high densities require imm
               </div>
 
               {/* Stale Text Body */}
-              <div>
-                <label className="block text-xs font-mono font-semibold text-gray-700 uppercase mb-1">
-                  Full Article Body (Standard paragraphs, write double linebreaks for spacing) <span className="text-red-600">*</span>
-                </label>
-                <textarea
-                  placeholder="NASHIK — Write full editorial paragraphs here. Describe the events, cite and comment on relevant municipal or industrial delegates, give statistical counts, and state final milestones."
-                  value={formBody}
-                  onChange={(e) => setFormBody(e.target.value)}
-                  rows={8}
-                  className="w-full px-3 py-2.5 text-sm border border-gray-300 rounded font-serif text-gray-900 focus:outline-none focus:ring-1 focus:ring-gray-950 focus:border-gray-950 leading-relaxed"
-                  required
-                ></textarea>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                  <label className="block text-xs font-mono font-semibold text-gray-700 uppercase mb-1">
+                    Full Article Body (English) <span className="text-red-600">*</span>
+                  </label>
+                  <textarea
+                    placeholder="NASHIK — Write full editorial paragraphs here. Describe the events, cite and comment on relevant municipal or industrial delegates, give statistical counts, and state final milestones."
+                    value={formBody}
+                    onChange={(e) => setFormBody(e.target.value)}
+                    rows={8}
+                    className="w-full px-3 py-2.5 text-sm border border-gray-300 rounded font-serif text-gray-900 focus:outline-none focus:ring-1 focus:ring-gray-950 focus:border-gray-950 leading-relaxed"
+                    required
+                  ></textarea>
+                </div>
+                <div>
+                  <label className="block text-xs font-mono font-semibold text-amber-900 uppercase mb-1">
+                    Full Article Body (मराठी अनुवाद) <span className="text-amber-700">*</span>
+                  </label>
+                  <textarea
+                    placeholder="नाशिक — सविस्तर बातमीचे परिच्छेद येथे मराठीत लिहा. कार्यक्रम किंवा घटनांचे वर्णन करा, संबंधित सरकारी किंवा औद्योगिक अधिकाऱ्यांचे संदर्भ द्या."
+                    value={formMarathiBody}
+                    onChange={(e) => setFormMarathiBody(e.target.value)}
+                    rows={8}
+                    className="w-full px-3 py-2.5 text-sm border border-gray-300 rounded font-serif text-gray-900 focus:outline-none focus:ring-1 focus:ring-amber-950 focus:border-amber-950 leading-relaxed"
+                    required
+                  ></textarea>
+                </div>
               </div>
 
               {/* Status checkboxes */}
