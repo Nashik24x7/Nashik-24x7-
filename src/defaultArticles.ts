@@ -7,222 +7,327 @@ import { NewsArticle } from './types';
 
 export const DEFAULT_ARTICLES: NewsArticle[] = [
   {
-    id: 'lead-1',
-    title: 'Nashik Emerges as North Maharashtras Advanced Tech Education Hub with New AI & Robotics Centers',
-    marathiTitle: 'नाशिक उत्तर महाराष्ट्राचे प्रगत तंत्रज्ञान शिक्षण केंद्र म्हणून उदयास; नवीन एआय आणि रोबोटिक्स केंद्र सुरू',
+    id: 'news-6',
+    title: 'Dindori Well Tragedy Probe: Legal Noose Tightens on Property Owners Over Open Wells',
+    marathiTitle: 'दिंडोरी विहीर दुर्घटना चौकशी: उघड्या विहिरींच्या मालकांवर गुन्हा दाखल; पोलीस कारवाई तीव्र',
     marathiSource: 'nashik24x7.com',
-    subtitle: 'The district secures massive allocations for digital classrooms, skill training institutes, and research hubs, benefiting over 50,000 students.',
-    marathiSubtitle: 'जिल्ह्यातील ५०,००0 हून अधिक विद्यार्थ्यांना लाभ देणाऱ्या डिजिटल वर्गखोल्या, कौशल्य प्रशिक्षण संस्था आणि संशोधन केंद्रांसाठी भव्य निधी मंजूर.',
-    marathiBody: `NASHIK — उत्तर महाराष्ट्राच्या शैक्षणिक क्षेत्रासाठी अत्यंत महत्त्वाच्या आणि ऐतिहासिक ठरणाऱ्या निर्णयामध्ये, नाशिकने राज्य शिक्षण मंडळाकडून 'डिजिटल शिक्षण क्षेत्रातील उत्कृष्ट कामगिरी'चा बहुमान मिळवला आहे. या सन्मानामुळे नाशिकचे प्रगत तंत्रज्ञान शिक्षण केंद्र म्हणून नाव अधिक दृढ झाले असून, येथील स्थानिक संस्थांना राष्ट्रीय पातळीवर नवी ओळख मिळाली आहे.
+    subtitle: 'A high-level investigation into the car-into-well incident reveals widespread safety negligence in rural agricultural zones.',
+    marathiSubtitle: 'दिंडोरीमध्ये विहिरीत कार कोसळलेल्या दुर्घटनेनंतर जिल्हा प्रशासनाचा मोठा निर्णय; सुरक्षेकडे दुर्लक्ष करणाऱ्यांवर कडक कायदेशीर पावले.',
+    marathiBody: `दिंडोरी — दिंडोरी तालुक्यातील रस्त्यालगत असलेल्या उघड्या विहिरीत कार कोसळून झालेल्या अपघाताच्या चौकशीनंतर प्रशासनाने विहीर मालकांवर कायदेशीर कारवाई सुरू केली आहे. ग्रामीण भागात अनेक विहिरींना संरक्षक भिंती किंवा कुंपण नसल्याचे या चौकशीत उघड झाले आहे.
 
-तांत्रिक शिक्षण संचालनालयाने (DTE) जारी केलेल्या ताज्या आकडेवारीनुसार, गंगापूर रोड परिसरातील शासकीय व खाजगी महाविद्यालयांमध्ये कृत्रिम बुद्धिमत्ता (AI), रोबोटिक्स आणि क्लाउड कॉम्प्युटिंग यांसारख्या अत्याधुनिक अभ्यासक्रमांसाठीच्या विद्यार्थ्यांच्या प्रवेशात तब्बल ३४ टक्क्यांची मोठी वाढ नोंदवण्यात आली आहे. अत्याधुनिक व्यावसायिक कोर्सेस, शासनाच्या शिष्यवृत्ती योजना आणि उद्योग-अनुकूल प्रशिक्षण शिबिरे यांच्या वाढत्या प्रभावामुळे हा बदल दिसून येत आहे.
-
-“आम्ही केवळ पुस्तकी ज्ञान देत नसून विद्यार्थ्यांना प्रत्यक्ष अनुभवाचे दालन उपलब्ध करून देत आहोत,” असे या क्षेत्रातील तज्ज्ञ डॉक्टर सुधीर तांबे यांनी सांगितले. “नाशिकचे वैशिष्ट्यपूर्ण शैक्षणिक वातावरण—ज्याला सातपूर औद्योगिक वसाहत (MIDC) आणि उद्योजकांचे थेट सहकार्य लाभले आहे—तेथील तरुणांना एक मजबूत स्पर्धात्मक फायदा मिळवून देते, ज्याला तंत्रज्ञान कंपन्यांच्या रिक्रूटर्सकडून मोठी पसंती दिली जात आहे.”
-
-या वाढत्या प्रगतीला अधिक बळ देण्यासाठी नाशिक महानगरपालिकेने (NMC) स्थानिक तंत्रज्ञान अकादमींसोबत भागीदारी करून 'नाशिक स्मार्ट एज्युकेशन आणि क्युरेटिंग कॉरिडॉर' विकसित करण्याचा निर्णय घेतला आहे. या अंतर्गत अत्याधुनिक संगणक प्रयोगशाळा, हाय-स्पीड वाय-फाय आणि करिअर मार्गदर्शन केंद्र सुरू केले जातील. शैक्षणिक मंडळाच्या अंदाजानुसार, या विशेष मोहिमेमुळे ५०,००० हून अधिक विद्यार्थ्यांना लाभ होणार असून, पदवीधर तरुणांच्या रोजगार क्षमतेत मोठी वाढ होईल.`,
-    category: 'Education',
-    author: 'Anjali Deshmukh, Education Correspondent',
-    date: 'June 8, 2026',
+या प्रकरणाच्या चौकशी अहवालानंतर सार्वजनिक रस्त्याजवळ धोकादायक पद्धतीने उघड्या ठेवलेल्या विहिरींच्या मालकांवर गुन्हे दाखल करण्याचे आदेश देण्यात आले आहेत. जिल्हा प्रशासनाने अशा सर्व विहिरींना १५ दिवसांच्या आत कुंपण घालण्याची कडक तंबी दिली आहे. सुरक्षेकडे दुर्लक्ष करणाऱ्यांवर कडक कायदेशीर पावले उचलली जात आहेत.`,
+    category: 'City Buzz',
+    author: 'Nashik 24x7 Special Correspondent',
+    date: 'July 14, 2026',
     readTime: 6,
-    imageUrl: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&q=80&w=1200',
+    imageUrl: 'https://lh3.googleusercontent.com/d/1GxxqP0cXp_-tN2rn3SgQ8EMIuq5uDCHb',
     isLead: true,
     isBreaking: true,
-    likes: 142,
-    body: `NASHIK — In a watershed moment for North Maharashtra's academic landscape, Nashik has officially secured the coveted 'Excellence in Digital Learning' designation from the State Education Council. The honor cements Nashik's hard-earned reputation as an emerging technology education hub and elevates its local institutions to national standards.
+    likes: 156,
+    body: `DINDORI — The high-level investigation into the tragic car-into-well accident in Dindori has entered a crucial phase, with police initiating strict legal action against private landowners who fail to secure deep wells on their properties. The crash, which occurred last week, saw a family vehicle skid off a rural road without crash barriers and plunge into a massive, unfenced agricultural well.
 
-According to data released by the Directorate of Technical Education, municipal and private colleges in the Gangapur and Road areas have seen a staggering 34% increase in student enrollment for specialized AI, robotics, and cloud-computing courses over the last academic year. This boost is attributed to a rising fascination with cutting-edge vocational courses, state-sponsored scholarships, and industry-aligned training camps.
-
-"We aren't just teaching from textbooks; we are curating an experiential gateway," remarks Dr. Sudhir Tambe, a pioneering educationist in the region. "The unique academic ecosystem of Nashik—characterized by strong industrial linkages with Satpur MIDC and support from corporate partners—endows our youth with a distinct competitive edge that technology recruiters are starting to value highly."
-
-To support this explosive growth, the Nashik Municipal Corporation (NMC) has announced a public-private partnership with local tech academies to establish a dedicated 'Nashik Smart Education & Skilling Corridor.' This initiative will introduce state-of-the-art computer labs, high-speed campus Wi-Fi, and career advisory panels. Educational boards project that this skilling drive will benefit over 50,000 regional students, offering a massive booster shot to the employment rate of young graduates.`,
+The probe conducted by district and PWD inspectors highlighted that hundreds of deep wells directly border village roads without mandatory safety walls, parapets, or warning signs. Property owners who had neglected repeated warnings from local panchayats are now facing criminal charges for endangerment. District authorities have set a strict 15-day deadline for all rural landowners to either cover or fence their wells, failing which severe penalties and property attachment actions will follow.`,
     comments: [
       {
-        id: 'c1',
-        author: 'Milind Kulkarni',
-        text: 'A proud moment for all Nashikites! Sula may have brought wines, but high quality education is the real future for our children.',
-        date: 'June 8, 2026, 8:45 AM'
-      },
-      {
-        id: 'c2',
-        author: 'Praniti G.',
-        text: 'Hope this educational initiative pays special attention to underprivileged schools and rural parts of Trimbak and Dindori.',
-        date: 'June 8, 2026, 9:20 AM'
+        id: 'c-6-1',
+        author: 'Dinkar Patil',
+        text: 'This is a welcome move. Many open wells in Dindori are hidden behind tall bushes, posing a constant threat.',
+        date: 'July 14, 2026, 9:30 PM'
       }
     ]
   },
   {
-    id: 'heritage-1',
-    title: 'Historic Ramkund to Undergo ₹150 Crore Godavari Rejuvenation & Riverfront Ecological Restoration',
-    marathiTitle: 'ऐतिहासिक रामकुंडाचा कायापालट होणार; गोदावरी नदी पात्रासाठी १५० कोटींचा निधी मंजूर',
+    id: 'news-1',
+    title: 'Tragic Highway Accident in Nashik Claims Four Lives, One Critically Injured',
+    marathiTitle: 'नाशिक जिल्ह्यात भीषण रस्ता अपघात; ४ जणांचा मृत्यू, १ गंभीर जखमी',
     marathiSource: 'nashik24x7.com',
-    subtitle: 'The historic pilgrimage site will benefit from smart filtration, organic bio-shield walls, and standard heritage corridor upgrades before the upcoming Shahi Snan cycle.',
-    marathiSubtitle: 'नमामी गोदा प्रकल्पांतर्गत रामकुंड आणि गोदावरी नदी पात्राच्या पर्यावरणपूरक संवर्धनासाठी राष्ट्रीय स्वच्छ गंगा मिशनकडून तब्बल १५० कोटींचा निधी मंजूर झाला आहे.',
-    marathiBody: `PANCHAVATI — ऐतिहासिक रामकुंड आणि गोदावरी घाटाच्या संवर्धनासाठी राष्ट्रीय स्वच्छ गंगा मिशनने (NMCG) १५० कोटी रुपयांच्या भव्य पुनरुज्जीवन आराखड्याला मंजुरी दिली आहे. १७व्या शतकात १७९६ मध्ये बांधलेले रामकुंड हे नाशिकच्या श्रद्धा आणि संस्कृतीचे केंद्र असून, दर बारा वर्षांनी होणाऱ्या कुंभमेळ्यात आणि दैनंदिन विधींमध्ये येथे लाखो भाविक हजेरी लावतात.
+    subtitle: 'A head-on collision between multiple vehicles on the Nashik-Peth highway route leads to a devastating loss of life and prompts local outrage.',
+    marathiSubtitle: 'नाशिक-पेठ रस्ता मार्गावर वाहनांच्या भीषण धडकेत ४ भाविकांचा जागीच मृत्यू झाला असून पोलीस तपास सुरू आहे.',
+    marathiBody: `नाशिक — नाशिक-पेठ राष्ट्रीय महामार्गावर बुधवारी झालेल्या एका भीषण रस्ता अपघातात चार भाविकांचा दुर्दैवी मृत्यू झाला असून, एक जण गंभीर जखमी झाला आहे. प्राथमिक माहितीनुसार, दोन अवजड ट्रक आणि भाविकांना घेऊन जाणाऱ्या इको कारमध्ये हा अपघात झाला. धडक इतकी भीषण होती की प्रवासी वाहनाचा चक्काचूर झाला.
 
-गेल्या काही दशकांत वाढते शहरीकरण आणि वाढत्या प्रदूषणामुळे नदीच्या नैसर्गिक प्रवाहायला अडथळा निर्माण झाला आहे. या नव्या प्रकल्पांतर्गत रामकुंडातील पाणी स्वच्छ आणि जिवंत ठेवण्यासाठी अत्याधुनिक सेंद्रिय गाळण यंत्रणा आणि वाळूचे नैसर्गिक फिल्टर लावले जातील. यामुळे पारंपारिक विधींना धक्का न लावता पाण्याचा दर्जा सुधारणे शक्य होणार आहे.
+स्थानिक नागरिक आणि पोलिसांनी घटनास्थळी धाव घेत तात्काळ बचावकार्य सुरू केले. कारचे पत्रे कापून मृतांना आणि जखमींना बाहेर काढण्यात आले. जखमी प्रवाशाला नाशिक जिल्हा शासकीय रुग्णालयात दाखल करण्यात आले असून त्यांची प्रकृती चिंताजनक आहे. पोलिसांनी ट्रक चालकांविरुद्ध हलगर्जीपणाचा गुन्हा दाखल केला असून तपास सुरू आहे.`,
+    category: 'City Buzz',
+    author: 'Nashik 24x7 Crime Bureau',
+    date: 'July 14, 2026',
+    readTime: 5,
+    imageUrl: 'https://lh3.googleusercontent.com/d/1qdgQPtNv8Seej32pS2eIOdEn8-zS0Epm',
+    likes: 48,
+    body: `NASHIK — In a heart-wrenching road tragedy on the Nashik-Peth National Highway, at least four pilgrims lost their lives and another was critically injured on Wednesday. According to preliminary reports, the collision involved two heavily loaded trucks and an Eeco car carrying pilgrims returning from a religious visit. The impact of the crash was so severe that the passenger vehicle was completely crushed under one of the trucks.
 
-तसेच, घाटांच्या मूळ सौंदर्याला धक्का न लावता सिमेंटऐवजी पारंपारिक चुना-मातीच्या चुन्याने घाटांची दुरुस्ती केली जाईल. पंचवटी परिसरातून गोदावरीत येणारे सांडपाणी रोखण्यासाठी २२ ठिकाणी कचरा संकलन यंत्रे बसवण्यात येतील.
+Local residents and police rushed to the spot, initiating immediate rescue operations. Emergency services had to use gas cutters to extricate the victims from the mangled remains of the car. The injured person was rushed to the Nashik Civil Hospital, where their condition remains extremely critical. Police have registered a case against the truck drivers for reckless driving and are conducting a thorough investigation into the exact sequence of events leading up to the crash.`,
+    comments: []
+  },
+  {
+    id: 'news-2',
+    title: 'Bhavli Dam Assault Case: Nine Suspects Arrested After Terrifying 15km Chase of Family',
+    marathiTitle: 'भावली धरण छळवणूक प्रकरण: ८ जणांच्या कुटुंबाचा १५ किमी पाठलाग; ९ संशयित जेरबंद',
+    marathiSource: 'nashik24x7.com',
+    subtitle: 'Rural police apprehend members of a violent gang who pursued a family of eight after they objected to the harassment of a female relative.',
+    marathiSubtitle: 'महिला पर्यटकाच्या विनयभंगाला विरोध केल्याने जमावाने केला पाठलाग; पोलिसांनी आवळल्या मुसक्या.',
+    marathiBody: `इगतपुरी — निसर्गरम्य भावली धरणावर फिरायला आलेल्या एका कुटुंबाचा पाठलाग करून त्यांच्यावर हल्ला केल्याप्रकरणी नाशिक ग्रामीण पोलिसांनी ९ जणांना अटक केली आहे. महिला पर्यटकाच्या विनयभंगाला विरोध केल्यामुळे आरोपींनी तब्बल १५ ते २० किलोमीटर अंतरापर्यंत कुटुंबाच्या गाडीचा थरारक पाठलाग केला व दगडफेक केली.
 
-"हा केवळ सिमेंट-कॉन्क्रीटचा विकास नसून, गोदामातेची पवित्रता आणि नाशिकचा वारसा जतन करण्याचा प्रामाणिक प्रयत्न आहे," असे मनपा आयुक्त चंद्रकांत पुलकुंडवार यांनी स्पष्ट केले.`,
+घाबरलेल्या कुटुंबाने गाडी थेट पोलीस चौकीकडे वळवली, मात्र हल्लेखोरांनी त्यांना अडवण्याचा प्रयत्न केला. पोलिसांनी तातडीने कारवाई करत ९ संशयितांना अटक केली आहे. पर्यटनस्थळांवर अशा घटना घडू नयेत म्हणून विशेष पोलीस गस्त वाढवण्यात आली आहे.`,
+    category: 'City Buzz',
+    author: 'Nashik 24x7 Security Desk',
+    date: 'July 14, 2026',
+    readTime: 5,
+    imageUrl: 'https://lh3.googleusercontent.com/d/1lAjc28k32flmobO9L3olJ1HoB0gYItv7',
+    likes: 87,
+    body: `IGATPURI — The Nashik Rural Police have arrested nine individuals in connection with the shocking assault and pursuit of a family at the scenic Bhavli Dam tourist spot. A family of eight, including women and children, was visiting the reservoir when local anti-social elements began harassing a female family member. When the family objected, a large mob gathered and began chasing their vehicle over a distance of 15 to 20 kilometers, throwing stones and threatening their lives.
+
+Terrified, the family drove directly towards the nearest police outpost, but the attackers blocked their path. Following a swift investigation spearheaded by rural police command units, nine suspects have been positively identified and taken into custody. The police have vowed to maintain strict law and order at picnic spots, deploying special patrol squads to prevent future incidents.`,
+    comments: []
+  },
+  {
+    id: 'news-3',
+    title: 'Nashik District Maps 52 High-Risk Disaster Hotspots Digitally to Boost Emergency Response',
+    marathiTitle: 'आपत्ती व्यवस्थापनात नाशिकचे पाऊल; ५२ धोकादायक हॉटस्पॉटचे डिजिटल मॅपिंग पूर्ण',
+    marathiSource: 'nashik24x7.com',
+    subtitle: 'The smart mapping initiative aims to optimize resource allocation, coordinate rescue teams, and prevent flood damage during monsoon surges.',
+    marathiSubtitle: 'मुसळधार पाऊस आणि पूरपरिस्थितीचा सामना करण्यासाठी जिल्हा प्रशासनाकडून तंत्रज्ञानाचा प्रभावी वापर.',
+    marathiBody: `नाशिक — मुसळधार पाऊस आणि अचानक येणाऱ्या पुराचा यशस्वी मुकाबला करण्यासाठी नाशिक जिल्हा प्रशासनाने ५२ आपत्तीप्रवण 'हॉटस्पॉट'चे डिजिटल भौगोलिक मॅपिंग पूर्ण केले आहे. यामध्ये गोदावरी नदीकाठचे सखल भाग, दरड कोसळणारे घाट रस्ते आणि कमकुवत पूल यांचा समावेश आहे.
+
+या मॅपिंगमुळे आपत्कालीन नियंत्रण कक्षाला रिअल-टाइम माहिती मिळणार असून बचाव पथके आधीच सज्ज ठेवता येतील. आपत्तीच्या प्रसंगी कमीत कमी वेळात मदत पोहोचवणे यामुळे शक्य होणार असल्याचे जिल्हाधिकारी आयुष प्रसाद यांनी सांगितले.`,
+    category: 'City Buzz',
+    author: 'Nashik 24x7 IT & Systems',
+    date: 'July 14, 2026',
+    readTime: 4,
+    imageUrl: 'https://lh3.googleusercontent.com/d/1adAm7W_z_CURGhLIAaiPq8ctwof398Ng',
+    likes: 56,
+    body: `NASHIK — To enhance readiness for heavy monsoon rains and flash floods, the Nashik District Administration has completed the digital and geographic mapping of 52 vulnerable "disaster hotspots" across the region. These locations, which include low-lying residential areas near the Godavari River, landslide-prone ghat sections, and weak bridges, are now integrated into a centralized GIS mapping portal.
+
+This digital network allows emergency war rooms to monitor water levels, rain metrics, and traffic density in real-time. Rescue teams, complete with rubber boats and life-saving equipment, have been strategically pre-positioned near these mapped zones to ensure rapid response. District Collector Ayush Prasad emphasized that this proactive framework will help minimize casualties and streamline relief operations.`,
+    comments: []
+  },
+  {
+    id: 'news-4',
+    title: 'Unified Digital Mapping System Rolled Out to Secure Upcoming Simhastha Kumbh Mela',
+    marathiTitle: 'सिंहस्थ कुंभमेळा २०२७: भाविकांच्या सुरक्षेसाठी अत्याधुनिक युनिफाइड डिजिटल मॅपिंग सिस्टीम',
+    marathiSource: 'nashik24x7.com',
+    subtitle: 'District authorities collaborate with multiple agencies to build a centralized control grid for managing millions of expected pilgrims.',
+    marathiSubtitle: 'विविध शासकीय यंत्रणांच्या समन्वयातून गर्दी नियंत्रण आणि आपत्कालीन नियोजनासाठी डेटा एकत्रीकरण.',
+    marathiBody: `पंचवटी — २०२७ मध्ये नाशिकमध्ये होणाऱ्या सिंहस्थ कुंभमेळ्याच्या जय्यत तयारीसाठी जिल्हा प्रशासनाने 'युनिफाइड डिजिटल मॅपिंग सिस्टीम' सुरू केली आहे. यामुळे पोलीस, मनपा, आरोग्य आणि वाहतूक विभाग एकाच डेटा नेटवर्कद्वारे जोडले गेले आहेत.
+
+या प्रणालीद्वारे मुख्य रस्ते, साधुग्राम, आणि रामकुंडासारख्या गर्दीच्या ठिकाणी एआय कॅमेऱ्यांच्या साहाय्याने नियंत्रण ठेवले जाईल, जेणेकरून गर्दी वाढल्यास चेंगराचेंगरी किंवा अनुचित प्रकार टाळता येतील.`,
     category: 'Panchavati',
-    author: 'Ramesh Shastri, Cultural Editor',
-    date: 'June 7, 2026',
+    author: 'Nashik 24x7 Heritage Editor',
+    date: 'July 14, 2026',
     readTime: 5,
-    imageUrl: 'https://images.unsplash.com/photo-1600100397573-047df1ec5bf1?auto=format&fit=crop&q=80&w=800',
-    isEditorial: false,
-    likes: 98,
-    body: `PANCHAVATI — A grand restoration blueprint has been greenlit by the National Mission for Clean Ganga (NMCG), allocating ₹150 crore to restore the ecological and structural integrity of the holy Ramkund and the surrounding Godavari riverfront plazas. Built in 1696 by Chitaraj Dharmadhikari, Ramkund serves as the religious focal point of Nashik, drawing millions of pilgrims to its holy waters during the Kumbh Mela and daily prayer rituals.
+    imageUrl: 'https://lh3.googleusercontent.com/d/1XUV93XjOlKjNk6fuw9UlVas4YsMN6FFR',
+    likes: 72,
+    body: `PANCHAVATI — With Nashik gearing up to host the monumental Simhastha Kumbh Mela in 2027, the district administration has launched a state-of-the-art Unified Digital Mapping System. This platform integrates topological and administrative data from the municipal corporation, police departments, health agencies, and transit networks into a single cohesive safety grid.
 
-Over decades of intense urban runoffs and heavy industrial discharge upstream, the legendary river has suffered from severe silting. Under the new eco-rehabilitation project, state-of-the-art bio-remediation blocks and sand-bed sub-surface filtration systems will be installed near the Ahilya Devi bridge. These screens are designed to keep the pool water oxygenated and clean without interfering with traditional rituals.
-
-Additionally, standard sandstone steps (Ghats) will be structurally reinforced using traditional lime mortar instead of concrete to preserve heritage aesthetics. The project also mandates the setting up of solid waste interceptors at twenty-two critical storm-drain channels feeding into the main stream from Panchavati.
-
-"This is not just a civil works venture, but a deep sacred duty to secure the lifeforce of Nashik," stated Municipal Commissioner Chandrakant Pulkundwar. "By pairing classic Vedic architectonics with modern municipal eco-filtration, we are returning the Godavari back to its pristine historic glory."`,
-    comments: [
-      {
-        id: 'c3',
-        author: 'Pandit Satish Pujari',
-        text: 'This was long overdue. The concrete beds in the river have choked the natural underground aquifers. We welcome the natural bio-remediation!',
-        date: 'June 7, 2026, 11:15 AM'
-      }
-    ]
-  },
-  {
-    id: 'city-1',
-    title: 'Dwarka Circle Elevated Flyover Enters Phase II; Smart Metro-Neo Routes Finalized for Satpur-Shalimar Sector',
-    marathiTitle: 'द्वारका चौकातील उड्डाणपुलाचे काम दुसऱ्या टप्प्यात; मेट्रो-निओ मार्गाचे नियोजन अंतिम',
-    marathiSource: 'nashik24x7.com',
-    subtitle: 'Maharashtra Cabinet fast-tracks approvals for a dual-tier transport network to decongest Nashik’s highest-volume intersection.',
-    marathiSubtitle: 'नाशिकमधील सर्वाधिक वाहतूक कोंडीचा भाग असलेल्या द्वारका चौकातील दुहेरी उड्डाणपुलाच्या दुसऱ्या टप्प्यातील कामांना गती देण्यात आली असून, मेट्रो-निओचे मार्ग निश्चित करण्यात आले आहेत.',
-    marathiBody: `NASHIK — शहरातील वाहतूक कोंडी सोडवण्यासाठी अत्यंत महत्त्वाच्या असलेल्या द्वारका चौकातील उड्डाणपुलाच्या दुसऱ्या टप्प्यातील खांब आणि गर्डर उभारणीच्या कामाला वेगाने सुरुवात झाली आहे. मुंबई-आग्रा राष्ट्रीय महामार्ग आणि पुणे-नाशिक महामार्ग एकमेकांना छेदत असल्याने येथे दररोज १ लाख ८० हजारांहून अधिक वाहनांची वर्दळ असते.
-
-याच दरम्यान, महामेट्रोने नाशिकसाठी महत्त्वाकांक्षी असलेल्या 'मेट्रो-निओ' प्रकल्पाचा सविस्तर अहवाल (DPR) जाहीर केला आहे. सातपूर-शालिमार दरम्यान रबर टायरवर चालणारी ही अनोखी मेट्रो एलिव्हेटेड ट्रॅकवरून धावणार असून, याचे मार्ग द्वारка उड्डाणपुलाशी सुसंगत ठेवण्यात आले आहेत.
-
-हा तीन पदरी उड्डाणपूल देशातील एक तांत्रिक आश्चर्य ठरणार आहे. यामध्ये पहिल्या मजल्यावर स्थानिक वाहतूक, दुसऱ्या मजल्यावर जड मालवाहू वाहने आणि सर्वांत वरच्या तिसऱ्या मजल्यावरून मेट्रो-निओ धावेल.
-
-"द्वारका चौकाची कोंडी सोडवणे हाच शहरातील विकासाचा खरा पाया आहे," असे मुख्य अभियंता रोहित सोनवणे यांनी सांगितले. "मेट्रो-निओ सुरू झाल्यावर सातपूर औद्योगिक वसाहत ते शालिमार दरम्यानचा प्रवासाचा वेळ ५० मिनिटांवरून थेट १२ मिनिटांवर येईल."`,
-    category: 'City Buzz',
-    author: 'Vikas Patil, Urban Development',
-    date: 'June 6, 2026',
-    readTime: 4,
-    imageUrl: 'https://images.unsplash.com/photo-1545231027-63b3f162d20e?auto=format&fit=crop&q=80&w=800',
-    isLead: false,
-    likes: 76,
-    body: `NASHIK — Following intense deliberation, the City Infrastructure Taskforce has officially kicked off Phase II of the Dwarka Circle Elevated corridor, preparing for the erection of pre-cast segments that will span the infamous bottleneck block. Dwarka Circle, which acts as the convergence junction for the Mumbai-Agra National Highway (NH-3) and Pune-Nashik highway, registers a daily congestion load exceeding 180,000 vehicles.
-
-Parallelly, MahaMetro officials have confirmed that the final DPR (Detailed Project Report) for the innovative Metro-Neo light transit system is now fully aligned with the central flyover coordinates. The rubber-tyred electric coaches, running on elevated dedicated viaducts, will begin trial runs along the Satpur-Garware-Shalimar corridor by early next year.
-
-The dual-tier design—where the lower deck handles local peak traffic, the second level accommodates long-distance cargo freighters, and the topmost viaduct carries the Metro-Neo transit cars—is an engineering marvel designed specifically for Tier-2 smart cities. 
-
-"Decongesting Dwarka is the linchpin of our city’s future growth," said Chief Engineer Rohit Sonawane. "By segregating heavy multi-axle freight from local city autos and utilizing silent electric Metro-Neos, we will slash travel times between the Satpur industrial zone and city limits from 50 minutes to under twelve."`,
+The mapping system covers all major transit routes, entry points, bathing ghats (including Ramkund), and temporary pilgrim shelters (Sadhugram). Authorities plan to deploy AI-based smart cameras to monitor crowd density, preventing stampedes and streamlining traffic flow during the auspicious Shahi Snan days.`,
     comments: []
   },
   {
-    id: 'editorial-1',
-    title: 'The Soul of Spicy Misal Pav: Understanding Nashik’s Uncontested Culinary Monarchy',
-    marathiTitle: 'नाशिकच्या झणझणीत मिसळ पावाचा स्वाद; जाणून घ्या चवदार इतिहास आणि संस्कृती',
+    id: 'news-5',
+    title: 'Structural Audit of Critical Bridges and Highways Commences Post-July Monsoon Spikes',
+    marathiTitle: 'मुसळधार पावसानंतर नाशिक-त्र्यंबकेश्वर मार्गावरील पुलांचे विशेष स्ट्रक्चरल ऑडिट सुरू',
     marathiSource: 'nashik24x7.com',
-    subtitle: 'From fire-roasted black masala to the rustic clay hearths of Sadhana and Vihar, an exploration of why our regional snack remains a sacred cultural ritual.',
-    marathiSubtitle: 'चुलीवरची कढई, झणझणीत कट, आणि गरमागरम पाव; नाशिकच्या खाद्यसंस्कृतीचा अविभाज्य भाग असलेल्या मिसळीचा रंजक आणि चवदार इतिहास.',
-    marathiBody: `मुंबईचा वडापाव आणि पुण्याची गोडसर मिसळ प्रसिद्ध असली, तरी नाशिककरांची ओळख असलेल्या झणझणीत, काळ्या मसाल्याच्या चुलीवरच्या मिसळीची चव संपूर्ण जगात न्यारी आहे.
+    subtitle: 'High-level engineering teams assess the safety of old stone bridges and highway sectors that witnessed heavy water logging.',
+    marathiSubtitle: '१ ते १० जुलै दरम्यान झालेल्या मुसळधार पावसामुळे रस्त्यांची आणि पुलांची सुरक्षा तपासण्याचे आदेश.',
+    marathiBody: `नाशिक — जुलैच्या पहिल्या आठवड्यात झालेल्या मुसळधार पावसानंतर सार्वजनिक बांधकाम विभागाने (PWD) नाशिक-त्र्यंबकेश्वर मार्गावरील जुन्या पुलांचे आणि रस्त्यांचे विशेष ऑडिट सुरू केले आहे. पुराच्या प्रचंड प्रवाहामुळे अनेक पुलांच्या पायाला धोका निर्माण झाला आहे का, याची तपासणी केली जात आहे.
 
-नवीन लोकांसाठी मिसळ म्हणजे केवळ उसळ आणि फरसाणचा रस्सा वाटू शकतो, पण नाशिककरांसाठी हा केवळ सकाळचा नाश्ता नसून एक जिवंत भावना आहे. सकाळी गोदावरीच्या काठावर किंवा सोमेश्वरच्या निसर्गरम्य वातावरणात मिसळीवर ताव मारल्याशिवाय नाशिककरांची सकाळ पूर्ण होत नाही.
-
-नाशिकच्या मिसळीचे मुख्य वैशिष्ट्य म्हणजे त्याचा 'कट' किंवा 'तर्री'. कच्च्या तिखटाऐवेजी सुके खोबरे, भाजलेला कांदा आणि घरगुती काळ्या मसाल्याच्या मिश्रणातून लोखंडी कढईत मंद आचेवर हा रस्सा तयार केला जातो.
-
-सोमेश्वर परिसरातील प्रसिद्ध 'साधना चुलीवरची मिसळ' सारख्या ठिकाणी आजही पारंपरिक मातीच्या चुलीवर लाकडाच्या धुराचा वापर करून उसळ शिजवली जाते, ज्यामुळे रश्श्याला एक वेगळाच अस्सल सुवास येतो. सोबत दही आणि पापड यामुळे या तिखट चवीला एक उत्तम समतोल मिळतो. नाशिकची खाद्यसंस्कृती येथील मातीसारखीच आहे: अस्सल, तिखट पण मनाला भिडणारी!`,
+प्रगत उपकरणांच्या सहाय्याने पुलांचे खांब आणि जॉईंट्स तपासले जात असून तातडीने दुरुस्तीची कामे हाती घेतली जातील जेणेकरून प्रवाशांची सुरक्षा अबाधित राईल.`,
     category: 'City Buzz',
-    author: 'Girish Deshpande, Food Historian',
-    date: 'June 5, 2026',
-    readTime: 7,
-    imageUrl: 'https://images.unsplash.com/photo-1601050690597-df056fb4ce78?auto=format&fit=crop&q=80&w=800',
-    isEditorial: true,
-    likes: 215,
-    body: `If Mumbai is synonymous with the fast-paced Vada Pav and Pune swears by the sweet undertones of its Misal, Nashik is the sovereign capital of a fiery, complex, fire-roasted culinary masterpiece: The Nashik Misal.
+    author: 'Nashik 24x7 Infrastructure Bureau',
+    date: 'July 14, 2026',
+    readTime: 5,
+    imageUrl: 'https://lh3.googleusercontent.com/d/13RDRcCyKGno8auZJFqKFkfjb9MqL529c',
+    likes: 61,
+    body: `NASHIK — Following intense spell of rains between July 1 and July 10, the Public Works Department (PWD) in coordination with municipal engineers has initiated a structural integrity audit of bridges and roads on the Nashik-Trimbakeshwar highway route. Several low-lying pathways and historic stone bridges witnessed massive water flows, prompting concerns about underlying erosion.
 
-To the uninitiated, Misal Pav is a hearty curry made of sprouted moth beans (matki), topped with crisp sev, chopped onions, and fresh lemon, served alongside heavily buttered laadi pav. But in Nashik, this is not merely breakfast; it is a spiritual ceremony, best consumed in the early haze of morning before the summer sun bakes the volcanic basalt of the Deccan plateau.
-
-What separates Nashik’s Misal is the distinct "Tarri" or "Katt"—the deep crimson, oil-slicked broth that draws its legendary heat not from raw chili powder, but from dry-roasted spices infused with charred onions and shredded dry coconut, slow-cooked in iron cauldrons.
-
-Establishments like the iconic Sadhana Chulivarchi Misal in Someshwar maintain dry wood Chulhas (clay hearths) to infuse a persistent woodsmoke aroma into the Matki curry. At classic Shalimar joints, a side of creamy curd (dahi) and single-serving roasted papad is mandatory to shield the palate from the heat. 
-
-Nashik's cuisine reflects its soil: fertile, unapologetic, rustic, yet deeply complex, much like the black cotton earth that yields both the sweet Thompson Seedless grapes and the spicy cloves of our regional spice box. To swallow a spoonful of Nashik Misal is to digest a piece of our stubborn, resilient history.`,
-    comments: [
-      {
-        id: 'c4',
-        author: 'Sanjay Tambe',
-        text: 'This article perfectly describes the feeling! Chulivarchi Misal is not food, it is an emotion.',
-        date: 'June 5, 2026, 2:10 PM'
-      },
-      {
-        id: 'c5',
-        author: 'Rashi Shah',
-        text: 'Tasting the black masala misal at Mamacha Mala is an experience that Pune or Mumbai can never replicate.',
-        date: 'June 5, 2026, 4:35 PM'
-      }
-    ]
-  },
-  {
-    id: 'business-1',
-    title: 'Satpur-Ambad Industrial Grid Embraces Electric Transition with ₹800 Crore EV Ancillary Hub',
-    marathiTitle: 'सातपूर-अंबड एमआयडीसीत ८०० कोटींचे नवीन इलेक्ट्रिक वाहन केंद्र सुरू होणार',
-    marathiSource: 'nashik24x7.com',
-    subtitle: 'Over forty legacy auto-component manufacturers gear up to pivot production to lithium-ion cell assemblies and electric drivetrains.',
-    marathiSubtitle: 'सातपूर आणि अंबड एमआयडीसीतील ऑटो-कॉम्पोनंट कंपन्या लिथियम-आयन बॅटरी आणि इलेक्ट्रिक वाहनांचे सुटे भाग बनवण्यासाठी ८०० कोटींची गुंतवणूक करत आहेत.',
-    marathiBody: `NASHIK — ऑटोमोबाईल क्षेत्रातील अग्रगण्य निर्यातदार म्हणून स्वतःचे स्थान टिकवून ठेवण्यासाठी नाशिकच्या सातपूर आणि अंबड औद्योगिक वसाहतींमध्ये (MIDC) ८०० कोटी रुपयांची मोठी गुंतवणूक होत आहे. या गुंतवणुकीला केंद्र सरकारच्या पीएलआय (PLI) योजनेचे पाठबळ मिळाले आहे.
-
-शहरातील अनेक लहान व मध्यम उद्योगांनी आता इलेक्ट्रिक वाहन (EV) तंत्रज्ञानाकडे आपला मोर्चा वळवला आहे. यासाठी बॅटरी व्यवस्थापन यंत्रणा (BMS) आणि कॉपर वाइंडिंग मोटर्सच्या उत्पादनाला प्राधान्य दिले जात आहे.
-
-या संदर्भात नव्याने स्थापन झालेल्या 'नाशिक ईव्ही कन्सोर्टियम'ने आयआयटी मुंबई (IIT Bombay) आणि पुण्यातील इंजिनिअरिंग हबसोबत तांत्रिक करार केले आहेत. याद्वारे स्थानिक ८,००० हून अधिक तंत्रज्ञांना अत्याधुनिक ईव्ही असेंब्लीचे मोफत प्रशिक्षण दिले जाईल.
-
-"हा बदल काळाची गरज आहे," असे निमाचे (NIMA) अध्यक्ष धनंजय डहाळे यांनी सांगितले. "जर आपण पुढच्या ३६ महिन्यांत स्वतःला पारंपरिक वाहनांऐवेजी ईव्ही सुट्या भागांच्या उत्पादनासाठी तयार केले नाही, तर आपण स्पर्धेत मागे पडू."`,
-    category: 'Business',
-    author: 'Samir Gujar, Industry Correspondent',
-    date: 'June 4, 2026',
-    readTime: 4,
-    imageUrl: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=800',
-    isEditorial: false,
-    likes: 54,
-    body: `NASHIK — In a bold push to preserve its standing as Maharashtra’s premier automotive product exporter, the MIDC clusters of Satpur and Ambad are witnessing a massive ₹800 crore re-tooling wave, backed by central PLI subsidies.
-
-Traditionally a manufacturing base for Mahindra electric chassis components and massive diesel generator parts, several mid-level foundry units and tier-2 suppliers are collectively pivoting to set up localized battery management system (BMS) testing centers and custom copper winding motors.
-
-The newly formed Nashik EV Consortium has secured technical collaboration treaties with IIT Bombay and engineering hubs in Pune to retrain over 8,000 local technicians in advanced mechatronics and assembly. 
-
-"The shift is existential," warns Dhananjay Dahale, President of the Nashik Industries & Manufacturers Association (NIMA). "If we don’t transition our forging lines from combustion engine layouts to electric powertrains within the next 36 months, we run the risk of losing out to neighboring smart-manufacturing clusters. This synergy represents a proactive safeguard on our manufacturing legacy."`,
+Teams equipped with non-destructive testing tools are examining foundation piers, expansion joints, and asphalt wearing courses. Necessary repair works and structural reinforcement plans will be executed on a priority basis to ensure thousands of daily commuters and tourists can travel safely.`,
     comments: []
   },
   {
-    id: 'politics-1',
-    title: 'State Cabinet Sanctions Landmark Yield-Protection Subsidy for Grapes and Onion Cultivators',
-    marathiTitle: 'राज्य मंत्रिमंडळाकडून द्राक्ष आणि कांदा उत्पादकांसाठी भरीव मदत; महत्त्वपूर्ण योजना जाहीर',
+    id: 'news-7',
+    title: 'Nashik Police File Massive 1,500-Page Charge Sheet in IT Firm Religious Conversion Case',
+    marathiTitle: 'धर्मांतर प्रकरण: नाशिक पोलिसांकडून कोर्टात १,५०० पानांचे दोषारोपपत्र दाखल',
     marathiSource: 'nashik24x7.com',
-    subtitle: 'Niphad and Lasalgaon farmers welcome the dynamic insurance cushion to offset unseasonal weather risks.',
-    marathiSubtitle: 'निफाड आणि लासलगाव परिसरातील वादळी पावसामुळे नुकसान झालेल्या शेतकऱ्यांना दिलासा देण्यासाठी ४५० कोटींच्या कर्ज आणि विमा सहाय्याची घोषणा.',
-    marathiBody: `MUMBAI — निफाड, सिन्नर आणि येवला परिसरातील शेतकरी संघटनांच्या तीव्र आंदोलनानंतर राज्य मंत्रिमंडळाने द्राक्ष आणि कांदा उत्पादकांसाठी ४५० कोटी रुपयांचे विशेष नुकसान भरपाई पॅकेज मंजूर केले आहे. अवकाळी पाऊस आणि गारपिटीमुळे नुकसान झालेल्या शेतकऱ्यांना या योजनेमुळे थेट दिलासा मिळणार आहे.
+    subtitle: 'The charge sheet contains forensic analysis, chat records, and bank accounts detailing suspected illicit funding operations.',
+    marathiSubtitle: 'स्थानिक आयटी कंपनीत चालणाऱ्या संशयास्पद धर्मांतर प्रकरणाचा सखोल तपास अंतिम टप्प्यात.',
+    marathiBody: `नाशिक — नाशिकमधील एका माहिती तंत्रज्ञान (IT) कंपनीत उघडकीस आलेल्या संशयास्पद धर्मांतर रॅकेटप्रकरणी पोलिसांनी स्थानिक न्यायालयात १,५०० पानांचे दोषारोपपत्र दाखल केले आहे. कर्मचाऱ्यांवर दबाव आणणे, प्रलोभने दाखवणे यांसारख्या तक्रारींनंतर हा तपास सुरू करण्यात आला था.
 
-या नव्या 'कृषी सन्मान कवच' योजनेअंतर्गत दर्जेदार निर्यातक्षम द्राक्षांना किमान आधारभूत किंमत दिली जाईल. तसेच, आशियातील सर्वात मोठी कांदा बाजारपेठ असलेल्या लासलगाव येथे शेतकऱ्यांना कांदा खराब न होता १८० दिवसांपर्यंत सुरक्षित साठवून ठेवण्यासाठी १२० कोटी रुपयांच्या शीतगृहांची (Cold Storage) उभारणी केली जाईल.
-
-"अवकाळी संकटामुळे हवालदिल झालेल्या शेतकऱ्यांना सावरण्यासाठी ही थेट मदत त्वरित शेतकऱ्यांच्या बँक खात्यात जमा केली जाईल," असे आश्वासन संबंधित मंत्र्यांनी दिले.`,
+दोषारोपपत्रात कार्यालयीन संगणक, चॅट रेकॉर्ड्स आणि संशयास्पद परदेशी बँक खात्यांच्या व्यवहारांचे पुरावे जोडण्यात आले आहेत. या प्रकरणी अनेक संशयितांची नावे समोर आली असून लवकरच खटला सुरू होणार आहे.`,
     category: 'Politics',
-    author: 'Manoj Salunkhe, Political Editor',
-    date: 'June 3, 2026',
+    author: 'Nashik 24x7 Politics Bureau',
+    date: 'July 14, 2026',
+    readTime: 6,
+    imageUrl: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=800',
+    likes: 94,
+    body: `NASHIK — The Nashik Police department has officially filed a massive, 1,500-page charge sheet before the local court in connection with the controversial religious conversion racket uncovered at a local software company. The investigation was initiated after complaints were made regarding pressure tactics, psychological conditioning, and financial incentives offered to young employees.
+
+The detailed charge sheet contains extensive digital evidence, including forensic analysis of office laptops, chats from messaging platforms, and overseas bank transactions. Prosecutors believe the firm was receiving illicit funding to execute coordinated conversions. Over fifteen suspects have been named in the document, and the court is set to begin trial proceedings soon.`,
+    comments: []
+  },
+  {
+    id: 'news-8',
+    title: 'Landslide Threats: Vehicular Movement Restricted in Igatpuri and Saptashrungi Passes',
+    marathiTitle: 'दरड कोसळण्याचा धोका: इगतपुरी आणि सप्तशृंगी घाटात वाहनांच्या वाहतुकीवर निर्बंध',
+    marathiSource: 'nashik24x7.com',
+    subtitle: 'Heavy rainfall has increased rockfall risks, prompting district officials to restrict night transit for heavy vehicles.',
+    marathiSubtitle: 'मुसळधार पाऊस आणि धुक्यामुळे प्रवाशांच्या सुरक्षेसाठी प्रशासनाकडून आपत्कालीन नियमावली लागू.',
+    marathiBody: `इगतपुरी — डोंगराळ भागातील दरड कोसळण्याच्या धोक्यामुळे जिल्हा प्रशासनाने सप्तशृंगी आणि इगतपुरी घाट रस्त्यांवर रात्रीच्या वेळी जड वाहनांच्या वाहतुकीला बंदी घातली आहे. मुसळधार पावसामुळे माती सुटली असून दरड कोसळण्याची शक्यता वाढली आहे.
+
+घाटात दाट धुक्यामुळे दृश्यमानता कमी झाली असून प्रवाशांना खबरदारी घेण्याचे आवाहन करण्यात आले आहे. रस्त्यावरील अडथळे तातडीने दूर करण्यासाठी ठिकठिकाणी आपत्ती प्रतिसाद पथके तैनात करण्यात आली आहेत.`,
+    category: 'City Buzz',
+    author: 'Nashik 24x7 Disaster Desk',
+    date: 'July 14, 2026',
+    readTime: 4,
+    imageUrl: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=800',
+    likes: 75,
+    body: `IGATPURI — To prevent catastrophic accidents during the peak monsoon, the District Disaster Management Authority has issued restrictions on vehicular movement across the critical Saptashrungi and Igatpuri ghat passes. Recent heavy downpours have saturated the soil, significantly increasing the probability of sudden landslides and rockfalls.
+
+Night traffic of heavy commercial vehicles has been completely suspended, and light passenger cars are advised to maintain extreme caution due to thick fog and low visibility. Disaster response teams equipped with JCB earthmovers and safety nets have been stationed at multiple spots along the mountain routes to clear blockages instantly.`,
+    comments: []
+  },
+  {
+    id: 'news-9',
+    title: 'NMC Launches Topographical Survey for Proposed ₹1,223 Crore Colony Roads Upgrade',
+    marathiTitle: 'नाशिकमधील अंतर्गत रस्त्यांचा कायापालट होणार; १,२२३ कोटींच्या महाप्रकल्पाचा सर्व्हे सुरू',
+    marathiSource: 'nashik24x7.com',
+    subtitle: 'The massive project aims to transform residential lanes, storm drains, and pedestrian walkways across six divisions of Nashik.',
+    marathiSubtitle: 'शहरातील अंतर्गत गल्ल्या आणि कॉलनी रोड्स काँक्रिटीकरण करण्याच्या मनपाच्या प्रस्तावाला गती.',
+    marathiBody: `नाशिक — नाशिक मनपाकडून शहरातील सर्व सहा विभागांमधील अंतर्गत आणि कॉलनी रस्त्यांच्या दुरुस्तीसाठी तब्बल १,२२३ कोटी रुपयांचा विकास आराखडा तयार केला जात आहे. यासाठी अत्याधुनिक ड्रोनद्वारे सर्वेक्षण सुरू झाले आहे.
+
+या अंतर्गत डांबरी आणि मातीचे रस्ते बदलून काँक्रीटचे रस्ते बनवले जातील, तसेच पाण्याचा निचरा होण्यासाठी बंदिस्त गटारे आणि नवीन पथदिवे बसवले जातील. पहिल्या टप्प्यातील सर्व्हेचे काम ३० दिवसांत पूर्ण होणार आहे.`,
+    category: 'Business',
+    author: 'Nashik 24x7 Urban Infrastructure Bureau',
+    date: 'July 14, 2026',
     readTime: 5,
-    imageUrl: 'https://images.unsplash.com/photo-1595974482597-4b8da8879bc5?auto=format&fit=crop&q=80&w=800',
-    isEditorial: false,
+    imageUrl: 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&q=80&w=800',
+    likes: 64,
+    body: `NASHIK — In one of the largest civic infrastructure overhauls in recent years, the Nashik Municipal Corporation (NMC) has launched a comprehensive drone-assisted topographical survey for its ambitious ₹1,223 crore Colony Roads Transformation Project. The venture aims to rebuild and asphalt aging residential lanes across Nashik West, East, Panchavati, Cidco, Satpur, and Nashik Road divisions.
+
+Alongside road resurfacing, the project incorporates smart storm-water drainage networks, designated walking paths, and energy-efficient LED street lighting. NMC Commissioner stated that the initial phase of the survey is expected to complete within 30 days, paving the way for immediate execution before the upcoming festive season.`,
+    comments: []
+  },
+  {
+    id: 'news-10',
+    title: 'NMC Allocates ₹100 Crore in Ward Development Funds to Accelerate Civic Improvements',
+    marathiTitle: 'नाशिक मनपाकडून प्रभागांच्या विकासासाठी १०० कोटींच्या विशेष निधीचे वाटप',
+    marathiSource: 'nashik24x7.com',
+    subtitle: 'Corporators receive targeted financial resources to resolve localized water, sewage, and public park issues.',
+    marathiSubtitle: 'स्थानिक नागरी सुविधा, ड्रेनेज लाईन आणि बागांच्या नूतनीकरणासाठी निधी मंजूर.',
+    marathiBody: `नाशिक — शहरातील नागरी समस्यांचे निवारण करण्यासाठी नाशिक मनपाने आर्थिक वर्ष २०२६-२७ साठी प्रभाग सुधारणा निधी अंतर्गत १०० कोटी रुपयांचा निधी मंजूर केला आहे. यामुळे पाणीपुरवठा, सांडपाणी वाहिनी आणि रस्त्यांचे प्रश्न तातडीने सुटू शकतील.
+
+प्रत्येक प्रभागाला हा विशेष विकास निधी मिळणार असून, स्थानिक पातळीवरील रखडलेली कामे वेगाने पूर्ण होण्यास मदत होणार आहे. नागरिकांनी या निर्णयाचे स्वागत केले असून पाणी आणि उद्यानांना प्राधान्य देण्याची मागणी केली आहे.`,
+    category: 'Politics',
+    author: 'Nashik 24x7 Local Administration',
+    date: 'July 14, 2026',
+    readTime: 5,
+    imageUrl: 'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&q=80&w=800',
+    likes: 43,
+    body: `NASHIK — The Nashik Municipal Corporation has approved an allocation of ₹100 crore in Ward Development Funds for the financial year 2026-27. This decision is aimed at resolving immediate citizen complaints regarding public utilities, drinking water pipelines, sanitation networks, and playground maintenance.
+
+Each municipal ward is set to receive a portion of the funds, enabling local administrative representatives to execute urgent works without standard red-tape delays. Resident associations have welcomed the move, requesting that priority be given to drinking water supply upgrades and public park beautification projects.`,
+    comments: []
+  },
+  {
+    id: 'news-11',
+    title: 'Nashik Records All-Time High Property Deals Worth ₹17,543 Crore in Recent Fiscal Year',
+    marathiTitle: 'नाशिक रिअल इस्टेटमध्ये मोठी तेजी; वर्षभरात १७,५४३ कोटींच्या मालमत्तांची नोंदणी',
+    marathiSource: 'nashik24x7.com',
+    subtitle: 'Surging interest in high-end luxury residences, commercial IT plazas, and industrial zones powers the district’s biggest real estate boom.',
+    marathiSubtitle: 'आयटी पार्क आणि वाईन पर्यटनाच्या वाढत्या प्रभावामुळे नाशिकमधील घरांच्या आणि जमिनींच्या किमतीत मोठी वाढ.',
+    marathiBody: `नाशिक — नाशिकमध्ये रिअल इस्टेट क्षेत्रात ऐतिहासिक तेजी पाहायला मिळत असून गेल्या आर्थिक वर्षात शहरात चक्क १७,५४३ कोटी रुपयांच्या मालमत्तेचे व्यवहार झाले आहेत. गंगापूर रोड, इंदिरानगर परिसरातील आलिशान घरांना नागरिकांनी मोठी पसंती दिली आहे.
+
+समृद्धी महामार्ग आणि नाशिक-मुंबई कनेक्टिव्हिटी वाढल्याने मुंबई आणि पुण्यातील अनेक बड्या गुंतवणूकदारांनी नाशिकमध्ये जमीन खरेदी करण्यास सुरुवात केली आहे, ज्यामुळे मुद्रांक शुल्काच्या रूपात शासनालाही मोठा महसूल मिळाला आहे.`,
+    category: 'Business',
+    author: 'Nashik 24x7 Business Bureau',
+    date: 'July 14, 2026',
+    readTime: 5,
+    imageUrl: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=800',
+    likes: 112,
+    body: `NASHIK — Highlighting its growing economic stature, Nashik district registered record-breaking property transactions worth ₹17,543 crore during the 2025-26 fiscal period. Data from the sub-registrar office indicated a major surge in luxury residential purchases along Gangapur Road and Indira Nagar, alongside heavy industrial land acquisitions in Ambad and Sinnar.
+
+Analysts attribute this growth to improved connectivity via the Mumbai-Nagpur Samruddhi Expressway and the expanding IT and winery tourism sectors. This high transaction volume has contributed massive stamp duty revenues to the state exchequer, cementing Nashik as a highly lucrative real estate market.`,
+    comments: []
+  },
+  {
+    id: 'news-12',
+    title: 'HALCON Janori Depot Achieves Milestone of Over 4 Lakh Tonnes Sea Cargo in Last Fiscal Year',
+    marathiTitle: 'हलकॉन जनोरी डेपोची मोठी झेप; ४ लाख टनांहून अधिक सागरी कार्गो हाताळणी पूर्ण',
+    marathiSource: 'nashik24x7.com',
+    subtitle: 'The major logistics terminal streamlines export workflows for the region’s agricultural, pharmaceutical, and industrial producers.',
+    marathiSubtitle: 'द्राक्षे, औषधे आणि अभियांत्रिकी उत्पादनांच्या निर्यातीला मोठा वेग; थेट बंदरांशी कनेक्टिव्हिटी.',
+    marathiBody: `जनोरी — हिंदुस्तान एरोनॉटिक्स लिमिटेड (HAL) आणि कॉनकोर (CONCOR) यांच्या संयुक्त भागीदारीत सुरू असलेल्या हलकॉनच्या जनोरी येथील कंटेनर डेपोने गेल्या वर्षात तब्बल ४ लाख टन सागरी मालवाहतूक हाताळण्याचा नवा विक्रम प्रस्थापित केला आहे.
+
+या डेपोतून नाशिकचे द्राक्ष उत्पादक शेतकरी, औषध कंपन्या आणि सातपूर-अंबड येथील सुटे भाग थेट मुंबईच्या न्हावा शेवा बंदराद्वारे परदेशात पाठवले जातात. यामुळे वाहतुकीचा वेळ आणि खर्च मोठ्या प्रमाणात वाचला आहे.`,
+    category: 'Business',
+    author: 'Nashik 24x7 Trade & Logistics',
+    date: 'July 14, 2026',
+    readTime: 5,
+    imageUrl: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=800',
+    likes: 68,
+    body: `JANORI — HALCON, a joint venture between Hindustan Aeronautics Limited (HAL) and Container Corporation of India (CONCOR), has reported handling a record 4 lakh tonnes of sea cargo from its Janori Inland Container Depot (ICD) during the last fiscal year. This milestone marks a major step forward for Nashik’s logistical integration with international trade routes.
+
+The Janori depot provides customs clearance and storage services, allowing local grape farmers, pharmaceutical companies, and auto part manufacturers to ship their products directly to Nhava Sheva port in Mumbai. Local industry experts say this record high volume proves Nashik is rapidly becoming a vital export-import center for North Maharashtra.`,
+    comments: []
+  },
+  {
+    id: 'news-13',
+    title: 'Nashik Rural Police Seek Immediate Mobile Network Upgrades Near Tourist Zones',
+    marathiTitle: 'पर्यटन स्थळांवर मोबाईल नेटवर्क वाढवा; ग्रामीण पोलिसांचे टेलिकॉम कंपन्यांना निर्देश',
+    marathiSource: 'nashik24x7.com',
+    subtitle: 'Poor coverage at remote water reservoirs and ghats hampers emergency communication and slows safety response.',
+    marathiSubtitle: 'भावली आणि इगतपुरी धरणावर रेंज नसल्याने आपत्कालीन कॉल करण्यात अडचणी; पोलिसांचे पत्र.',
+    marathiBody: `नाशिक — भावली धरणावरील विनयभंग आणि हल्ल्याच्या घटनेनंतर नाशिक ग्रामीण पोलिसांनी मोबाईल नेटवर्क कंपन्यांना धरणे आणि घाट परिसरात नेटवर्क सुकर करण्याचे आदेश दिले आहेत. भावली आणि इगतपुरी परिसरातील निसर्गरम्य पर्यटन स्थळांवर रेंज नसल्याने पर्यटकांना पोलिसांशी संपर्क साधणे कठीण होते.
+
+सुरक्षिततेच्या दृष्टीने मोबाईल सिग्नल अत्यंत गरजेचे असून, पोलिसांनी कंपन्यांना या दुर्गम भागात नवीन टॉवर उभारण्यास सांगितले आहे जेणेकरून आपत्कालीन वेळी तातडीने मदत मागता येईल.`,
+    category: 'City Buzz',
+    author: 'Nashik 24x7 Telecommunications Desk',
+    date: 'July 14, 2026',
+    readTime: 5,
+    imageUrl: 'https://images.unsplash.com/photo-1562408590-e32931084e23?auto=format&fit=crop&q=80&w=800',
+    likes: 79,
+    body: `NASHIK — Following the recent law and order incident at Bhavli Dam, the Nashik Rural Police have formally requested telecom service providers to urgently upgrade mobile cellular coverage near remote tourist destinations, ghat sections, and reservoirs. Areas like Bhavli, Igatpuri dams, and isolated scenic viewpoints suffer from poor to non-existent mobile signals.
+
+This cellular deficit makes it extremely difficult for distressed tourists to call for police assistance or report medical emergencies. The police department has urged telecommunication companies to set up dedicated network towers in these sensitive zones to safeguard visitors and ensure seamless security monitoring.`,
+    comments: []
+  },
+  {
+    id: 'news-14',
+    title: 'Special Security Squad Deployed to Restore Tourist Confidence Across Nashik Rural',
+    marathiTitle: 'नाशिकमधील धरणे आणि धबधब्यांच्या ठिकाणी पोलिसांचा कडक बंदोबस्त; विशेष पथक सज्ज',
+    marathiSource: 'nashik24x7.com',
+    subtitle: 'Police increase presence at popular picnic spots, implementing regular vehicle checking and strict vigil against anti-social gangs.',
+    marathiSubtitle: 'पर्यटकांमध्ये भीतीचे वातावरण दूर करण्यासाठी पोलिसांची गस्त; छेडछाड रोखण्यासाठी विशेष दामिनी पथके तैनात.',
+    marathiBody: `नाशिक — पर्यटकांमध्ये सुरक्षेची भावना वाढवण्यासाठी नाशिक ग्रामीण पोलिसांनी धरणे आणि धबधब्यांच्या ठिकाणी विशेष सुरक्षा पथके तैनात केली आहेत. भावली धरण घटनेनंतर पर्यटकांना कोणताही त्रास होऊ नये म्हणून पोलीस प्रशासनाने कडक पावले उचलली आहेत.
+
+विशेषतः महिलांच्या सुरक्षेसाठी दामिनी पथके साध्या वेशात तैनात करण्यात आली असून हुल्लडबाजी करणाऱ्यांवर कडक कायदेशीर कारवाई केली जाणार आहे. पर्यटनस्थळांवर जाणाऱ्या मुख्य मार्गांवर नाकाबंदी सुरू करण्यात आली आहे.`,
+    category: 'Panchavati',
+    author: 'Nashik 24x7 Public Security',
+    date: 'July 14, 2026',
+    readTime: 5,
+    imageUrl: 'https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&q=80&w=800',
     likes: 83,
-    body: `MUMBAI — Following intense protests and weeks of round-the-clock advocacy from grower unions in Niphad, Sinnar, and Yeola, the Maharashtra Cabinet has approved an emergency, landmark ₹450-crore yield-protection subsidy. The scheme is specifically drafted to insulate grape and onion cultivators from severe losses caused by unseasonal hail and unpredictable moisture spikes.
+    body: `NASHIK — In a major initiative to restore confidence among tourists, the Nashik Rural Police have set up special safety squads at major reservoirs, waterfalls, and hiking trails in the district. Following the isolated harassment incident at Bhavli Dam, security checks have been doubled to prevent such events from occurring.
 
-Under the new 'Krishi Sanman Kudrat Shield,' a dynamic floor price will be guaranteed for standard Export-Grade Grapes, automatically kicking in if global retail price levels dip below standard input expenses. At Lasalgaon—Asia's largest wholesale onion market—a new smart cold-chain grant of ₹120 crore has also been launched, allowing small farmers to stockpile harvests for up to 180 days during supply gluts without quality degradation.
+Special squads, including female police units (Damini Pathak), have been deployed to monitor isolated spots and deter anti-social elements. Police checkpoints have been established at entry routes to check for drunk driving and illegal items, ensuring a family-friendly and safe environment for visitors.`,
+    comments: []
+  },
+  {
+    id: 'news-15',
+    title: "Collector's Central War Room Active 24x7 to Monitor Dam Discharges and River Levels",
+    marathiTitle: 'धरण पाणी साठ्यावर २४ तास नजर; जिल्हाधिकाऱ्यांचे आपत्कालीन नियंत्रण कक्ष सक्रिय',
+    marathiSource: 'nashik24x7.com',
+    subtitle: 'Real-time sensor feeds and hydro-meteorological data are integrated to prevent sudden floods along the Godavari basins.',
+    marathiSubtitle: 'गंगापूर धरणातून होणाऱ्या विसर्गावर रिअल-टाइम लक्ष; नदीकाठच्या गावांना पूर इशारा प्रणाली कार्यान्वित.',
+    marathiBody: `नाशिक — गंगापूर आणि दारणा धरणांमधील पाण्याचा येवा आणि विसर्ग यावर बारीक लक्ष ठेवण्यासाठी जिल्हाधिकारी कार्यालयातील २४ तास कार्यरत असणारा 'वॉर रूम' सक्रिय करण्यात आला आहे. पुलांवर लावलेले अत्याधुनिक सेन्सर थेट मुख्य नियंत्रण कक्षाला पाणी पातळीची अचूक माहिती देतात.
 
-Local assembly block representatives from Nashik district highlighted that rural agro-distress was a critical swaying issue in recent municipal polls. The immediate financial relief is expected to reach bank accounts via Direct Benefit Transfer (DBT) before the onset of the harvest prep cycles in early July.`,
-    comments: [
-      {
-        id: 'c6',
-        author: 'Dnyaneshwar Shinde',
-        text: 'This will bring great relief. Lasalgaon storage facilities are heavily outdated. We need solar-powered cold storages urgently!',
-        date: 'June 3, 2026, 12:40 PM'
-      }
-    ]
+पावसाचा जोर कायम राहिल्यास नदीकाठच्या रहिवाशांना आधीच इशारा देऊन सुरक्षित स्थळी हलवण्याचे नियोजन यामुळे सोपे होणार असून नागरिकांनी कोणत्याही अफवांवर विश्वास न ठेवण्याचे आवाहन केले आहे.`,
+    category: 'City Buzz',
+    author: 'Nashik 24x7 Crisis Response',
+    date: 'July 14, 2026',
+    readTime: 5,
+    imageUrl: 'https://images.unsplash.com/photo-1541872703-74c5e44368f9?auto=format&fit=crop&q=80&w=800',
+    likes: 71,
+    body: `NASHIK — The Nashik District Collector's "Central War Room" has activated round-the-clock live telemetry monitoring to track water accumulation and discharge rates at major reservoirs like Gangapur and Darna. Real-time radar sensors on bridges feed data directly into the dashboard, enabling quick prediction of downstream flood behaviors.
+
+With heavy rains predicted in catchment areas, this precautionary control center coordinates water release to prevent inundation of low-lying areas. The collector urged citizens living near riverbanks to stay informed via official channels and avoid visiting low bridges during peak discharge.`,
+    comments: []
   }
 ];

@@ -24,48 +24,138 @@ import { Calendar } from 'lucide-react';
 const SHORTS_NEWS = [
   {
     id: 'short-1',
-    titleEn: 'Cloudburst Alert Issued for Nashik District',
-    bodyEn: 'CM Devendra Fadnavis has placed Nashik on high alert following IMD warnings of a potential cloudburst, with some areas expecting up to 300 mm of rain.',
-    titleMr: 'नाशिक जिल्ह्यासाठी ढगफुटीचा इशारा जारी',
-    bodyMr: 'हवामान विभागाने (IMD) दिलेल्या ढगफुटीच्या इशाऱ्यानंतर मुख्यमंत्री देवेंद्र फडणवीस यांनी नाशिकला हाय अलर्टवर ठेवले असून, काही भागात ३०० मिमीपर्यंत पावसाची शक्यता वर्तवण्यात आली आहे.',
-    category: 'Weather / हवामान',
-    image: 'https://images.unsplash.com/photo-1534274988757-a28bf1a57c17?auto=format&fit=crop&w=800&q=80',
-  },
-  {
-    id: 'short-2',
-    titleEn: 'Schools and Colleges Declared Shut',
-    bodyEn: 'District Collector Ayush Prasad has ordered all educational institutions and markets to remain closed in rural tehsils like Trimbakeshwar and Igatpuri due to the extreme weather.',
-    titleMr: 'शाळा आणि महाविद्यालयांना सुट्टी जाहीर',
-    bodyMr: 'जिल्हाधिकारी आयुष प्रसाद यांनी त्र्यंबकेश्वर आणि इगतपुरी सारख्या ग्रामीण तालुक्यांमध्ये अत्यंत खराब हवामानामुळे सर्व शैक्षणिक संस्था आणि बाजारपेठा बंद ठेवण्याचे आदेश दिले आहेत.',
-    category: 'Education / शिक्षण',
-    image: 'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=800&q=80',
-  },
-  {
-    id: 'short-3',
-    titleEn: 'Pilgrim Sites Closed as Precaution',
-    bodyEn: 'The famous Trimbakeshwar and Saptashrungi temples have been temporarily closed to ensure public safety during the predicted heavy rainfall.',
-    titleMr: 'खबरदारीचा उपाय म्हणून तीर्थक्षेत्रे बंद',
-    bodyMr: 'मुसळधार पावसाचा अंदाज पाहता सार्वजनिक सुरक्षिततेसाठी प्रसिद्ध त्र्यंबकेश्वर आणि सप्तशृंगी मंदिरे तात्पुरती बंद करण्यात आली आहेत.',
-    category: 'Tourism / पर्यटन',
-    image: 'https://images.unsplash.com/photo-1545128485-c400e7702796?auto=format&fit=crop&w=800&q=80',
-  },
-  {
-    id: 'short-4',
-    titleEn: 'Disaster Response Forces Deployed',
-    bodyEn: 'The State Disaster Response Force (SDRF) has been deployed in vulnerable rural pockets, with emergency control rooms activated across the district.',
-    titleMr: 'आपत्ती निवारण दले तैनात',
-    bodyMr: 'जिल्ह्यातील संवेदनशील ग्रामीण भागांत राज्य आपत्ती प्रतिसाद दल (SDRF) तैनात करण्यात आले असून, आपत्कालीन नियंत्रण कक्ष सक्रिय करण्यात आले आहेत.',
-    category: 'Safety / सुरक्षा',
+    titleEn: 'Bhavli Dam Tourist Harassment',
+    bodyEn: 'A family of eight was chased for 15–20 km by a mob after objecting to the harassment of a woman; nine suspects have been arrested.',
+    titleMr: 'भावली धरणावर पर्यटकांची छळवणूक',
+    bodyMr: 'एका महिलेच्या छळवणुकीला विरोध केल्यामुळे ८ जणांच्या कुटुंबाचा जमावाने १५-२० किमीपर्यंत पाठलाग केला; या प्रकरणी ९ संशयितांना अटक करण्यात आली आहे.',
+    category: 'Crime / गुन्हेगारी',
     image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80',
   },
   {
+    id: 'short-2',
+    titleEn: 'Fatal Accident at Savalghat',
+    bodyEn: 'A tragic collision involving two trucks and an Eeco car on the Nashik-Peth road resulted in the death of four pilgrims on July 15.',
+    titleMr: 'सावळघाट येथे भीषण अपघात',
+    bodyMr: 'नाशिक-पेठ रस्त्यावर दोन ट्रक आणि इको कार यांच्यात झालेल्या भीषण अपघातात १५ जुलै रोजी चार भाविकांचा दुर्दैवी मृत्यू झाला.',
+    category: 'Accident / अपघात',
+    image: 'https://images.unsplash.com/photo-1617400324418-75bc6c3ee115?auto=format&fit=crop&w=800&q=80',
+  },
+  {
+    id: 'short-3',
+    titleEn: 'Luxury Bus Accident',
+    bodyEn: 'On July 14, a private luxury bus traveling from Madhya Pradesh overturned in the Somthane-Josh Ghat section, leaving one dead and several injured.',
+    titleMr: 'लक्झरी बसचा अपघात',
+    bodyMr: '१४ जुलै रोजी मध्य प्रदेशातून येणारी खाजगी लक्झरी बस सोमठाणे-जोश घाट विभागात उलटली, ज्यामध्ये एका प्रवाशाचा मृत्यू झाला आणि अनेक जण जखमी झाले.',
+    category: 'Accident / अपघात',
+    image: 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=800&q=80',
+  },
+  {
+    id: 'short-4',
+    titleEn: 'Kumbh Mela Preparations',
+    bodyEn: 'Authorities are fast-tracking infrastructure projects, including AI-based crowd management systems, ahead of the Dhwajarohan on Oct 31.',
+    titleMr: 'कुंभमेळा तयारीला वेग',
+    bodyMr: '३१ ऑक्टोबर रोजी होणाऱ्या ध्वजारोहणापूर्वी अधिकारी एआय-आधारित गर्दी व्यवस्थापन प्रणालीसह पायाभूत सुविधा प्रकल्पांना युद्धपातळीवर वेग देत आहेत.',
+    category: 'Kumbh Mela / कुंभमेळा',
+    image: 'https://images.unsplash.com/photo-1545128485-c400e7702796?auto=format&fit=crop&w=800&q=80',
+  },
+  {
     id: 'short-5',
-    titleEn: 'Travel Advisory: Avoid Non-Essential Movement',
-    bodyEn: 'Nashik Municipal Commissioner Manisha Khatri has urged citizens to avoid travel and advised private offices to allow "Work from Home" protocols.',
-    titleMr: 'प्रवास सल्ला: विनाकारण बाहेर पडणे टाळा',
-    bodyMr: 'नाशिक मनपा आयुक्त मनीषा खत्री यांनी नागरिकांना विनाकारण प्रवास न करण्याचे आवाहन केले असून, खासगी कार्यालयांना "वर्क फ्रॉम होम" प्रोटोकॉल लागू करण्याचा सल्ला दिला आहे.',
-    category: 'Advisory / सूचना',
+    titleEn: 'Water Allocation Request',
+    bodyEn: 'The Nashik Municipal Corporation has requested an additional 1,400 mcft of water from local dams to support the massive influx of pilgrims for the 2027 Kumbh Mela.',
+    titleMr: 'अतिरिक्त पाणी वाटपाची मागणी',
+    bodyMr: '२०२७ च्या कुंभमेळ्यासाठी येणाऱ्या भाविकांच्या प्रचंड गर्दीच्या नियोजनासाठी नाशिक महानगरपालिकेने स्थानिक धरणांमधून अतिरिक्त १,४०० दलघफू पाण्याची मागणी केली आहे.',
+    category: 'Water / पाणी पुरवठा',
+    image: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=800&q=80',
+  },
+  {
+    id: 'short-6',
+    titleEn: 'Expansion of Tourist Security',
+    bodyEn: 'Following the Bhavli Dam incident, Nashik Rural Police have expanded investigations to include all associates and shelter providers of the attackers.',
+    titleMr: 'पर्यटक सुरक्षेत वाढ आणि तपास विस्तार',
+    bodyMr: 'भावली धरण घटनेच्या पार्श्वभूमीवर, नाशिक ग्रामीण पोलिसांनी तपास चक्र वेगाने फिरवत हल्लेखोरांच्या सर्व साथीदारांचा आणि त्यांना आश्रय देणाऱ्यांचा शोध सुरू केला आहे.',
+    category: 'Security / सुरक्षा',
     image: 'https://images.unsplash.com/photo-1506015391300-4802dc74de2e?auto=format&fit=crop&w=800&q=80',
+  },
+  {
+    id: 'short-7',
+    titleEn: 'Ring Road Project Inquiry',
+    bodyEn: 'An audit has been launched into the Nashik Ring Road project, specifically reviewing alignment changes and land acquisitions from the past three years.',
+    titleMr: 'रिंग रोड प्रकल्प चौकशी सुरू',
+    bodyMr: 'नाशिक रिंग रोड प्रकल्पाचे विशेष ऑडिट सुरू करण्यात आले असून, गेल्या तीन वर्षांतील रेखांकन बदल आणि भूसंपादनाबाबत आढावा घेतला जात आहे.',
+    category: 'Infrastructure / पायाभूत सुविधा',
+    image: 'https://images.unsplash.com/photo-1515162305285-0293e4767cc2?auto=format&fit=crop&w=800&q=80',
+  },
+  {
+    id: 'short-8',
+    titleEn: 'Bus Fire Incident',
+    bodyEn: 'Passengers on a bus along the Mumbai-Agra highway narrowly escaped injury after the vehicle caught fire on July 14.',
+    titleMr: 'मुंबई-आग्रा हायवेवर बसला आग',
+    bodyMr: '१४ जुलै रोजी मुंबई-आग्रा महामार्गावर धावत्या ट्रॅव्हल बसला अचानक भीषण आग लागली; सुदैवाने प्रवाशांनी तातडीने उतरल्याने मोठे संकट टळले.',
+    category: 'Incident / दुर्घटना',
+    image: 'https://images.unsplash.com/photo-1481391319762-47dff72954d4?auto=format&fit=crop&w=800&q=80',
+  },
+  {
+    id: 'short-9',
+    titleEn: 'Cyber Security Conference',
+    bodyEn: 'Nashik is preparing to host an International Conference on Cyber Security and Cloud Computing, scheduled for July 18–19.',
+    titleMr: 'सायबर सुरक्षा परिषद नाशिकमध्ये',
+    bodyMr: '१८ ते १९ जुलै दरम्यान नाशिकमध्ये सायबर सुरक्षा आणि क्लाउड कॉम्प्युटिंग या विषयावर आंतरराष्ट्रीय स्तरावरील परिषद आयोजित केली जात आहे.',
+    category: 'Technology / तंत्रज्ञान',
+    image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80',
+  },
+  {
+    id: 'short-10',
+    titleEn: 'Volunteer Training Program',
+    bodyEn: 'The district administration has launched a training drive for over 1,000 guides and volunteers to manage the expected millions of Kumbh Mela visitors.',
+    titleMr: 'स्वयंसेवक आणि गाईड्स प्रशिक्षण मोहीम',
+    bodyMr: 'कुंभमेळ्याच्या निमित्ताने कोट्यवधी भाविकांचे नियोजन सुलभ करण्यासाठी जिल्हा प्रशासनाने १,००० पेक्षा जास्त गाईड्स आणि स्वयंसेवकांसाठी विशेष प्रशिक्षण सुरू केले आहे.',
+    category: 'Kumbh Mela / कुंभमेळा',
+    image: 'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=800&q=80',
+  },
+  {
+    id: 'short-11',
+    titleEn: 'Traffic and Road Safety Audit',
+    bodyEn: 'Due to recent fatal accidents in ghat sections, authorities are reviewing safety measures and heavy-vehicle traffic protocols on mountain passes.',
+    titleMr: 'वाहतूक आणि रस्ता सुरक्षा ऑडिट',
+    bodyMr: 'घाट परिसरात अलीकडेच झालेल्या अपघातांनंतर, प्रशासनाकडून डोंगराळ मार्गावरील सुरक्षा फलक, रडार आणि अवजड वाहनांच्या नियमांचे कडक ऑडिट केले जात आहे.',
+    category: 'Safety / सुरक्षा',
+    image: 'https://images.unsplash.com/photo-1506015391300-4802dc74de2e?auto=format&fit=crop&w=800&q=80',
+  },
+  {
+    id: 'short-12',
+    titleEn: '"Fashionista" Exhibition',
+    bodyEn: 'The city is gearing up for the "Fashionista Nashik 2026" exhibition, which is scheduled to commence on July 20.',
+    titleMr: '"फॅशनिस्टा" प्रदर्शन २० जुलैपासून',
+    bodyMr: 'नाशिक शहर प्रसिद्ध "फॅशनिस्टा नाशिक २०२६" प्रदर्शनासाठी सज्ज झाले असून, हे भव्य फॅशन प्रदर्शन २० जुलैपासून सुरू होत आहे.',
+    category: 'Lifestyle / जीवनशैली',
+    image: 'https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=800&q=80',
+  },
+  {
+    id: 'short-13',
+    titleEn: 'Industrial Learning Mission',
+    bodyEn: 'Industry leaders are set to gather in Nashik on July 22 for a CII-organized "Learning Mission on Future Ready Factories".',
+    titleMr: 'भविष्यातील कारखान्यांवर आधारित शिक्षण मोहीम',
+    bodyMr: 'CII तर्फे आयोजित "लर्निंग मिशन ऑन फ्युचर रेडी फॅक्टरीज" अंतर्गत २२ जुलै रोजी नामांकित उद्योगपती आणि तज्ज्ञ नाशिकमध्ये एकत्र येणार आहेत.',
+    category: 'Business / व्यवसाय',
+    image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80',
+  },
+  {
+    id: 'short-14',
+    titleEn: 'River Cleaning Initiatives',
+    bodyEn: 'Ongoing efforts to clean the Godavari and Nandini rivers continue, with reports of debris and hazards being removed as part of urban beautification.',
+    titleMr: 'गोदावरी-नंदिनी नदी स्वच्छता अभियान',
+    bodyMr: 'गोदावरी आणि नंदिनी नद्यांची स्वच्छता मोहीम जोमाने सुरू असून, शहरातील नदीपात्रातील घातक कचरा आणि गाळ प्राधान्याने काढला जात आहे.',
+    category: 'Environment / पर्यावरण',
+    image: 'https://images.unsplash.com/photo-1504151932400-72d425550d2d?auto=format&fit=crop&w=800&q=80',
+  },
+  {
+    id: 'short-15',
+    titleEn: 'Political Meetings',
+    bodyEn: 'High-level political discussions occurred between state ministers and party leaders on July 14 regarding local administrative coordination and upcoming developments.',
+    titleMr: 'मंत्र्यांच्या उपस्थितीत महत्त्वाच्या राजकीय बैठका',
+    bodyMr: 'स्थानिक विकासकामे आणि प्रशासकीय समन्वयाच्या मुद्द्यांवरून १४ जुलै रोजी राज्यमंत्री आणि वरिष्ठ राजकीय नेत्यांमध्ये महत्त्वाची चर्चा पार पडली.',
+    category: 'Politics / राजकारण',
+    image: 'https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?auto=format&fit=crop&w=800&q=80',
   }
 ];
 
@@ -77,7 +167,7 @@ export default function App() {
       try {
         const parsed = JSON.parse(saved) as NewsArticle[];
         // Merge latest DEFAULT_ARTICLES fields to ensure fields like marathiSubtitle/marathiBody are present
-        return parsed.map(pArt => {
+        const merged = parsed.map(pArt => {
           const defaultArt = DEFAULT_ARTICLES.find(d => d.id === pArt.id);
           if (defaultArt) {
             return {
@@ -87,6 +177,11 @@ export default function App() {
           }
           return pArt;
         });
+
+        // Add any brand-new DEFAULT_ARTICLES that do not exist in the parsed/cached set
+        const parsedIds = new Set(parsed.map(a => a.id));
+        const brandNewDefaults = DEFAULT_ARTICLES.filter(d => !parsedIds.has(d.id));
+        return [...brandNewDefaults, ...merged];
       } catch (err) {
         console.error('Failed to parse localStorage articles, restoring fallback:', err);
       }

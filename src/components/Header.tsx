@@ -212,21 +212,14 @@ export const Header: React.FC<HeaderProps> = ({
                 setShowBookmarksOnly(false);
                 setSearchQuery('');
               }}
-              className="flex items-center gap-2 select-none cursor-pointer group"
+              className="flex items-center select-none cursor-pointer group"
             >
-              <div className="w-8 h-8 rounded-full bg-orange-600 flex items-center justify-center text-white font-extrabold text-sm shadow-md shrink-0 group-hover:scale-105 transition-transform animate-pulse font-mono">
-                {isMarathi ? '२४' : '24'}
-              </div>
-              <div className="flex flex-col text-left">
-                <span className={`text-xl md:text-2xl font-black tracking-tight leading-none font-serif transition-colors duration-300 ${
-                  isDarkMode ? 'text-white' : 'text-zinc-900'
-                }`}>
-                  {isMarathi ? 'नाशिक २४x७' : 'Nashik 24x7'}
-                </span>
-                <span className="text-[9px] font-mono tracking-widest text-orange-500 font-bold mt-0.5 uppercase">
-                  {isMarathi ? 'नाशिकचे आपले २४ तास वृत्तपत्र' : "Nashik's Premier 24/7 News"}
-                </span>
-              </div>
+              <img 
+                src="https://lh3.googleusercontent.com/d/1VoNiJS-xT5k4o6DnuOtBXNDEndePyj_X" 
+                alt="Nashik 24x7" 
+                className="h-8 md:h-10 w-auto object-contain transition-transform group-hover:scale-102"
+                referrerPolicy="no-referrer"
+              />
             </div>
           </div>
 
@@ -431,11 +424,13 @@ export const Header: React.FC<HeaderProps> = ({
           <div className="relative flex flex-col w-full max-w-xs bg-[#111114] border-r border-zinc-850 h-full p-6 text-white overflow-y-auto shadow-2xl z-55">
             {/* Header */}
             <div className="flex items-center justify-between border-b border-zinc-850 pb-4 mb-6">
-              <div className="flex items-center gap-2">
-                <div className="w-7 h-7 rounded-full bg-orange-600 flex items-center justify-center font-bold text-xs font-mono">
-                  {isMarathi ? '२४' : '24'}
-                </div>
-                <span className="font-serif font-black text-lg">{isMarathi ? 'नाशिक २४x७' : 'Nashik 24x7'}</span>
+              <div className="flex items-center">
+                <img 
+                  src="https://lh3.googleusercontent.com/d/1VoNiJS-xT5k4o6DnuOtBXNDEndePyj_X" 
+                  alt="Nashik 24x7" 
+                  className="h-8 w-auto object-contain"
+                  referrerPolicy="no-referrer"
+                />
               </div>
               <button 
                 onClick={() => setShowDrawer(false)}
