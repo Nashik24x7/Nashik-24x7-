@@ -66,6 +66,46 @@ export const Header: React.FC<HeaderProps> = ({
   const [showDrawer, setShowDrawer] = useState(false);
   const [showSubscriptionModal, setShowSubscriptionModal] = useState(false);
 
+  // Live ticking time state for today's timing display
+  const [liveTime, setLiveTime] = useState(new Date());
+
+  React.useEffect(() => {
+    const timer = setInterval(() => {
+      setLiveTime(new Date());
+    }, 1000);
+    return () => clearInterval(timer);
+  }, []);
+
+  const toMarathiDigits = (num: string | number): string => {
+    const digitsMap: Record<string, string> = {
+      '0': '०', '1': '१', '2': '२', '3': '३', '4': '४',
+      '5': '५', '6': '६', '7': '७', '8': '८', '9': '९'
+    };
+    return (num ?? '').toString().split('').map(char => digitsMap[char] || char).join('');
+  };
+
+  const formattedTime = useMemo(() => {
+    return liveTime.toLocaleTimeString('en-US', {
+      hour: '2-digit',
+      minute: '2-digit',
+      second: '2-digit',
+      hour12: true
+    });
+  }, [liveTime]);
+
+  const marathiFormattedTime = useMemo(() => {
+    const hour = liveTime.getHours();
+    const period = hour < 12 ? 'सकाळ' : hour < 16 ? 'दुपार' : hour < 20 ? 'संध्याकाळ' : 'रात्र';
+    const timeStr = liveTime.toLocaleTimeString('en-US', {
+      hour: '2-digit',
+      minute: '2-digit',
+      second: '2-digit',
+      hour12: true
+    });
+    const formatted = timeStr.replace(/\s*[A-Z]+$/, ''); // remove AM/PM
+    return `${period} ${toMarathiDigits(formatted)}`;
+  }, [liveTime]);
+
   // Weather generator helper
   const getNashikWeather = (date: Date) => {
     const isInvalid = !date || isNaN(date.getTime());
@@ -136,6 +176,55 @@ export const Header: React.FC<HeaderProps> = ({
       };
     });
   }, [safeCurrentDate]);
+
+  const hourlyForecast = useMemo(() => {
+    const baseTemp = currentWeather.temp;
+    const isMonsoon = safeCurrentDate.getMonth() >= 5 && safeCurrentDate.getMonth() <= 8;
+    const isWinter = safeCurrentDate.getMonth() >= 9 || safeCurrentDate.getMonth() === 0;
+
+    return [
+      { 
+        time: '08:00 AM', 
+        marathiTime: 'सकाळी ०८:००', 
+        temp: baseTemp - 3, 
+        condition: isMonsoon ? 'Drizzle' : isWinter ? 'Mist' : 'Pleasant', 
+        marathiCondition: isMonsoon ? 'रिमझिम पाऊस' : isWinter ? 'धुके' : 'ल्हाददायक',
+        icon: isMonsoon ? 'rain' as const : isWinter ? 'cool' as const : 'cool' as const
+      },
+      { 
+        time: '12:00 PM', 
+        marathiTime: 'दुपारी १२:००', 
+        temp: baseTemp + 2, 
+        condition: isMonsoon ? 'Overcast' : isWinter ? 'Sunny' : 'Hot', 
+        marathiCondition: isMonsoon ? 'ढगाळ वातावरण' : isWinter ? 'सूर्यप्रकाश' : 'उष्ण',
+        icon: isMonsoon ? 'rain' as const : isWinter ? 'cool' as const : 'hot' as const
+      },
+      { 
+        time: '03:00 PM', 
+        marathiTime: 'दुपारी ०३:००', 
+        temp: baseTemp + 1, 
+        condition: isMonsoon ? 'Passing Showers' : isWinter ? 'Clear' : 'Dry Heat', 
+        marathiCondition: isMonsoon ? 'पावसाच्या सरी' : isWinter ? 'स्वच्छ आकाश' : 'कोरडी उष्णता',
+        icon: isMonsoon ? 'rain' as const : isWinter ? 'cool' as const : 'hot' as const
+      },
+      { 
+        time: '06:00 PM', 
+        marathiTime: 'संध्याकाळी ०६:००', 
+        temp: baseTemp - 1, 
+        condition: isMonsoon ? 'Cloudy' : isWinter ? 'Cool Breeze' : 'Warm Breeze', 
+        marathiCondition: isMonsoon ? 'ढगाळ' : isWinter ? 'थंडगार वारा' : 'उबदार वारा',
+        icon: isMonsoon ? 'rain' as const : isWinter ? 'cool' as const : 'cool' as const
+      },
+      { 
+        time: '09:00 PM', 
+        marathiTime: 'रात्री ०९:००', 
+        temp: baseTemp - 2, 
+        condition: isMonsoon ? 'Heavy Rain' : isWinter ? 'Chilly' : 'Mild', 
+        marathiCondition: isMonsoon ? 'मुसळधार पाऊस' : isWinter ? 'थंडी' : 'सौम्य',
+        icon: isMonsoon ? 'rain' as const : isWinter ? 'cool' as const : 'cool' as const
+      }
+    ];
+  }, [currentWeather, safeCurrentDate]);
 
   const getWeatherIcon = (iconType: "rain" | "cool" | "hot", sizeClass = "w-4 h-4") => {
     switch (iconType) {
@@ -236,7 +325,11 @@ export const Header: React.FC<HeaderProps> = ({
                 isDarkMode ? 'text-zinc-300 hover:text-white' : 'text-zinc-750 hover:text-zinc-900'
               }`}>
                 {getWeatherIcon(currentWeather.icon, "w-4 h-4")}
-                <span className="font-semibold text-orange-400">नाशिक: {currentWeather.temp}°C</span>
+                <span className="font-semibold text-orange-400">
+                  {isMarathi 
+                    ? `नाशिक: ${toMarathiDigits(currentWeather.temp)}°C | ${marathiFormattedTime}` 
+                    : `Nashik: ${currentWeather.temp}°C @ ${formattedTime}`}
+                </span>
                 <ChevronDown className="w-3 h-3 text-zinc-500" />
               </div>
 
@@ -260,10 +353,20 @@ export const Header: React.FC<HeaderProps> = ({
                       </div>
                       <div>
                         <div className="text-2xl font-bold font-serif text-white tracking-tight leading-none">
-                          {currentWeather.temp}°C
+                          {isMarathi ? `${toMarathiDigits(currentWeather.temp)}°C` : `${currentWeather.temp}°C`}
                         </div>
-                        <div className="text-[11px] text-zinc-400 font-semibold mt-0.5">
-                          {currentWeather.condition}
+                        <div className="text-[11px] text-zinc-400 font-semibold mt-1">
+                          {isMarathi ? (
+                            currentWeather.condition === 'Heavy Rain' ? 'मुसळधार पाऊस' :
+                            currentWeather.condition === 'Overcast Sky' ? 'ढगाळ आकाश' :
+                            currentWeather.condition === 'Monsoon Drizzle' ? 'रिमझिम पाऊस' :
+                            currentWeather.condition === 'Crisp Clear Sky' ? 'स्वच्छ आकाश' :
+                            currentWeather.condition === 'Hot & Sunny' ? 'उष्ण आणि सूर्यप्रकाश' :
+                            currentWeather.condition
+                          ) : currentWeather.condition}
+                        </div>
+                        <div className="text-[10px] text-orange-400 font-mono mt-1 font-medium">
+                          {isMarathi ? `वेळ: ${marathiFormattedTime}` : `As of ${formattedTime}`}
                         </div>
                       </div>
                     </div>
@@ -284,6 +387,28 @@ export const Header: React.FC<HeaderProps> = ({
                     </div>
                   </div>
 
+                  {/* Hourly Temperature & Timing Section */}
+                  <div className="space-y-1.5 mt-2 border-b border-zinc-800 pb-2.5 mb-2">
+                    <div className="text-[9px] font-mono font-bold text-zinc-500 uppercase tracking-wider">
+                      {isMarathi ? 'तासवार तापमान व वेळ' : 'Hourly Temp & Timing'}
+                    </div>
+                    <div className="grid grid-cols-5 gap-1 text-[10px]">
+                      {hourlyForecast.map((h, i) => (
+                        <div key={i} className="bg-zinc-800/50 p-1 rounded text-center flex flex-col items-center justify-between">
+                          <span className="text-[8px] font-mono text-zinc-400 block leading-tight">
+                            {isMarathi ? h.marathiTime.split(' ')[1] : h.time.split(':')[0] + h.time.slice(-2)}
+                          </span>
+                          <div className="my-0.5">
+                            {getWeatherIcon(h.icon, "w-3.5 h-3.5")}
+                          </div>
+                          <span className="font-semibold text-white leading-none">
+                            {isMarathi ? toMarathiDigits(h.temp) : h.temp}°C
+                          </span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
                   <div className="space-y-1.5 mt-2">
                     <div className="text-[9px] font-mono font-bold text-zinc-500 uppercase tracking-wider">
                       3-Day Vineyard Outlook
@@ -295,7 +420,7 @@ export const Header: React.FC<HeaderProps> = ({
                         </span>
                         <div className="flex items-center gap-1.5">
                           {getWeatherIcon(f.icon, "w-3 h-3")}
-                          <span className="font-semibold text-white">{f.temp}°C</span>
+                          <span className="font-semibold text-white">{isMarathi ? toMarathiDigits(f.temp) : f.temp}°C</span>
                         </div>
                       </div>
                     ))}
@@ -403,11 +528,18 @@ export const Header: React.FC<HeaderProps> = ({
           ? 'bg-zinc-900 border-zinc-800/80 text-zinc-400' 
           : 'bg-zinc-50 border-zinc-200 text-zinc-600'
       }`}>
-        <div className="flex items-center justify-between">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
           <span className="flex items-center gap-1.5 font-medium text-orange-400">
-            <MapPin className="w-3 h-3" /> नाशिक: {currentWeather.temp}°C • {currentWeather.condition}
+            <MapPin className="w-3 h-3 text-orange-500" /> 
+            {isMarathi 
+              ? `नाशिक: ${toMarathiDigits(currentWeather.temp)}°C | ${marathiFormattedTime}` 
+              : `Nashik: ${currentWeather.temp}°C @ ${formattedTime}`}
           </span>
-          <span className={`font-mono ${isDarkMode ? 'text-zinc-500' : 'text-zinc-450'}`}>{getMarathiDateString(currentDate)}</span>
+          <div className="flex items-center justify-between sm:justify-end gap-2 text-zinc-400">
+            <span className={`font-mono ${isDarkMode ? 'text-zinc-500' : 'text-zinc-450'}`}>{getFormattedDate(currentDate)}</span>
+            <span>•</span>
+            <span className="font-sans">{getMarathiDateString(currentDate)}</span>
+          </div>
         </div>
       </div>
 

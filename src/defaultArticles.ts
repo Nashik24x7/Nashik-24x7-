@@ -26,7 +26,7 @@ export const DEFAULT_ARTICLES: NewsArticle[] = [
     likes: 156,
     body: `DINDORI — The high-level investigation into the tragic car-into-well accident in Dindori has entered a crucial phase, with police initiating strict legal action against private landowners who fail to secure deep wells on their properties. The crash, which occurred last week, saw a family vehicle skid off a rural road without crash barriers and plunge into a massive, unfenced agricultural well.
 
-The probe conducted by district and PWD inspectors highlighted that hundreds of deep wells directly border village roads without mandatory safety walls, parapets, or warning signs. Property owners who had neglected repeated warnings from local panchayats are now facing criminal charges for endangerment. District authorities have set a strict 15-day deadline for all rural landowners to either cover or fence their wells, failing which severe penalties and property attachment actions will follow.`,
+The probe conducted by district and PWD inspectors highlighted that hundreds of deep wells directly border village roads without mandatory safety walls, parapets, or warning signs. Property owners who had neglected repeated warnings from local panchayats are now facing criminal charges for endangerment. District authorities have set a strict 15-day deadline for all rural landowners to either cover or fence their wells, failing which severe penalties and property attachment actions will follow. Source: Nashik 24x7 News.`,
     comments: [
       {
         id: 'c-6-1',
@@ -37,297 +37,528 @@ The probe conducted by district and PWD inspectors highlighted that hundreds of 
     ]
   },
   {
-    id: 'news-1',
-    title: 'Tragic Highway Accident in Nashik Claims Four Lives, One Critically Injured',
-    marathiTitle: 'नाशिक जिल्ह्यात भीषण रस्ता अपघात; ४ जणांचा मृत्यू, १ गंभीर जखमी',
+    id: 'city-1',
+    title: 'Bhavli Dam Assault: 9 Arrested after Terrifying 15km SUV Pursuit',
+    marathiTitle: 'भावली धरण हल्ला प्रकरण: ९ संशयितांना अटक; १५ किमी थरारक पाठलागानंतर पोलिसांची कडक कारवाई',
     marathiSource: 'nashik24x7.com',
-    subtitle: 'A head-on collision between multiple vehicles on the Nashik-Peth highway route leads to a devastating loss of life and prompts local outrage.',
-    marathiSubtitle: 'नाशिक-पेठ रस्ता मार्गावर वाहनांच्या भीषण धडकेत ४ भाविकांचा जागीच मृत्यू झाला असून पोलीस तपास सुरू आहे.',
-    marathiBody: `नाशिक — नाशिक-पेठ राष्ट्रीय महामार्गावर बुधवारी झालेल्या एका भीषण रस्ता अपघातात चार भाविकांचा दुर्दैवी मृत्यू झाला असून, एक जण गंभीर जखमी झाला आहे. प्राथमिक माहितीनुसार, दोन अवजड ट्रक आणि भाविकांना घेऊन जाणाऱ्या इको कारमध्ये हा अपघात झाला. धडक इतकी भीषण होती की प्रवासी वाहनाचा चक्काचूर झाला.
+    subtitle: 'Nine people have been arrested following a 15km chase where a mob harassed a family and vandalized their SUV after an altercation regarding the molestation of a woman tourist.',
+    marathiSubtitle: 'महिला पर्यटकाच्या विनयभंगाला विरोध केल्याने ८ जणांच्या कुटुंबाचा पाठलाग करून हल्ला करणाऱ्या ९ संशयितांना पोलिसांनी घेतले ताब्यात.',
+    marathiBody: `इगतपुरी — इगतपुरीतील प्रसिद्ध भावली धरण परिसरात महिला पर्यटकाच्या विनयभंगाला विरोध करणाऱ्या कुटुंबावर हल्ला करून, त्यांच्या वाहनाचा १५ किलोमीटरपर्यंत थरारक पाठलाग करणाऱ्या ९ संशयितांना पोलिसांनी अटक केली आहे.
 
-स्थानिक नागरिक आणि पोलिसांनी घटनास्थळी धाव घेत तात्काळ बचावकार्य सुरू केले. कारचे पत्रे कापून मृतांना आणि जखमींना बाहेर काढण्यात आले. जखमी प्रवाशाला नाशिक जिल्हा शासकीय रुग्णालयात दाखल करण्यात आले असून त्यांची प्रकृती चिंताजनक आहे. पोलिसांनी ट्रक चालकांविरुद्ध हलगर्जीपणाचा गुन्हा दाखल केला असून तपास सुरू आहे.`,
-    category: 'City Buzz',
-    author: 'Nashik 24x7 Crime Bureau',
-    date: 'July 14, 2026',
-    readTime: 5,
-    imageUrl: 'https://lh3.googleusercontent.com/d/1qdgQPtNv8Seej32pS2eIOdEn8-zS0Epm',
-    likes: 48,
-    body: `NASHIK — In a heart-wrenching road tragedy on the Nashik-Peth National Highway, at least four pilgrims lost their lives and another was critically injured on Wednesday. According to preliminary reports, the collision involved two heavily loaded trucks and an Eeco car carrying pilgrims returning from a religious visit. The impact of the crash was so severe that the passenger vehicle was completely crushed under one of the trucks.
-
-Local residents and police rushed to the spot, initiating immediate rescue operations. Emergency services had to use gas cutters to extricate the victims from the mangled remains of the car. The injured person was rushed to the Nashik Civil Hospital, where their condition remains extremely critical. Police have registered a case against the truck drivers for reckless driving and are conducting a thorough investigation into the exact sequence of events leading up to the crash.`,
-    comments: []
-  },
-  {
-    id: 'news-2',
-    title: 'Bhavli Dam Assault Case: Nine Suspects Arrested After Terrifying 15km Chase of Family',
-    marathiTitle: 'भावली धरण छळवणूक प्रकरण: ८ जणांच्या कुटुंबाचा १५ किमी पाठलाग; ९ संशयित जेरबंद',
-    marathiSource: 'nashik24x7.com',
-    subtitle: 'Rural police apprehend members of a violent gang who pursued a family of eight after they objected to the harassment of a female relative.',
-    marathiSubtitle: 'महिला पर्यटकाच्या विनयभंगाला विरोध केल्याने जमावाने केला पाठलाग; पोलिसांनी आवळल्या मुसक्या.',
-    marathiBody: `इगतपुरी — निसर्गरम्य भावली धरणावर फिरायला आलेल्या एका कुटुंबाचा पाठलाग करून त्यांच्यावर हल्ला केल्याप्रकरणी नाशिक ग्रामीण पोलिसांनी ९ जणांना अटक केली आहे. महिला पर्यटकाच्या विनयभंगाला विरोध केल्यामुळे आरोपींनी तब्बल १५ ते २० किलोमीटर अंतरापर्यंत कुटुंबाच्या गाडीचा थरारक पाठलाग केला व दगडफेक केली.
-
-घाबरलेल्या कुटुंबाने गाडी थेट पोलीस चौकीकडे वळवली, मात्र हल्लेखोरांनी त्यांना अडवण्याचा प्रयत्न केला. पोलिसांनी तातडीने कारवाई करत ९ संशयितांना अटक केली आहे. पर्यटनस्थळांवर अशा घटना घडू नयेत म्हणून विशेष पोलीस गस्त वाढवण्यात आली आहे.`,
-    category: 'City Buzz',
-    author: 'Nashik 24x7 Security Desk',
+धरण परिसरात हुल्लडबाजी करणाऱ्या टोळक्याने कुटुंबाच्या गाडीचा पाठलाग करत दगडफेक केली होती. घाबरलेल्या कुटुंबाने गाडी थेट पोलीस चौकीकडे वळवून स्वतःचा जीव वाचवला. पोलिसांनी तातडीने शोधमोहीम राबवून सर्व ९ आरोपींना जेरबंद केले आहे. स्रोत: नाशिक २४x७ न्यूज.`,
+    category: 'Panchavati',
+    author: 'Nashik 24x7 Special Correspondent',
     date: 'July 14, 2026',
     readTime: 5,
     imageUrl: 'https://lh3.googleusercontent.com/d/1lAjc28k32flmobO9L3olJ1HoB0gYItv7',
     likes: 87,
-    body: `IGATPURI — The Nashik Rural Police have arrested nine individuals in connection with the shocking assault and pursuit of a family at the scenic Bhavli Dam tourist spot. A family of eight, including women and children, was visiting the reservoir when local anti-social elements began harassing a female family member. When the family objected, a large mob gathered and began chasing their vehicle over a distance of 15 to 20 kilometers, throwing stones and threatening their lives.
+    body: `IGATPURI — Nashik Rural Police have arrested nine suspects following a terrifying incident at the scenic Bhavli Dam. According to police authorities, a family of eight visiting the dam resisted the molestation and harassment of a female relative by a local group. 
 
-Terrified, the family drove directly towards the nearest police outpost, but the attackers blocked their path. Following a swift investigation spearheaded by rural police command units, nine suspects have been positively identified and taken into custody. The police have vowed to maintain strict law and order at picnic spots, deploying special patrol squads to prevent future incidents.`,
+Following the altercation, a hostile mob chased the family’s SUV for over 15 kilometers, pelted stones, and vandalized the vehicle. The terrified family drove straight to the nearest police check post, leading to an immediate counter-operation. Superintendent of Police confirmed that all nine prime suspects have been arrested, and strict action is being taken. Source: Nashik 24x7 News.`,
     comments: []
   },
   {
-    id: 'news-3',
-    title: 'Nashik District Maps 52 High-Risk Disaster Hotspots Digitally to Boost Emergency Response',
-    marathiTitle: 'आपत्ती व्यवस्थापनात नाशिकचे पाऊल; ५२ धोकादायक हॉटस्पॉटचे डिजिटल मॅपिंग पूर्ण',
+    id: 'city-2',
+    title: 'Four Killed in Horrific Road Accident on Nashik Highway; One Critically Injured',
+    marathiTitle: 'नाशिक महामार्गावर भीषण अपघात; ४ भाविकांचा जागीच मृत्यू, १ गंभीर जखमी',
     marathiSource: 'nashik24x7.com',
-    subtitle: 'The smart mapping initiative aims to optimize resource allocation, coordinate rescue teams, and prevent flood damage during monsoon surges.',
-    marathiSubtitle: 'मुसळधार पाऊस आणि पूरपरिस्थितीचा सामना करण्यासाठी जिल्हा प्रशासनाकडून तंत्रज्ञानाचा प्रभावी वापर.',
-    marathiBody: `नाशिक — मुसळधार पाऊस आणि अचानक येणाऱ्या पुराचा यशस्वी मुकाबला करण्यासाठी नाशिक जिल्हा प्रशासनाने ५२ आपत्तीप्रवण 'हॉटस्पॉट'चे डिजिटल भौगोलिक मॅपिंग पूर्ण केले आहे. यामध्ये गोदावरी नदीकाठचे सखल भाग, दरड कोसळणारे घाट रस्ते आणि कमकुवत पूल यांचा समावेश आहे.
+    subtitle: 'A tragic road accident in the Nashik district on July 15 resulted in four deaths and one serious injury; authorities are investigating the cause of the crash.',
+    marathiSubtitle: 'नाशिक-पेठ रस्त्यावर दोन अवजड ट्रक आणि भाविकांच्या कारमध्ये भीषण धडक; पोलीस तपास वेगात.',
+    marathiBody: `नाशिक — नाशिक-पेठ राष्ट्रीय महामार्गावर बुधवारी दोन ट्रक आणि भाविकांच्या इको कारमध्ये झालेल्या भीषण धडकेत चार जणांचा जागीच मृत्यू झाला, तर एक जण गंभीर जखमी झाला आहे.
 
-या मॅपिंगमुळे आपत्कालीन नियंत्रण कक्षाला रिअल-टाइम माहिती मिळणार असून बचाव पथके आधीच सज्ज ठेवता येतील. आपत्तीच्या प्रसंगी कमीत कमी वेळात मदत पोहोचवणे यामुळे शक्य होणार असल्याचे जिल्हाधिकारी आयुष प्रसाद यांनी सांगितले.`,
-    category: 'City Buzz',
-    author: 'Nashik 24x7 IT & Systems',
-    date: 'July 14, 2026',
-    readTime: 4,
-    imageUrl: 'https://lh3.googleusercontent.com/d/1adAm7W_z_CURGhLIAaiPq8ctwof398Ng',
-    likes: 56,
-    body: `NASHIK — To enhance readiness for heavy monsoon rains and flash floods, the Nashik District Administration has completed the digital and geographic mapping of 52 vulnerable "disaster hotspots" across the region. These locations, which include low-lying residential areas near the Godavari River, landslide-prone ghat sections, and weak bridges, are now integrated into a centralized GIS mapping portal.
-
-This digital network allows emergency war rooms to monitor water levels, rain metrics, and traffic density in real-time. Rescue teams, complete with rubber boats and life-saving equipment, have been strategically pre-positioned near these mapped zones to ensure rapid response. District Collector Ayush Prasad emphasized that this proactive framework will help minimize casualties and streamline relief operations.`,
-    comments: []
-  },
-  {
-    id: 'news-4',
-    title: 'Unified Digital Mapping System Rolled Out to Secure Upcoming Simhastha Kumbh Mela',
-    marathiTitle: 'सिंहस्थ कुंभमेळा २०२७: भाविकांच्या सुरक्षेसाठी अत्याधुनिक युनिफाइड डिजिटल मॅपिंग सिस्टीम',
-    marathiSource: 'nashik24x7.com',
-    subtitle: 'District authorities collaborate with multiple agencies to build a centralized control grid for managing millions of expected pilgrims.',
-    marathiSubtitle: 'विविध शासकीय यंत्रणांच्या समन्वयातून गर्दी नियंत्रण आणि आपत्कालीन नियोजनासाठी डेटा एकत्रीकरण.',
-    marathiBody: `पंचवटी — २०२७ मध्ये नाशिकमध्ये होणाऱ्या सिंहस्थ कुंभमेळ्याच्या जय्यत तयारीसाठी जिल्हा प्रशासनाने 'युनिफाइड डिजिटल मॅपिंग सिस्टीम' सुरू केली आहे. यामुळे पोलीस, मनपा, आरोग्य आणि वाहतूक विभाग एकाच डेटा नेटवर्कद्वारे जोडले गेले आहेत.
-
-या प्रणालीद्वारे मुख्य रस्ते, साधुग्राम, आणि रामकुंडासारख्या गर्दीच्या ठिकाणी एआय कॅमेऱ्यांच्या साहाय्याने नियंत्रण ठेवले जाईल, जेणेकरून गर्दी वाढल्यास चेंगराचेंगरी किंवा अनुचित प्रकार टाळता येतील.`,
+धडक इतकी तीव्र होती की कारचा पूर्णपणे चक्काचूर झाला. पोलिसांनी क्रेन आणि कटरच्या साहाय्याने मृतदेह व जखमीला बाहेर काढले. जखमी रुग्णावर नाशिक जिल्हा रुग्णालयात उपचार सुरू असून प्रकृती चिंताजनक आहे. स्रोत: नाशिक २४x७ न्यूज.`,
     category: 'Panchavati',
-    author: 'Nashik 24x7 Heritage Editor',
+    author: 'Nashik 24x7 Crime Reporter',
+    date: 'July 15, 2026',
+    readTime: 5,
+    imageUrl: 'https://lh3.googleusercontent.com/d/1qdgQPtNv8Seej32pS2eIOdEn8-zS0Epm',
+    likes: 48,
+    body: `NASHIK — A devastating head-on collision on the Nashik-Peth highway route has left four pilgrims dead and one critically injured. The accident occurred on Wednesday when a passenger car was crushed between two heavy trucks, leaving the car completely mangled.
+
+Emergency response teams and local residents used metal cutters to rescue the passengers. The injured survivor was rushed to the Nashik Civil Hospital and is currently in the intensive care unit. Police have registered a case against the drivers involved and are conducting a thorough investigation. Source: Nashik 24x7 News.`,
+    comments: []
+  },
+  {
+    id: 'city-3',
+    title: 'Kumbh Mela Infrastructure Push: ₹57 Crore Sanctioned for Airport Expansion and Landslide Mapping',
+    marathiTitle: 'सिंहस्थ कुंभमेळा पायाभूत सुविधा; विमानतळ विस्तारीकरणासाठी ५७ कोटी मंजूर, दरड प्रवण क्षेत्राचे सर्वेक्षण सुरू',
+    marathiSource: 'nashik24x7.com',
+    subtitle: 'The Kumbh Mela authority has sanctioned an additional ₹57 crore for airport expansion, alongside new geological surveys to map landslide risks ahead of the 2027 event.',
+    marathiSubtitle: '२०२७ च्या सिंहस्थ कुंभमेळ्याच्या तयारीसाठी प्रशासनाकडून मोठा निधी जाहीर; विमानतळ धावपट्टी विस्तार आणि घाटांचे भूवैज्ञानिक मॅपिंग होणार.',
+    marathiBody: `पंचवटी — २०२७ मधील सिंहस्थ कुंभमेळ्याच्या पार्श्वभूमीवर, कुंभमेळा प्राधिकरणाने नाशिक विमानतळ विस्तारीकरणासाठी ५७ कोटी रुपयांचा अतिरिक्त निधी मंजूर केला आहे. यामुळे प्रवासी क्षमता आणि धावपट्टीची लांबी वाढवली जाईल.
+
+यासोबतच, घाटांमधील दरड कोसळण्याच्या धोक्याचा अंदाज घेण्यासाठी भारतीय भूवैज्ञानिक सर्वेक्षण विभागाकडून डिजिटल मॅपिंग सुरू करण्यात आले आहे, जेणेकरून लाखो भाविकांना सुरक्षित प्रवास करता येईल. स्रोत: नाशिक २४x७ न्यूज.`,
+    category: 'Panchavati',
+    author: 'Nashik 24x7 Infrastructure Bureau',
     date: 'July 14, 2026',
     readTime: 5,
     imageUrl: 'https://lh3.googleusercontent.com/d/1XUV93XjOlKjNk6fuw9UlVas4YsMN6FFR',
     likes: 72,
-    body: `PANCHAVATI — With Nashik gearing up to host the monumental Simhastha Kumbh Mela in 2027, the district administration has launched a state-of-the-art Unified Digital Mapping System. This platform integrates topological and administrative data from the municipal corporation, police departments, health agencies, and transit networks into a single cohesive safety grid.
+    body: `PANCHAVATI — In a major development ahead of the 2027 Simhastha Kumbh Mela, the high-power Kumbh Mela Committee has sanctioned an additional ₹57 crore for the immediate expansion of the Nashik Ozar Airport runway and passenger terminal. 
 
-The mapping system covers all major transit routes, entry points, bathing ghats (including Ramkund), and temporary pilgrim shelters (Sadhugram). Authorities plan to deploy AI-based smart cameras to monitor crowd density, preventing stampedes and streamlining traffic flow during the auspicious Shahi Snan days.`,
+Alongside airport modernization, geological experts have launched comprehensive satellite-based geological surveys to map landslide and rockfall risks in the surrounding ghat roads. This is aimed at ensuring smooth and safe transit for the millions of devotees expected to flood the holy city. Source: Nashik 24x7 News.`,
     comments: []
   },
   {
-    id: 'news-5',
-    title: 'Structural Audit of Critical Bridges and Highways Commences Post-July Monsoon Spikes',
-    marathiTitle: 'मुसळधार पावसानंतर नाशिक-त्र्यंबकेश्वर मार्गावरील पुलांचे विशेष स्ट्रक्चरल ऑडिट सुरू',
+    id: 'city-4',
+    title: 'NMC Launches Drone Surveys for Ambitious ₹1,223 Crore Colony Roads Renovation',
+    marathiTitle: 'नाशिकमधील अंतर्गत गल्ल्यांचा कायापालट; मनपाकडून १,२२३ कोटींच्या रस्त्यांच्या दुरुस्तीचा सर्व्हे सुरू',
     marathiSource: 'nashik24x7.com',
-    subtitle: 'High-level engineering teams assess the safety of old stone bridges and highway sectors that witnessed heavy water logging.',
-    marathiSubtitle: '१ ते १० जुलै दरम्यान झालेल्या मुसळधार पावसामुळे रस्त्यांची आणि पुलांची सुरक्षा तपासण्याचे आदेश.',
-    marathiBody: `नाशिक — जुलैच्या पहिल्या आठवड्यात झालेल्या मुसळधार पावसानंतर सार्वजनिक बांधकाम विभागाने (PWD) नाशिक-त्र्यंबकेश्वर मार्गावरील जुन्या पुलांचे आणि रस्त्यांचे विशेष ऑडिट सुरू केले आहे. पुराच्या प्रचंड प्रवाहामुळे अनेक पुलांच्या पायाला धोका निर्माण झाला आहे का, याची तपासणी केली जात आहे.
+    subtitle: 'The Nashik Municipal Corporation (NMC) has launched a survey for a major ₹1,223 crore project to renovate colony roads across the city.',
+    marathiSubtitle: 'शहरातील सर्व सहा विभागांमधील अंतर्गत रस्त्यांचे काँक्रिटीकरण आणि आधुनिक गटार बांधणीसाठी ड्रोनद्वारे सर्वेक्षण.',
+    marathiBody: `नाशिक — नाशिक शहरातील अंतर्गत व कॉलनी रस्त्यांची दुरवस्था दूर करण्यासाठी नाशिक महानगरपालिकेने (NMC) १,२२३ कोटी रुपयांच्या महाप्रकल्पाचा सविस्तर सर्व्हे सुरू केला आहे. अत्याधुनिक ड्रोनद्वारे रस्त्यांची मोजणी केली जात आहे.
 
-प्रगत उपकरणांच्या सहाय्याने पुलांचे खांब आणि जॉईंट्स तपासले जात असून तातडीने दुरुस्तीची कामे हाती घेतली जातील जेणेकरून प्रवाशांची सुरक्षा अबाधित राईल.`,
-    category: 'City Buzz',
-    author: 'Nashik 24x7 Infrastructure Bureau',
-    date: 'July 14, 2026',
-    readTime: 5,
-    imageUrl: 'https://lh3.googleusercontent.com/d/13RDRcCyKGno8auZJFqKFkfjb9MqL529c',
-    likes: 61,
-    body: `NASHIK — Following intense spell of rains between July 1 and July 10, the Public Works Department (PWD) in coordination with municipal engineers has initiated a structural integrity audit of bridges and roads on the Nashik-Trimbakeshwar highway route. Several low-lying pathways and historic stone bridges witnessed massive water flows, prompting concerns about underlying erosion.
-
-Teams equipped with non-destructive testing tools are examining foundation piers, expansion joints, and asphalt wearing courses. Necessary repair works and structural reinforcement plans will be executed on a priority basis to ensure thousands of daily commuters and tourists can travel safely.`,
-    comments: []
-  },
-  {
-    id: 'news-7',
-    title: 'Nashik Police File Massive 1,500-Page Charge Sheet in IT Firm Religious Conversion Case',
-    marathiTitle: 'धर्मांतर प्रकरण: नाशिक पोलिसांकडून कोर्टात १,५०० पानांचे दोषारोपपत्र दाखल',
-    marathiSource: 'nashik24x7.com',
-    subtitle: 'The charge sheet contains forensic analysis, chat records, and bank accounts detailing suspected illicit funding operations.',
-    marathiSubtitle: 'स्थानिक आयटी कंपनीत चालणाऱ्या संशयास्पद धर्मांतर प्रकरणाचा सखोल तपास अंतिम टप्प्यात.',
-    marathiBody: `नाशिक — नाशिकमधील एका माहिती तंत्रज्ञान (IT) कंपनीत उघडकीस आलेल्या संशयास्पद धर्मांतर रॅकेटप्रकरणी पोलिसांनी स्थानिक न्यायालयात १,५०० पानांचे दोषारोपपत्र दाखल केले आहे. कर्मचाऱ्यांवर दबाव आणणे, प्रलोभने दाखवणे यांसारख्या तक्रारींनंतर हा तपास सुरू करण्यात आला था.
-
-दोषारोपपत्रात कार्यालयीन संगणक, चॅट रेकॉर्ड्स आणि संशयास्पद परदेशी बँक खात्यांच्या व्यवहारांचे पुरावे जोडण्यात आले आहेत. या प्रकरणी अनेक संशयितांची नावे समोर आली असून लवकरच खटला सुरू होणार आहे.`,
-    category: 'Politics',
-    author: 'Nashik 24x7 Politics Bureau',
-    date: 'July 14, 2026',
-    readTime: 6,
-    imageUrl: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=800',
-    likes: 94,
-    body: `NASHIK — The Nashik Police department has officially filed a massive, 1,500-page charge sheet before the local court in connection with the controversial religious conversion racket uncovered at a local software company. The investigation was initiated after complaints were made regarding pressure tactics, psychological conditioning, and financial incentives offered to young employees.
-
-The detailed charge sheet contains extensive digital evidence, including forensic analysis of office laptops, chats from messaging platforms, and overseas bank transactions. Prosecutors believe the firm was receiving illicit funding to execute coordinated conversions. Over fifteen suspects have been named in the document, and the court is set to begin trial proceedings soon.`,
-    comments: []
-  },
-  {
-    id: 'news-8',
-    title: 'Landslide Threats: Vehicular Movement Restricted in Igatpuri and Saptashrungi Passes',
-    marathiTitle: 'दरड कोसळण्याचा धोका: इगतपुरी आणि सप्तशृंगी घाटात वाहनांच्या वाहतुकीवर निर्बंध',
-    marathiSource: 'nashik24x7.com',
-    subtitle: 'Heavy rainfall has increased rockfall risks, prompting district officials to restrict night transit for heavy vehicles.',
-    marathiSubtitle: 'मुसळधार पाऊस आणि धुक्यामुळे प्रवाशांच्या सुरक्षेसाठी प्रशासनाकडून आपत्कालीन नियमावली लागू.',
-    marathiBody: `इगतपुरी — डोंगराळ भागातील दरड कोसळण्याच्या धोक्यामुळे जिल्हा प्रशासनाने सप्तशृंगी आणि इगतपुरी घाट रस्त्यांवर रात्रीच्या वेळी जड वाहनांच्या वाहतुकीला बंदी घातली आहे. मुसळधार पावसामुळे माती सुटली असून दरड कोसळण्याची शक्यता वाढली आहे.
-
-घाटात दाट धुक्यामुळे दृश्यमानता कमी झाली असून प्रवाशांना खबरदारी घेण्याचे आवाहन करण्यात आले आहे. रस्त्यावरील अडथळे तातडीने दूर करण्यासाठी ठिकठिकाणी आपत्ती प्रतिसाद पथके तैनात करण्यात आली आहेत.`,
-    category: 'City Buzz',
-    author: 'Nashik 24x7 Disaster Desk',
-    date: 'July 14, 2026',
-    readTime: 4,
-    imageUrl: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=800',
-    likes: 75,
-    body: `IGATPURI — To prevent catastrophic accidents during the peak monsoon, the District Disaster Management Authority has issued restrictions on vehicular movement across the critical Saptashrungi and Igatpuri ghat passes. Recent heavy downpours have saturated the soil, significantly increasing the probability of sudden landslides and rockfalls.
-
-Night traffic of heavy commercial vehicles has been completely suspended, and light passenger cars are advised to maintain extreme caution due to thick fog and low visibility. Disaster response teams equipped with JCB earthmovers and safety nets have been stationed at multiple spots along the mountain routes to clear blockages instantly.`,
-    comments: []
-  },
-  {
-    id: 'news-9',
-    title: 'NMC Launches Topographical Survey for Proposed ₹1,223 Crore Colony Roads Upgrade',
-    marathiTitle: 'नाशिकमधील अंतर्गत रस्त्यांचा कायापालट होणार; १,२२३ कोटींच्या महाप्रकल्पाचा सर्व्हे सुरू',
-    marathiSource: 'nashik24x7.com',
-    subtitle: 'The massive project aims to transform residential lanes, storm drains, and pedestrian walkways across six divisions of Nashik.',
-    marathiSubtitle: 'शहरातील अंतर्गत गल्ल्या आणि कॉलनी रोड्स काँक्रिटीकरण करण्याच्या मनपाच्या प्रस्तावाला गती.',
-    marathiBody: `नाशिक — नाशिक मनपाकडून शहरातील सर्व सहा विभागांमधील अंतर्गत आणि कॉलनी रस्त्यांच्या दुरुस्तीसाठी तब्बल १,२२३ कोटी रुपयांचा विकास आराखडा तयार केला जात आहे. यासाठी अत्याधुनिक ड्रोनद्वारे सर्वेक्षण सुरू झाले आहे.
-
-या अंतर्गत डांबरी आणि मातीचे रस्ते बदलून काँक्रीटचे रस्ते बनवले जातील, तसेच पाण्याचा निचरा होण्यासाठी बंदिस्त गटारे आणि नवीन पथदिवे बसवले जातील. पहिल्या टप्प्यातील सर्व्हेचे काम ३० दिवसांत पूर्ण होणार आहे.`,
-    category: 'Business',
-    author: 'Nashik 24x7 Urban Infrastructure Bureau',
+या प्रकल्पात अंतर्गत रस्त्यांचे सिमेंट काँक्रिटीकरण, बंदिस्त ड्रेनेज वाहिन्या आणि नवीन एलईडी पथदिवे बसवले जातील. स्रोत: नाशिक २४x७ न्यूज.`,
+    category: 'Panchavati',
+    author: 'Nashik 24x7 Municipal Desk',
     date: 'July 14, 2026',
     readTime: 5,
     imageUrl: 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&q=80&w=800',
     likes: 64,
-    body: `NASHIK — In one of the largest civic infrastructure overhauls in recent years, the Nashik Municipal Corporation (NMC) has launched a comprehensive drone-assisted topographical survey for its ambitious ₹1,223 crore Colony Roads Transformation Project. The venture aims to rebuild and asphalt aging residential lanes across Nashik West, East, Panchavati, Cidco, Satpur, and Nashik Road divisions.
+    body: `NASHIK — To address years of complaints regarding poorly maintained residential roads, the Nashik Municipal Corporation (NMC) has officially rolled out topographical drone surveys for a massive ₹1,223 crore road overhaul project.
 
-Alongside road resurfacing, the project incorporates smart storm-water drainage networks, designated walking paths, and energy-efficient LED street lighting. NMC Commissioner stated that the initial phase of the survey is expected to complete within 30 days, paving the way for immediate execution before the upcoming festive season.`,
+The project will focus on converting all gravel and damaged asphalt colony roads across six municipal divisions into durable concrete roads, coupled with covered storm water drains and energy-efficient street lamps. This is designed to improve last-mile connectivity and city hygiene. Source: Nashik 24x7 News.`,
     comments: []
   },
   {
-    id: 'news-10',
-    title: 'NMC Allocates ₹100 Crore in Ward Development Funds to Accelerate Civic Improvements',
-    marathiTitle: 'नाशिक मनपाकडून प्रभागांच्या विकासासाठी १०० कोटींच्या विशेष निधीचे वाटप',
+    id: 'city-5',
+    title: 'Nashik Property Registrations Strike Historic High at ₹17,543 Crore',
+    marathiTitle: 'नाशिक रिअल इस्टेटमध्ये ऐतिहासिक तेजी; वर्षभरात १७,५४३ कोटींच्या मालमत्तांची नोंदणी',
     marathiSource: 'nashik24x7.com',
-    subtitle: 'Corporators receive targeted financial resources to resolve localized water, sewage, and public park issues.',
-    marathiSubtitle: 'स्थानिक नागरी सुविधा, ड्रेनेज लाईन आणि बागांच्या नूतनीकरणासाठी निधी मंजूर.',
-    marathiBody: `नाशिक — शहरातील नागरी समस्यांचे निवारण करण्यासाठी नाशिक मनपाने आर्थिक वर्ष २०२६-२७ साठी प्रभाग सुधारणा निधी अंतर्गत १०० कोटी रुपयांचा निधी मंजूर केला आहे. यामुळे पाणीपुरवठा, सांडपाणी वाहिनी आणि रस्त्यांचे प्रश्न तातडीने सुटू शकतील.
+    subtitle: 'Nashik city recorded an all-time high in property registrations during the 2025-26 fiscal year, with transactions totaling ₹17,543 crore.',
+    marathiSubtitle: 'गंगापूर रोड, इंदिरानगर परिसरातील आलिशान घरांना मोठी मागणी; समृद्धी महामार्गामुळे बाहेरून गुंतवणूक वाढली.',
+    marathiBody: `नाशिक — नाशिकमध्ये रिअल इस्टेट क्षेत्रात आतापर्यंतची सर्वात मोठी तेजी पाहायला मिळाली असून, गेल्या आर्थिक वर्षात विक्रमी १७,५४३ कोटी रुपयांच्या मालमत्तेची नोंदणी झाली आहे.
 
-प्रत्येक प्रभागाला हा विशेष विकास निधी मिळणार असून, स्थानिक पातळीवरील रखडलेली कामे वेगाने पूर्ण होण्यास मदत होणार आहे. नागरिकांनी या निर्णयाचे स्वागत केले असून पाणी आणि उद्यानांना प्राधान्य देण्याची मागणी केली आहे.`,
-    category: 'Politics',
-    author: 'Nashik 24x7 Local Administration',
-    date: 'July 14, 2026',
-    readTime: 5,
-    imageUrl: 'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&q=80&w=800',
-    likes: 43,
-    body: `NASHIK — The Nashik Municipal Corporation has approved an allocation of ₹100 crore in Ward Development Funds for the financial year 2026-27. This decision is aimed at resolving immediate citizen complaints regarding public utilities, drinking water pipelines, sanitation networks, and playground maintenance.
-
-Each municipal ward is set to receive a portion of the funds, enabling local administrative representatives to execute urgent works without standard red-tape delays. Resident associations have welcomed the move, requesting that priority be given to drinking water supply upgrades and public park beautification projects.`,
-    comments: []
-  },
-  {
-    id: 'news-11',
-    title: 'Nashik Records All-Time High Property Deals Worth ₹17,543 Crore in Recent Fiscal Year',
-    marathiTitle: 'नाशिक रिअल इस्टेटमध्ये मोठी तेजी; वर्षभरात १७,५४३ कोटींच्या मालमत्तांची नोंदणी',
-    marathiSource: 'nashik24x7.com',
-    subtitle: 'Surging interest in high-end luxury residences, commercial IT plazas, and industrial zones powers the district’s biggest real estate boom.',
-    marathiSubtitle: 'आयटी पार्क आणि वाईन पर्यटनाच्या वाढत्या प्रभावामुळे नाशिकमधील घरांच्या आणि जमिनींच्या किमतीत मोठी वाढ.',
-    marathiBody: `नाशिक — नाशिकमध्ये रिअल इस्टेट क्षेत्रात ऐतिहासिक तेजी पाहायला मिळत असून गेल्या आर्थिक वर्षात शहरात चक्क १७,५४३ कोटी रुपयांच्या मालमत्तेचे व्यवहार झाले आहेत. गंगापूर रोड, इंदिरानगर परिसरातील आलिशान घरांना नागरिकांनी मोठी पसंती दिली आहे.
-
-समृद्धी महामार्ग आणि नाशिक-मुंबई कनेक्टिव्हिटी वाढल्याने मुंबई आणि पुण्यातील अनेक बड्या गुंतवणूकदारांनी नाशिकमध्ये जमीन खरेदी करण्यास सुरुवात केली आहे, ज्यामुळे मुद्रांक शुल्काच्या रूपात शासनालाही मोठा महसूल मिळाला आहे.`,
-    category: 'Business',
-    author: 'Nashik 24x7 Business Bureau',
+समृद्धी महामार्गामुळे नाशिक-मुंबई कनेक्टिव्हिटी वाढल्याने आणि आयटी पार्कच्या विस्तारामुळे मुंबई, पुण्यातील बड्या गुंतवणूकदारांनी नाशिकला पसंती दिली आहे. स्रोत: नाशिक २४x७ न्यूज.`,
+    category: 'Panchavati',
+    author: 'Nashik 24x7 Real Estate Desk',
     date: 'July 14, 2026',
     readTime: 5,
     imageUrl: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=800',
     likes: 112,
-    body: `NASHIK — Highlighting its growing economic stature, Nashik district registered record-breaking property transactions worth ₹17,543 crore during the 2025-26 fiscal period. Data from the sub-registrar office indicated a major surge in luxury residential purchases along Gangapur Road and Indira Nagar, alongside heavy industrial land acquisitions in Ambad and Sinnar.
+    body: `NASHIK — Nashik's real estate market has experienced an unprecedented boom, recording an all-time high of ₹17,543 crore in property registrations during the 2025-26 fiscal year. 
 
-Analysts attribute this growth to improved connectivity via the Mumbai-Nagpur Samruddhi Expressway and the expanding IT and winery tourism sectors. This high transaction volume has contributed massive stamp duty revenues to the state exchequer, cementing Nashik as a highly lucrative real estate market.`,
+Winery tourism, the rising footprint of IT companies, and superb connectivity provided by the Mumbai-Nagpur Samruddhi Expressway are driving heavy investments. High-end residential properties on Gangapur Road and Indira Nagar have witnessed maximum sales, filling the state exchequer with record stamp duty collections. Source: Nashik 24x7 News.`,
     comments: []
   },
   {
-    id: 'news-12',
-    title: 'HALCON Janori Depot Achieves Milestone of Over 4 Lakh Tonnes Sea Cargo in Last Fiscal Year',
-    marathiTitle: 'हलकॉन जनोरी डेपोची मोठी झेप; ४ लाख टनांहून अधिक सागरी कार्गो हाताळणी पूर्ण',
+    id: 'edu-1',
+    title: 'HSC Supplementary Results Declared by MSBSHSE; Board Portal Active',
+    marathiTitle: '१२वी पुरवणी परीक्षेचा निकाल जाहीर; बोर्डाच्या अधिकृत संकेतस्थळावर निकाल उपलब्ध',
     marathiSource: 'nashik24x7.com',
-    subtitle: 'The major logistics terminal streamlines export workflows for the region’s agricultural, pharmaceutical, and industrial producers.',
-    marathiSubtitle: 'द्राक्षे, औषधे आणि अभियांत्रिकी उत्पादनांच्या निर्यातीला मोठा वेग; थेट बंदरांशी कनेक्टिव्हिटी.',
-    marathiBody: `जनोरी — हिंदुस्तान एरोनॉटिक्स लिमिटेड (HAL) आणि कॉनकोर (CONCOR) यांच्या संयुक्त भागीदारीत सुरू असलेल्या हलकॉनच्या जनोरी येथील कंटेनर डेपोने गेल्या वर्षात तब्बल ४ लाख टन सागरी मालवाहतूक हाताळण्याचा नवा विक्रम प्रस्थापित केला आहे.
+    subtitle: 'The Maharashtra State Board (MSBSHSE) officially declared the HSC Supplementary Exam results on July 14, 2026. Students can access their results via the official state board portal using their roll number and mother’s first name.',
+    marathiSubtitle: 'महाराष्ट्र राज्य बोर्डाने जाहीर केला पुरवणी परीक्षेचा निकाल; विद्यार्थ्यांनी बैठक क्रमांक आणि आईचे नाव टाकून निकाल तपासावा.',
+    marathiBody: `नाशिक — महाराष्ट्र राज्य माध्यमिक व उच्च माध्यमिक शिक्षण मंडळाने (MSBSHSE) १२वी पुरवणी परीक्षेचा निकाल मंगळवारी, १४ जुलै २०२६ रोजी जाहीर केला.
 
-या डेपोतून नाशिकचे द्राक्ष उत्पादक शेतकरी, औषध कंपन्या आणि सातपूर-अंबड येथील सुटे भाग थेट मुंबईच्या न्हावा शेवा बंदराद्वारे परदेशात पाठवले जातात. यामुळे वाहतुकीचा वेळ आणि खर्च मोठ्या प्रमाणात वाचला आहे.`,
-    category: 'Business',
-    author: 'Nashik 24x7 Trade & Logistics',
+जून महिन्यात झालेल्या या परीक्षेचा निकाल बोर्डाच्या अधिकृत संकेतस्थळावर उपलब्ध आहे. विद्यार्थ्यांनी आपला रोल नंबर आणि आईचे नाव टाकून निकाल डाऊनलोड करावा. स्रोत: नाशिक २४x७ न्यूज.`,
+    category: 'Education',
+    author: 'Nashik 24x7 Academic Bureau',
+    date: 'July 14, 2026',
+    readTime: 4,
+    imageUrl: 'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&q=80&w=800',
+    likes: 55,
+    body: `NASHIK — The Maharashtra State Board of Secondary and Higher Secondary Education (MSBSHSE) declared the Higher Secondary Certificate (HSC) Supplementary Examination results on Tuesday, July 14, 2026. 
+
+Students who appeared for the exam in June can now view and download their scorecards via the official portal. To access results, candidates must enter their roll number and their mother's first name. Nashik division reported steady performance with high clearance rates among repeat candidates. Source: Nashik 24x7 News.`,
+    comments: []
+  },
+  {
+    id: 'edu-2',
+    title: 'Teachers Stage Massive "Mahadarbar" Protest in Nashik Over Pending Salaries',
+    marathiTitle: 'शिक्षकांचे नाशिकमध्ये भव्य \'महादरबार\' आंदोलन; प्रलंबित पगार आणि सेवांच्या प्रश्नांवर आक्रमक',
+    marathiSource: 'nashik24x7.com',
+    subtitle: 'Educators in Nashik staged a massive protest at the Regional Deputy Director of Education’s office under the leadership of MLA Kishor Darade, demanding urgent resolution of long-pending service and salary issues.',
+    marathiSubtitle: 'आमदार किशोर दराडे यांच्या नेतृत्वाखाली शिक्षण उपसंचालक कार्यालयावर शिक्षकांचे ठिय्या आंदोलन; मागण्या पूर्ण न झाल्यास तीव्र संघर्षाचा इशारा.',
+    marathiBody: `नाशिक — नाशिक विभागीय शिक्षण उपसंचालक कार्यालयाबाहेर शेकडो शिक्षकांनी आपल्या विविध न्याय्य मागण्यांसाठी 'महादरबार' आंदोलन केले. 
+
+शिक्षक आमदार किशोर दराडे यांच्या नेतृत्वाखाली झालेल्या या आंदोलनात थकीत वेतन मिळणे, कंत्राटी शिक्षकांचे सेवा संरक्षण आणि पेन्शनचे प्रलंबित प्रश्न तातडीने सोडवण्याची मागणी करण्यात आली. स्रोत: नाशिक २४x७ न्यूज.`,
+    category: 'Education',
+    author: 'Nashik 24x7 Education Bureau',
     date: 'July 14, 2026',
     readTime: 5,
-    imageUrl: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=800',
-    likes: 68,
-    body: `JANORI — HALCON, a joint venture between Hindustan Aeronautics Limited (HAL) and Container Corporation of India (CONCOR), has reported handling a record 4 lakh tonnes of sea cargo from its Janori Inland Container Depot (ICD) during the last fiscal year. This milestone marks a major step forward for Nashik’s logistical integration with international trade routes.
+    imageUrl: 'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=800',
+    likes: 74,
+    body: `NASHIK — Hundreds of government and private school educators staged a massive "Mahadarbar" protest outside the Regional Deputy Director of Education's office in Nashik today. 
 
-The Janori depot provides customs clearance and storage services, allowing local grape farmers, pharmaceutical companies, and auto part manufacturers to ship their products directly to Nhava Sheva port in Mumbai. Local industry experts say this record high volume proves Nashik is rapidly becoming a vital export-import center for North Maharashtra.`,
+Led by Teacher's MLA Kishor Darade, the protesters raised slogans demanding immediate release of unpaid salaries, regularisation of contract teachers, and resolving pending pension disputes. The administration has assured a high-level review meeting within a week to defuse the standoff. Source: Nashik 24x7 News.`,
     comments: []
   },
   {
-    id: 'news-13',
-    title: 'Nashik Rural Police Seek Immediate Mobile Network Upgrades Near Tourist Zones',
-    marathiTitle: 'पर्यटन स्थळांवर मोबाईल नेटवर्क वाढवा; ग्रामीण पोलिसांचे टेलिकॉम कंपन्यांना निर्देश',
+    id: 'edu-3',
+    title: 'SIT Summon 48 Education Officials in Rapidly Expanding "Shalarth" ID Scam',
+    marathiTitle: 'शालार्थ आयडी घोटाळा: नाशिकमध्ये \'एसआयटी\' कडून ४८ शिक्षण अधिकाऱ्यांना चौकशीचे समन्स',
     marathiSource: 'nashik24x7.com',
-    subtitle: 'Poor coverage at remote water reservoirs and ghats hampers emergency communication and slows safety response.',
-    marathiSubtitle: 'भावली आणि इगतपुरी धरणावर रेंज नसल्याने आपत्कालीन कॉल करण्यात अडचणी; पोलिसांचे पत्र.',
-    marathiBody: `नाशिक — भावली धरणावरील विनयभंग आणि हल्ल्याच्या घटनेनंतर नाशिक ग्रामीण पोलिसांनी मोबाईल नेटवर्क कंपन्यांना धरणे आणि घाट परिसरात नेटवर्क सुकर करण्याचे आदेश दिले आहेत. भावली आणि इगतपुरी परिसरातील निसर्गरम्य पर्यटन स्थळांवर रेंज नसल्याने पर्यटकांना पोलिसांशी संपर्क साधणे कठीण होते.
+    subtitle: 'The Economic Offences Wing (EOW) of Nashik has intensified its investigation into the Shalarth ID scam, with SIT officials now summoning 48 education officials from across the region for questioning.',
+    marathiSubtitle: 'शिक्षक पगार वितरणासाठी वापरल्या जाणाऱ्या शालार्थ प्रणालीत बोगस आयडी तयार केल्याचा आरोप; आर्थिक गुन्हे शाखेची कारवाई तीव्र.',
+    marathiBody: `नाशिक — राज्यातील शिक्षकांच्या पगारासाठी वापरल्या जाणाऱ्या 'शालार्थ' प्रणालीत बोगस शिक्षक आयडी तयार करून कोट्यवधींचा अपहार केल्याप्रकरणी नाशिक आर्थिक गुन्हे शाखेच्या एसआयटीने ४८ अधिकाऱ्यांना समन्स बजावले आहेत.
 
-सुरक्षिततेच्या दृष्टीने मोबाईल सिग्नल अत्यंत गरजेचे असून, पोलिसांनी कंपन्यांना या दुर्गम भागात नवीन टॉवर उभारण्यास सांगितले आहे जेणेकरून आपत्कालीन वेळी तातडीने मदत मागता येईल.`,
+संशयित अधिकाऱ्यांचे संगणक आणि डिजिटल स्वाक्षऱ्यांची फॉरेन्सिक तपासणी केली जात असून अनेक मोठे चेहरे अडकण्याची शक्यता आहे. स्रोत: नाशिक २४x७ न्यूज.`,
+    category: 'Education',
+    author: 'Nashik 24x7 Crime Reporter',
+    date: 'July 14, 2026',
+    readTime: 5,
+    imageUrl: 'https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&q=80&w=800',
+    likes: 92,
+    body: `NASHIK — The investigation into the infamous "Shalarth" teacher pay portal scam has intensified, with the Nashik Economic Offences Wing (EOW) issuing official summons to 48 education department officials.
+
+The Special Investigation Team (SIT) is probing allegations of massive bribery where fraudulent teacher profile IDs were generated to siphon off state funds. Officials across Nashik, Jalgaon, and Dhule are being questioned regarding administrative loopholes and digital signature sharing. Source: Nashik 24x7 News.`,
+    comments: []
+  },
+  {
+    id: 'edu-4',
+    title: 'BARTI Announces Free Skill Development Training Programs for SC Youth in Nashik',
+    marathiTitle: 'बार्टी (BARTI) कडून अनुसूचित जातीच्या तरुणांसाठी मोफत कौशल्य विकास प्रशिक्षण सुरू',
+    marathiSource: 'nashik24x7.com',
+    subtitle: 'The Dr. Babasaheb Ambedkar Research and Training Institute (BARTI) announced new free skill development training programs for Scheduled Caste youth, with local training centers active in Nashik as of early July.',
+    marathiSubtitle: 'आयटी, रिटेल आणि डिजिटल मार्केटिंग क्षेत्रात मोफत रोजगाराभिमुख प्रशिक्षण; नाशिकमधील केंद्रांवर प्रवेश प्रक्रिया सुरू.',
+    marathiBody: `नाशिक — डॉ. बाबासाहेब आंबेडकर संशोधन व प्रशिक्षण संस्थेने (BARTI) नाशिक जिल्ह्यातील अनुसूचित जातीच्या (SC) तरुण-तरुणींसाठी मोफत कौशल्य विकास योजना सुरू केली आहे.
+
+नाशिकमधील प्रशिक्षण केंद्रांवर प्रवेश सुरू झाले असून प्रशिक्षणानंतर नोकरी मिळवून देण्यासाठी मदत केली जाईल. स्रोत: नाशिक २४x७ न्यूज.`,
+    category: 'Education',
+    author: 'Nashik 24x7 Social Desk',
+    date: 'July 14, 2026',
+    readTime: 4,
+    imageUrl: 'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80&w=800',
+    likes: 62,
+    body: `NASHIK — The Dr. Babasaheb Ambedkar Research and Training Institute (BARTI), Pune, has launched a new set of fully funded skill development training programs for Scheduled Caste (SC) youth in Nashik.
+
+The programs cover job-oriented courses including digital marketing, IT support, retail management, and advanced accounting. Training centers in Nashik have started accepting applications, offering free study materials and job placement assistance post-course completion. Source: Nashik 24x7 News.`,
+    comments: []
+  },
+  {
+    id: 'edu-5',
+    title: 'DISHA Committee Highlights Need to Modernize Anganwadis and Early Childcare',
+    marathiTitle: 'दिशा (DISHA) समितीची बैठक: अंगणवाड्यांचे आधुनिकीकरण आणि बालविकास सुविधांवर खासदारांचा भर',
+    marathiSource: 'nashik24x7.com',
+    subtitle: 'In a high-level DISHA committee meeting held on July 14–15, local MPs highlighted the urgent need for better early childhood development infrastructure, including the modernization of Anganwadis across Nashik district.',
+    marathiSubtitle: 'जिल्ह्यातील कुपोषण रोखण्यासाठी आणि बालकांच्या प्राथमिक शिक्षणासाठी अंगणवाड्यांमध्ये डिजिटल साधने आणि चांगल्या इमारती उभारण्याचे निर्देश.',
+    marathiBody: `नाशिक — जिल्हा विकास समन्वय व नियंत्रण समितीच्या (DISHA) उच्चस्तरीय बैठकीत स्थानिक खासदारांनी जिल्ह्यातील अंगणवाड्यांची अवस्था सुधारण्यावर भर दिला.
+
+विशेषतः ग्रामीण आणि आदिवासी भागातील अंगणवाड्यांमध्ये पिण्याचे शुद्ध पाणी, खेळाची मैदाने आणि डिजिटल शिक्षण साहित्य पुरवण्याची मागणी करण्यात आली. स्रोत: नाशिक २४x७ न्यूज.`,
+    category: 'Education',
+    author: 'Nashik 24x7 District Bureau',
+    date: 'July 15, 2026',
+    readTime: 5,
+    imageUrl: 'https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?auto=format&fit=crop&q=80&w=800',
+    likes: 47,
+    body: `NASHIK — During the two-day high-level District Development Coordination and Monitoring Committee (DISHA) meeting, local Members of Parliament (MPs) called for immediate structural upgrades to child welfare centers.
+
+The committee emphasized modernizing thousands of rural Anganwadis across Nashik with clean drinking water, proper ventilation, and digital learning toys. Ensuring nutritional security and basic education at the grassroots level remains the primary focus. Source: Nashik 24x7 News.`,
+    comments: []
+  },
+  {
+    id: 'buzz-1',
+    title: 'Outrage Over Tourist Safety: Family Brutally Attacked and Chased at Bhavli Waterfall',
+    marathiTitle: 'पर्यटक सुरक्षा धोक्यात: भावली धबधब्यावर कुटुंबाला बेदम मारहाण; नागरिकांमध्ये तीव्र संताप',
+    marathiSource: 'nashik24x7.com',
+    subtitle: 'A family visiting Bhavli Waterfall was brutally attacked and chased for 15km by a local gang on July 14 after resisting harassment; nine suspects have been arrested following public outcry.',
+    marathiSubtitle: 'पर्यटनस्थळांवरील हुल्लडबाजी आणि सुरक्षेच्या प्रश्नावरून नागरिक आक्रमक; पोलिसांनी आवळल्या ९ जणांच्या मुसक्या.',
+    marathiBody: `इगतपुरी — पावसाळी पर्यटनाचा आनंद घेण्यासाठी भावली धबधब्यावर आलेल्या पर्यटकांना स्थानिक टोळक्याने मारहाण केल्याने संपूर्ण जिल्ह्यात तीव्र संताप व्यक्त होत आहे.
+
+नागरिकांच्या संतापानंतर पोलिसांनी तातडीने सूत्रे हलवून ९ मुख्य हल्लेखोरांना बेड्या ठोकल्या आहेत. स्रोत: नाशिक २४x७ न्यूज.`,
     category: 'City Buzz',
-    author: 'Nashik 24x7 Telecommunications Desk',
-    date: 'July 14, 2026',
-    readTime: 5,
-    imageUrl: 'https://images.unsplash.com/photo-1562408590-e32931084e23?auto=format&fit=crop&q=80&w=800',
-    likes: 79,
-    body: `NASHIK — Following the recent law and order incident at Bhavli Dam, the Nashik Rural Police have formally requested telecom service providers to urgently upgrade mobile cellular coverage near remote tourist destinations, ghat sections, and reservoirs. Areas like Bhavli, Igatpuri dams, and isolated scenic viewpoints suffer from poor to non-existent mobile signals.
-
-This cellular deficit makes it extremely difficult for distressed tourists to call for police assistance or report medical emergencies. The police department has urged telecommunication companies to set up dedicated network towers in these sensitive zones to safeguard visitors and ensure seamless security monitoring.`,
-    comments: []
-  },
-  {
-    id: 'news-14',
-    title: 'Special Security Squad Deployed to Restore Tourist Confidence Across Nashik Rural',
-    marathiTitle: 'नाशिकमधील धरणे आणि धबधब्यांच्या ठिकाणी पोलिसांचा कडक बंदोबस्त; विशेष पथक सज्ज',
-    marathiSource: 'nashik24x7.com',
-    subtitle: 'Police increase presence at popular picnic spots, implementing regular vehicle checking and strict vigil against anti-social gangs.',
-    marathiSubtitle: 'पर्यटकांमध्ये भीतीचे वातावरण दूर करण्यासाठी पोलिसांची गस्त; छेडछाड रोखण्यासाठी विशेष दामिनी पथके तैनात.',
-    marathiBody: `नाशिक — पर्यटकांमध्ये सुरक्षेची भावना वाढवण्यासाठी नाशिक ग्रामीण पोलिसांनी धरणे आणि धबधब्यांच्या ठिकाणी विशेष सुरक्षा पथके तैनात केली आहेत. भावली धरण घटनेनंतर पर्यटकांना कोणताही त्रास होऊ नये म्हणून पोलीस प्रशासनाने कडक पावले उचलली आहेत.
-
-विशेषतः महिलांच्या सुरक्षेसाठी दामिनी पथके साध्या वेशात तैनात करण्यात आली असून हुल्लडबाजी करणाऱ्यांवर कडक कायदेशीर कारवाई केली जाणार आहे. पर्यटनस्थळांवर जाणाऱ्या मुख्य मार्गांवर नाकाबंदी सुरू करण्यात आली आहे.`,
-    category: 'Panchavati',
-    author: 'Nashik 24x7 Public Security',
+    author: 'Nashik 24x7 Tourism Bureau',
     date: 'July 14, 2026',
     readTime: 5,
     imageUrl: 'https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&q=80&w=800',
     likes: 83,
-    body: `NASHIK — In a major initiative to restore confidence among tourists, the Nashik Rural Police have set up special safety squads at major reservoirs, waterfalls, and hiking trails in the district. Following the isolated harassment incident at Bhavli Dam, security checks have been doubled to prevent such events from occurring.
+    body: `IGATPURI — Massive public anger has erupted in Nashik after a family of tourists visiting Bhavli Waterfall was brutally beaten and chased by a local gang. The family had objected to the harassment of a female tourist.
 
-Special squads, including female police units (Damini Pathak), have been deployed to monitor isolated spots and deter anti-social elements. Police checkpoints have been established at entry routes to check for drunk driving and illegal items, ensuring a family-friendly and safe environment for visitors.`,
+Following widespread outrage and protests, Nashik Rural Police fast-tracked the investigation and apprehended nine individuals. Civic groups have demanded permanent armed police patrols at all natural waterfalls and tourist hotspots during monsoon weekends. Source: Nashik 24x7 News.`,
     comments: []
   },
   {
-    id: 'news-15',
-    title: "Collector's Central War Room Active 24x7 to Monitor Dam Discharges and River Levels",
-    marathiTitle: 'धरण पाणी साठ्यावर २४ तास नजर; जिल्हाधिकाऱ्यांचे आपत्कालीन नियंत्रण कक्ष सक्रिय',
+    id: 'buzz-2',
+    title: 'Fatal Head-On Collision in Savalghat Leaves Car Crushed Between Two Trucks',
+    marathiTitle: 'सावळघाट येथे भीषण अपघात; दोन ट्रकच्या मधोमध कार चिरडली, ४ जणांचा दुर्दैवी अंत',
     marathiSource: 'nashik24x7.com',
-    subtitle: 'Real-time sensor feeds and hydro-meteorological data are integrated to prevent sudden floods along the Godavari basins.',
-    marathiSubtitle: 'गंगापूर धरणातून होणाऱ्या विसर्गावर रिअल-टाइम लक्ष; नदीकाठच्या गावांना पूर इशारा प्रणाली कार्यान्वित.',
-    marathiBody: `नाशिक — गंगापूर आणि दारणा धरणांमधील पाण्याचा येवा आणि विसर्ग यावर बारीक लक्ष ठेवण्यासाठी जिल्हाधिकारी कार्यालयातील २४ तास कार्यरत असणारा 'वॉर रूम' सक्रिय करण्यात आला आहे. पुलांवर लावलेले अत्याधुनिक सेन्सर थेट मुख्य नियंत्रण कक्षाला पाणी पातळीची अचूक माहिती देतात.
+    subtitle: 'On July 15, a fatal collision occurred on the Nashik-Peth road at Savalghat, where a passenger car was crushed between two trucks, leading to four deaths.',
+    marathiSubtitle: 'नाशिक-पेठ मार्गावरील धोकादायक सावळघाटात भीषण अपघात; मृतांमध्ये भाविकांचा समावेश.',
+    marathiBody: `सावळघाट — नाशिक-पेठ रस्त्यावरील धोकादायक सावळघाटात बुधवारी झालेल्या भीषण अपघातात दोन ट्रकच्या मध्ये कार चिरडली गेल्याने चार प्रवाशांचा जागीच मृत्यू झाला.
 
-पावसाचा जोर कायम राहिल्यास नदीकाठच्या रहिवाशांना आधीच इशारा देऊन सुरक्षित स्थळी हलवण्याचे नियोजन यामुळे सोपे होणार असून नागरिकांनी कोणत्याही अफवांवर विश्वास न ठेवण्याचे आवाहन केले आहे.`,
+मृत्त प्रवाशांचे मृतदेह कटरच्या साहाय्याने गाडी कापून बाहेर काढावे लागले. स्रोत: नाशिक २४x७ न्यूज.`,
     category: 'City Buzz',
-    author: 'Nashik 24x7 Crisis Response',
+    author: 'Nashik 24x7 Highway Patrol',
+    date: 'July 15, 2026',
+    readTime: 5,
+    imageUrl: 'https://images.unsplash.com/photo-1617400324418-75bc6c3ee115?auto=format&fit=crop&q=80&w=800',
+    likes: 61,
+    body: `SAVALGHAT — A tragic pile-up accident occurred on the Nashik-Peth route at Savalghat on Wednesday. A passenger car was caught and completely crushed in a head-on impact between two heavy commercial trucks.
+
+All four occupants of the car, identified as pilgrims returning from a nearby temple, died on the spot. PWD and police units were dispatched to clear the highway and restore normal traffic flow on the busy ghat corridor. Source: Nashik 24x7 News.`,
+    comments: []
+  },
+  {
+    id: 'buzz-3',
+    title: 'Kumbh Countdown Begins: ₹44 Crore Approved for Ramkund Bathing Ghat Repairs',
+    marathiTitle: 'कुंभमेळा पूर्वतयारी: रामकुंड आणि गोदावरी घाटांच्या दुरुस्तीसाठी ४४ कोटी मंजूर; ध्वजस्तंभाचे शिलान्यास संपन्न',
+    marathiSource: 'nashik24x7.com',
+    subtitle: 'City authorities have cleared ₹44 crore for the urgent repair of Godavari bathing ghats and initiated the Shilanyas (foundation stone) ceremony for the Dhwajstambh at Ramkund, marking the official Kumbh countdown.',
+    marathiSubtitle: 'रामकुंडावरील सिंहस्थ कुंभमेळाच्या ऐतिहासिक ध्वजस्तंभ उभारणीची पायाभरणी संपन्न; नदीपात्र स्वच्छतेची कामे वेगात.',
+    marathiBody: `पंचवटी — रामकुंडावर सिंहस्थ कुंभमेळ्याची तयारी अधिकृतपणे सुरू झाली आहे. गोदावरी नदीपात्रातील जुन्या घाटांच्या डागडुजीसाठी महानगरपालिकेने ४४ कोटी रुपयांचा निधी मंजूर केला आहे.
+
+तसेच, रामकुंडावर भव्य धर्मध्वजाच्या 'ध्वजस्तंभाचा' शिलान्यास सोहळा पार पडला. स्रोत: नाशिक २४x७ न्यूज.`,
+    category: 'City Buzz',
+    author: 'Nashik 24x7 Heritage Editor',
+    date: 'July 14, 2026',
+    readTime: 5,
+    imageUrl: 'https://images.unsplash.com/photo-1545128485-c400e7702796?auto=format&fit=crop&q=80&w=800',
+    likes: 95,
+    body: `PANCHAVATI — The Nashik Municipal Corporation has approved an allocation of ₹44 crore for the restoration and repair of the ancient Godavari bathing ghats. 
+
+Additionally, the formal 'Shilanyas' (foundation stone laying) ceremony for the monumental Dhwajstambh (flag mast) was performed at Ramkund on Tuesday. This marks the official launch of physical infrastructure works for the grand Simhastha Kumbh Mela 2027. Source: Nashik 24x7 News.`,
+    comments: []
+  },
+  {
+    id: 'buzz-4',
+    title: 'NMC Proposes ₹66 Crore for Widening Critical Stretch of Gangapur Road',
+    marathiTitle: 'गंगापूर रोड रुंदीकरणाचा प्रस्ताव; मनपाकडून ६६ कोटी रुपयांच्या निधीची मागणी',
+    marathiSource: 'nashik24x7.com',
+    subtitle: 'To alleviate severe congestion, the NMC is seeking ₹66 crore for widening the parallel stretch of Gangapur Road, while residents continue to protest the slow pace of current road closures.',
+    marathiSubtitle: 'गंगापूर रोडवरील वाहतूक कोंडी फोडण्यासाठी रस्ता रुंदीकरणाची योजना; संतप्त नागरिकांचे संथ गतीच्या कामांविरोधात आंदोलन.',
+    marathiBody: `नाशिक — शहरातील उच्चभ्रू परिसर असलेल्या गंगापूर रोडवर रोज होणारी मोठी वाहतूक कोंडी सोडवण्यासाठी, नाशिक मनपाने ६६ कोटी रुपयांचा रस्ता रुंदीकरणाचा नवीन प्रस्ताव शासनाकडे पाठवला आहे.
+
+संतप्त नागरिकांनी तीव्र संताप व्यक्त करत आंदोलन केले आहे. स्रोत: नाशिक २४x७ न्यूज.`,
+    category: 'City Buzz',
+    author: 'Nashik 24x7 Municipal Desk',
+    date: 'July 14, 2026',
+    readTime: 4,
+    imageUrl: 'https://images.unsplash.com/photo-1515162305285-0293e4767cc2?auto=format&fit=crop&q=80&w=800',
+    likes: 71,
+    body: `NASHIK — With traffic congestion peaking on Gangapur Road, the Nashik Municipal Corporation has drafted a proposal requesting ₹66 crore from the urban development ministry for widening the parallel residential corridors. 
+
+Meanwhile, local resident associations staged a protest on Tuesday against the slow pace of current drainage-laying road closures, demanding immediate restoration of double-lane operations to prevent daily gridlocks. Source: Nashik 24x7 News.`,
+    comments: []
+  },
+  {
+    id: 'buzz-5',
+    title: 'NMC Serves Safety Notices to 21 Private Hospitals; MSEDCL Secures Transformers',
+    marathiTitle: 'सुरक्षा नियमांचे उल्लंघन; शहरातील २१ खाजगी रुग्णालयांना नोटीस, वीज ट्रान्सफॉर्मरला संरक्षक जाळ्या',
+    marathiSource: 'nashik24x7.com',
+    subtitle: 'The municipal corporation has served notices to 21 private hospitals for safety non-compliance, and MSEDCL has begun installing safety guards around transformers to prevent electrocution incidents during the monsoon.',
+    marathiSubtitle: 'अग्निशामक आणि इमारत सुरक्षा नियमांचे पालन न करणाऱ्या रुग्णालयांवर कारवाई; पावसाळ्यात विजेचा धक्का टाळण्यासाठी महावितरणची मोहीम.',
+    marathiBody: `नाशिक — नाशिक मनपाच्या अग्निशामक विभागाने शहरातील २१ मोठ्या खाजगी रुग्णालयांना सुरक्षा नियमांचे उल्लंघन केल्याप्रकरणी कडक नोटिसा बजावल्या आहेत.
+
+पावसाळ्यात वीज अटकाव होऊन जीवितहानी होऊ नये म्हणून महावितरणने (MSEDCL) विद्युत ट्रान्सफॉर्मर्सभोवती लोखंडी जाळ्या लावण्याचे काम युद्धपातळीवर सुरू केले आहे. स्रोत: नाशिक २४x७ न्यूज.`,
+    category: 'City Buzz',
+    author: 'Nashik 24x7 Civic Desk',
     date: 'July 14, 2026',
     readTime: 5,
     imageUrl: 'https://images.unsplash.com/photo-1541872703-74c5e44368f9?auto=format&fit=crop&q=80&w=800',
-    likes: 71,
-    body: `NASHIK — The Nashik District Collector's "Central War Room" has activated round-the-clock live telemetry monitoring to track water accumulation and discharge rates at major reservoirs like Gangapur and Darna. Real-time radar sensors on bridges feed data directly into the dashboard, enabling quick prediction of downstream flood behaviors.
+    likes: 80,
+    body: `NASHIK — The Nashik Municipal Corporation's health and fire departments have jointly served show-cause notices to 21 prominent private hospitals in the city for violating fire safety norms. 
 
-With heavy rains predicted in catchment areas, this precautionary control center coordinates water release to prevent inundation of low-lying areas. The collector urged citizens living near riverbanks to stay informed via official channels and avoid visiting low bridges during peak discharge.`,
+Concurrently, state power distributor MSEDCL has initiated a monsoon safety drive, erecting iron barricades and insulating guards around low-hanging street transformers to eliminate any risk of electrocution in flooded areas. Source: Nashik 24x7 News.`,
+    comments: []
+  },
+  {
+    id: 'pol-1',
+    title: 'Alliance Friction Intensifies Post-MLC Polls Over Rebel Gokul Gite\'s Victory',
+    marathiTitle: 'विधानपरिषद निवडणुकीनंतर महायुतीत धुसफूस; बंडखोर गोकुळ गिते यांच्या विजयाने तणाव वाढला',
+    marathiSource: 'nashik24x7.com',
+    subtitle: 'The aftermath of the Legislative Council election, where rebel candidate Gokul Gite defeated the official Mahayuti candidate Narendra Darade, continues to fuel internal friction. Leaders are now debating the "betrayal" of alliance partners during the voting process.',
+    marathiSubtitle: 'बंडखोर उमेदवाराने अधिकृत उमेदवाराचा पराभव केल्याने स्थानिक पातळीवर नाराजी; मित्रपक्षांच्या \'दगाफटक्यावर\' भाजप-सेना नेत्यांमध्ये खल.',
+    marathiBody: `नाशिक — नाशिक स्थानिक स्वराज्य संस्था विधानपरिषद निवडणुकीत बंडखोर उमेदवार गोकुळ गिते यांनी अधिकृत महायुतीचे उमेदवार नरेंद्र दराडे यांचा पराभव केल्याने महायुतीत धुसफूस वाढली आहे.
+
+बंडखोराला छुपा पाठिंबा देणाऱ्या स्थानिक नेत्यांवर कारवाई करण्याची मागणी आता जोर धरत आहे, ज्यामुळे अंतर्गत तणाव वाढला आहे. स्रोत: नाशिक २४x७ न्यूज.`,
+    category: 'Politics',
+    author: 'Nashik 24x7 Political Analyst',
+    date: 'July 14, 2026',
+    readTime: 5,
+    imageUrl: 'https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?auto=format&fit=crop&q=80&w=800',
+    likes: 91,
+    body: `NASHIK — Severe political friction has gripped the ruling Mahayuti alliance in Nashik following the Legislative Council elections. Rebel candidate Gokul Gite successfully defeated official nominee Narendra Darade. 
+
+The upset has sparked heavy debates and mutual accusations of sabotage among local party leaders. Strategists are evaluating reports that alliance cadres voted in favor of the rebel candidate, raising concerns about mutual trust ahead of the crucial assembly elections. Source: Nashik 24x7 News.`,
+    comments: []
+  },
+  {
+    id: 'pol-2',
+    title: 'Mahayuti Deploys Cabinet Ministers Mahajan and Samant for Urgent Damage Control',
+    marathiTitle: 'महायुतीचे डॅमेज कंट्रोल: मंत्री गिरीश महाजन आणि उदय सामंत नाशिकमध्ये दाखल',
+    marathiSource: 'nashik24x7.com',
+    subtitle: 'Minister Girish Mahajan and Uday Samant have been active in Nashik, attempting to reconcile internal factions. Their visits are aimed at stabilizing the party cadre following the rebellion and preparing for the upcoming Municipal Corporation elections.',
+    marathiSubtitle: 'बंडखोरीमुळे बिघडलेली गणिते दुरुस्त करण्यासाठी बड्या मंत्र्यांची नाशिक धाव; स्थानिक नगरसेवक आणि कार्यकर्त्यांशी बंद दाराआड चर्चा.',
+    marathiBody: `नाशिक — विधानपरिषद निवडणुकीतील बंडखोरीच्या धक्क्यानंतर महायुतीचे ज्येष्ठ मंत्री गिरीश महाजन आणि उदय सामंत तातडीने नाशिकमध्ये दाखल झाले आहेत.
+
+आगामी महानगरपालिका आणि विधानसभा निवडणुकांसाठी सर्व मित्रपक्षांनी एकत्र येण्याचे आवाहन त्यांनी केले असून 'डॅमेज कंट्रोल'चे काम सुरू आहे. स्रोत: नाशिक २४x७ न्यूज.`,
+    category: 'Politics',
+    author: 'Nashik 24x7 Political Desk',
+    date: 'July 14, 2026',
+    readTime: 5,
+    imageUrl: 'https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=800',
+    likes: 85,
+    body: `NASHIK — Senior Cabinet Ministers Girish Mahajan and Uday Samant have arrived in Nashik to launch urgent damage-control operations within the Mahayuti alliance.
+
+The ministerial visits aim to reconcile divided local party factions and soothe ruffled feathers following the MLC election defeat. The leadership is holding marathon closed-door sessions with district heads to consolidate their worker base before the impending Municipal Corporation polls. Source: Nashik 24x7 News.`,
+    comments: []
+  },
+  {
+    id: 'pol-3',
+    title: 'Divisional Commissioner Orders Direct Action Against Encroachments in Riverbeds',
+    marathiTitle: 'गोदावरी नदीपात्रातील अतिक्रमणांवर थेट हातोडा; विभागीय आयुक्तांचे कडक आदेश',
+    marathiSource: 'nashik24x7.com',
+    subtitle: 'Divisional Commissioner Dr. Praveen Gedam has issued strict directives on July 14 against illegal encroachments in riverbeds, a move that is being viewed as a significant administrative intervention in local urban governance.',
+    marathiSubtitle: 'नदीपात्रात भराव टाकणाऱ्या आणि अनधिकृत बांधकामे करणाऱ्यांवर गुन्हे दाखल करण्याचे निर्देश; पुराचा धोका कमी करण्यासाठी प्रशासनाचे पाऊल.',
+    marathiBody: `नाशिक — नाशिकचे विभागीय आयुक्त डॉ. प्रवीण गेडाम यांनी गोदावरी आणि नासर्दी नदीपात्रात झालेल्या सर्व बेकायदेशीर बांधकामांवर आणि अतिक्रमणांवर तातडीने कारवाई करण्याचे कडक आदेश जारी केले आहेत.
+
+नदीच्या पात्रात मातीचा भराव टाकून नैसर्गिक प्रवाह बदलणाऱ्यांवर फौजदारी गुन्हे दाखल करण्याचे निर्देश आयुक्तांनी दिले आहेत. स्रोत: नाशिक २४x७ न्यूज.`,
+    category: 'Politics',
+    author: 'Nashik 24x7 Administrative Bureau',
+    date: 'July 14, 2026',
+    readTime: 5,
+    imageUrl: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=800',
+    likes: 73,
+    body: `NASHIK — In a bold administrative move, Nashik Divisional Commissioner Dr. Praveen Gedam has issued stringent directives to demolish all illegal commercial and residential structures obstructing natural riverbeds. 
+
+The orders, issued on Tuesday, target low-lying Godavari and Nasardi riverbanks that frequently witness flash flooding. Local builders and commercial operators are being scanned, and criminal complaints will be filed against safety violators. Source: Nashik 24x7 News.`,
+    comments: []
+  },
+  {
+    id: 'pol-4',
+    title: 'Opposition Slams Government Over Law & Order and Monsoon Failures',
+    marathiTitle: 'कायदा व सुव्यवस्था आणि रस्त्यांच्या दुरवस्थेवरून विरोधक आक्रमक; सरकारवर तीव्र टीका',
+    marathiSource: 'nashik24x7.com',
+    subtitle: 'Opposition parties are leveraging the recent administrative lapses, such as the handling of the Bhavli Dam assault case and monsoon infrastructure failures, to criticize the current leadership’s grip on law and order.',
+    marathiSubtitle: 'इगतपुरीतील पर्यटक छळवणूक आणि शहरातील खड्ड्यांच्या साम्राज्यावरून महाविकास आघाडीचे नाशिकमध्ये ठिकठिकाणी आंदोलन.',
+    marathiBody: `नाशिक — नाशिकमधील कायदा आणि सुव्यवस्थेची बिघडलेली स्थिती आणि पावसामुळे रस्त्यांवर पडलेले खड्डे यावरून विरोधी पक्षांनी महायुती सरकारवर जोरदार हल्ला चढवला आहे.
+
+प्रशासनाच्या गलथान कारभारामुळे नागरिक त्रस्त असल्याचा आरोप त्यांनी केला. स्रोत: नाशिक २४x७ न्यूज.`,
+    category: 'Politics',
+    author: 'Nashik 24x7 Opposition Desk',
+    date: 'July 14, 2026',
+    readTime: 5,
+    imageUrl: 'https://images.unsplash.com/photo-1541872703-74c5e44368f9?auto=format&fit=crop&q=80&w=800',
+    likes: 67,
+    body: `NASHIK — Taking advantage of recent public grievances, opposition parties have launched a blistering campaign against the state government, citing major failures in public safety and infrastructure maintenance.
+
+Opposition leaders held protests highlighting the delayed police response in the Bhavli Dam assault case and the rapid deterioration of city roads under monsoon rain. They claimed that civic authorities are riddled with corruption, leaving citizens to suffer. Source: Nashik 24x7 News.`,
+    comments: []
+  },
+  {
+    id: 'pol-5',
+    title: 'Political-Administrative Nexus Scrutinized as SIT Intensifies "Shalarth" Scam Probe',
+    marathiTitle: 'शालार्थ घोटाळ्यामागील राजकीय लागेबांधे उघड होणार? एसआयटीकडून शिक्षण खात्याची चौकशी',
+    marathiSource: 'nashik24x7.com',
+    subtitle: 'The political-administrative nexus is under the scanner as the EOW/SIT probe into the "Shalarth" education ID scam gains momentum, with several regional officials being summoned for questioning this week.',
+    marathiSubtitle: 'बोगस शिक्षक भरती आणि पगार लाटणाऱ्या टोळीत राजकीय नेत्यांचा हात असल्याचा संशय; नाशिक विभागीय कार्यालयात चौकशी सुरू.',
+    marathiBody: `नाशिक — कोट्यवधी रुपयांच्या 'शालार्थ' शिक्षक पगार आयडी घोटाळ्यातील राजकीय आणि प्रशासकीय लागेबांध्यांची चौकशी विशेष तपास पथकाने (SIT) सुरू केली आहे.
+
+अनेक बोगस शिक्षकांची भरती करण्यासाठी काही बड्या नेत्यांनी दबाव आणल्याची माहिती तपासात समोर आली आहे. स्रोत: नाशिक २४x७ न्यूज.`,
+    category: 'Politics',
+    author: 'Nashik 24x7 Investigative Desk',
+    date: 'July 14, 2026',
+    readTime: 5,
+    imageUrl: 'https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&q=80&w=800',
+    likes: 88,
+    body: `NASHIK — The Economic Offences Wing's Special Investigation Team is digging deeper into the "Shalarth" teacher ID pay scam, scanning a complex web of political influences and senior administrative figures.
+
+SIT sources indicate that several fraudulent appointments were authorized under direct pressure from local political heavyweights. The ongoing interrogation of 48 district officials is expected to reveal major discrepancies and potential high-profile political arrests in the coming days. Source: Nashik 24x7 News.`,
+    comments: []
+  },
+  {
+    id: 'biz-1',
+    title: 'Assistant Commissioner Issues GST Compliance Notice to Harish Textile Engineers',
+    marathiTitle: 'हरिश टेक्स्टाईल इंजिनिअर्सला जीएसटी कर चुकवेगिरीप्रकरणी विभागाची कडक नोटीस',
+    marathiSource: 'nashik24x7.com',
+    subtitle: 'On July 13, 2026, the Assistant Commissioner of State Tax (Ambad, Nashik) issued a GST ASMT-10 notice to Harish Textile Engineers regarding discrepancies in Input Tax Credit (ITC) for the 2022-23 fiscal year.',
+    marathiSubtitle: '२०२२-२३ आर्थिक वर्षातील इनपुट टॅक्स क्रेडिट (ITC) मध्ये विसंगती आढळल्याने सहाय्यक राज्य कर आयुक्तांची कारवाई.',
+    marathiBody: `अंबड — अंबड औद्योगिक वसाहतीमधील 'हरिश टेक्स्टाईल इंजिनिअर्स' या नामवंत कंपनीला सहाय्यक राज्य कर आयुक्तांनी जीएसटी कर भरण्यातील त्रुटींवरून कडक नोटीस (ASMT-10) बजावली आहे.
+
+यावर १५ दिवसांत खुलासा करण्याचे आदेश कंपनीला देण्यात आले आहेत. स्रोत: नाशिक २४x७ न्यूज.`,
+    category: 'Business',
+    author: 'Nashik 24x7 Business Bureau',
+    date: 'July 13, 2026',
+    readTime: 5,
+    imageUrl: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80&w=800',
+    likes: 42,
+    body: `AMBAD — The Assistant Commissioner of State Tax, Ambad Division, has issued a formal GST ASMT-10 notice to Harish Textile Engineers, a prominent industrial manufacturing unit in the Nashik MIDC belt. 
+
+The notice flags substantial discrepancies between the Input Tax Credit (ITC) claimed in their annual filings and the values declared by their suppliers during the 2022-23 financial year. The firm has been given 15 days to clarify or face heavy penal actions. Source: Nashik 24x7 News.`,
+    comments: []
+  },
+  {
+    id: 'biz-2',
+    title: 'Nashik’s Record ₹60,575 Crore Annual Credit Plan Drives Industrial Optimism',
+    marathiTitle: 'नाशिक जिल्ह्यासाठी विक्रमी ६०,५७५ कोटींचा पतपुरवठा आराखडा; लघुउद्योगांना (MSME) मोठा दिलासा',
+    marathiSource: 'nashik24x7.com',
+    subtitle: 'While announced earlier in July, the district’s record ₹60,575 crore credit plan continues to be the primary topic in business circles this week. The ₹20,000 crore allocation specifically for MSMEs remains a key driver for local industrial optimism.',
+    marathiSubtitle: 'उद्योजक वर्तुळात यंदाच्या कर्ज पत आराखड्यामुळे आनंदाचे वातावरण; २०,००0 कोटी केवळ लघु आणि मध्यम उद्योगांसाठी राखीव.',
+    marathiBody: `नाशिक — नाशिक जिल्ह्यासाठी जाहीर झालेला ६०,५७५ कोटी रुपयांचा वार्षिक पतपुरवठा आराखडा सध्या औद्योगिक वर्तुळात चर्चेचा मुख्य विषय बनला आहे. 
+
+यापैकी २०,००० कोटींचा भरीव निधी केवळ लघु, सूक्ष्म आणि मध्यम उद्योगांना (MSME) कर्ज देण्यासाठी राखीव ठेवण्यात आला आहे. स्रोत: नाशिक २४x७ न्यूज.`,
+    category: 'Business',
+    author: 'Nashik 24x7 Trade Reporter',
+    date: 'July 14, 2026',
+    readTime: 5,
+    imageUrl: 'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&q=80&w=800',
+    likes: 104,
+    body: `NASHIK — Nashik district's record-breaking ₹60,575 crore annual credit plan has brought great optimism to local business sectors. Out of this budget, ₹20,000 crore is strictly dedicated to micro, small, and medium enterprises (MSMEs).
+
+Local industrial bodies, including NIMA and AIMA, welcomed the heavy allocation, stating that access to cheap credit will allow local manufacturing and engineering firms to upgrade facilities and hire more youth. Source: Nashik 24x7 News.`,
+    comments: []
+  },
+  {
+    id: 'biz-3',
+    title: 'RBI Imposes Monetary Penalties on Regional Cooperative Banks for Compliance Lapses',
+    marathiTitle: 'नियमांचे उल्लंघन; नाशिक रोड देवळाली व्यापारी बँकेसह इतर सहकारी बँकांना रिझर्व्ह बँकेचा भुर्दंड',
+    marathiSource: 'nashik24x7.com',
+    subtitle: 'The Reserve Bank of India (RBI) recently imposed monetary penalties on several regional cooperative banks in Maharashtra, including the Nasik Road Deolali Vyapari Sahakari Bank Ltd., highlighting a period of increased regulatory scrutiny for local financial institutions.',
+    marathiSubtitle: 'बँकिंग नियामक कायद्यांचे पालन न केल्याने आरबीआय (RBI) कडून नाशिकमधील सहकारी बँकांवर दंडात्मक कारवाई.',
+    marathiBody: `नाशिक — बँकिंग नियमांची कडक अंमलबजावणी न केल्याबद्दल भारतीय रिझर्व्ह बँकेने (RBI) नाशिक रोड देवळाली व्यापारी सहकारी बँकेसह महाराष्ट्रातील अनेक सहकारी बँकांना दंड ठोठावला आहे.
+
+बँकेने स्पष्ट केले आहे की दंडाचा ग्राहकांच्या ठेवींवर आणि दैनंदिन व्यवहारांवर कोणताही परिणाम होणार नाही. स्रोत: नाशिक २४x७ न्यूज.`,
+    category: 'Business',
+    author: 'Nashik 24x7 Financial Analyst',
+    date: 'July 14, 2026',
+    readTime: 5,
+    imageUrl: 'https://images.unsplash.com/photo-1501167786227-4cba60f6d58f?auto=format&fit=crop&q=80&w=800',
+    likes: 58,
+    body: `NASHIK — The Reserve Bank of India (RBI) has cracked down on cooperative lenders in Maharashtra, imposing hefty monetary penalties on multiple institutions. 
+
+Among the affected banks is the Nasik Road Deolali Vyapari Sahakari Bank Ltd. The regulator cited compliance lapses regarding loan exposure limits, customer identification norms (KYC), and financial health disclosures. Local directors have assured depositors that operations and safety of funds remain unaffected. Source: Nashik 24x7 News.`,
+    comments: []
+  },
+  {
+    id: 'biz-4',
+    title: 'Retailers Gear Up for Highly Anticipated "Fashionista Nashik 2026" Exhibition',
+    marathiTitle: 'नाशिकमध्ये \'फॅशनिस्टा २०२६\' प्रदर्शनाची लगबग; ग्राहक आणि विक्रेत्यांमध्ये मोठा उत्साह',
+    marathiSource: 'nashik24x7.com',
+    subtitle: 'City businesses are currently preparing for the "Fashionista Nashik 2026" exhibition, scheduled for July 20–22. The event is generating significant buzz among local retailers and lifestyle entrepreneurs looking to showcase new trends.',
+    marathiSubtitle: '२० ते २२ जुलै दरम्यान होणाऱ्या भव्य फॅशन प्रदर्शनाची तयारी अंतिम टप्प्यात; नामांकित ब्रँड्सचे स्टॉल्स लागणार.',
+    marathiBody: `नाशिक — नाशिकमधील फॅशन प्रेमी आणि व्यापाऱ्यांसाठी आनंदाची बातमी आहे. येत्या २० ते २२ जुलै दरम्यान शहरात प्रसिद्ध 'फॅशनिस्टा नाशिक २०२६' प्रदर्शनाचे आयोजन केले जात आहे.
+
+स्थानिक पातळीवरील किरकोळ विक्रेत्यांनी या महोत्सवाची जय्यत तयारी सुरू केली आहे. स्रोत: नाशिक २४x७ न्यूज.`,
+    category: 'Business',
+    author: 'Nashik 24x7 Trade Correspondent',
+    date: 'July 14, 2026',
+    readTime: 4,
+    imageUrl: 'https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&q=80&w=800',
+    likes: 76,
+    body: `NASHIK — Trade and lifestyle sectors in Nashik are abuzz with preparations for the upcoming "Fashionista Nashik 2026" trade exhibition, scheduled to open from July 20 to July 22.
+
+The high-profile event offers local boutiques, jewelry designers, and lifestyle entrepreneurs an elite platform to showcase current trends. Retailers are hoping for high footfall as consumers look forward to festive shopping and exclusive premium collections. Source: Nashik 24x7 News.`,
+    comments: []
+  },
+  {
+    id: 'biz-5',
+    title: 'Industrial Associations Demand Urgent Road and Drainage Repairs in MIDC Zones',
+    marathiTitle: 'अंबड आणि सातपूर MIDC मधील अंतर्गत रस्ते आणि गटारांची दुरुस्ती करा; उद्योजकांची तीव्र मागणी',
+    marathiSource: 'nashik24x7.com',
+    subtitle: 'Following the mid-July monsoon intensity, local industrial associations have intensified their appeals to the MIDC for immediate road and drainage maintenance in industrial zones to prevent operational delays.',
+    marathiSubtitle: 'पावसामुळे कारखान्यांच्या परिसरात पाणी साचून उत्पादनावर परिणाम; उद्योजक संघटनांचे एमआयडीसी प्रशासनाला साकडे.',
+    marathiBody: `सातपूर — जुलैच्या पावसानंतर सातपूर आणि अंबड औद्योगिक वसाहतीतील अंतर्गत रस्त्यांची आणि ड्रेनेज वाहिन्यांची दुरवस्था झाल्याने उद्योजक संघटनांनी एमआयडीसी (MIDC) प्रशासनाकडे धाव घेतली आहे.
+
+एमआयडीसीने तातडीने दुरुस्ती न केल्यास आंदोलनाचा इशारा आयमा (AIMA) आणि निमा (NIMA) ने दिला आहे. स्रोत: नाशिक २४x७ न्यूज.`,
+    category: 'Business',
+    author: 'Nashik 24x7 Industry Desk',
+    date: 'July 14, 2026',
+    readTime: 5,
+    imageUrl: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=800',
+    likes: 65,
+    body: `SATPUR — Following intense rainfall in mid-July, key industrial associations in Satpur and Ambad have registered strong appeals to MIDC officials demanding immediate infrastructure repairs. 
+
+Damaged roads, open storm drains, and flooded industrial streets are hampering cargo transit, damaging equipment, and risking worker safety. Industrialists have threatened peaceful protests if drainage cleaning and pothole repairs are not executed promptly. Source: Nashik 24x7 News.`,
     comments: []
   }
 ];
