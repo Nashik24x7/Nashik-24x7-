@@ -115,7 +115,7 @@ export const Header: React.FC<HeaderProps> = ({
 
     if (month >= 5 && month <= 8) {
       // Monsoon (June to Sept)
-      const temps = [24, 25, 23, 26, 24];
+      const temps = [22, 21, 22, 23, 21];
       const conditions = ["Heavy Rain", "Overcast Sky", "Monsoon Drizzle", "Passing Rainstorms", "Misty Rain"];
       const humidities = ["88%", "92%", "95%", "85%", "90%"];
       const winds = ["22 km/h W", "18 km/h WSW", "25 km/h W", "15 km/h W", "20 km/h WNW"];

@@ -156,6 +156,141 @@ const SHORTS_NEWS = [
     bodyMr: 'स्थानिक विकासकामे आणि प्रशासकीय समन्वयाच्या मुद्द्यांवरून १४ जुलै रोजी राज्यमंत्री आणि वरिष्ठ राजकीय नेत्यांमध्ये महत्त्वाची चर्चा पार पडली.',
     category: 'Politics / राजकारण',
     image: 'https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?auto=format&fit=crop&w=800&q=80',
+  },
+  {
+    id: 'short-16',
+    titleEn: '9 Sent to Custody in Dam Attack Case',
+    bodyEn: 'A local court has remanded nine suspects to police custody till July 18 to facilitate weapons recovery and further investigation of the violent tourist assault at Bhavli Dam.',
+    titleMr: 'भावली हल्ला प्रकरण: ९ आरोपींना पोलीस कोठडी',
+    bodyMr: 'भावली धरण परिसरातील पर्यटकांवरील प्राणघातक हल्ला प्रकरणातील ९ संशयितांना न्यायालयाने १८ जुलैपर्यंत पोलीस कोठडी सुनावली असून पुढील तपास सुरू आहे.',
+    category: 'City Buzz / शहर वृत्त',
+    image: 'https://lh3.googleusercontent.com/d/1dwuV1N-x24NG5GBWN9MJnBH16iR04THt',
+  },
+  {
+    id: 'short-17',
+    titleEn: 'Family Chased 15 km near Bhavli Dam',
+    bodyEn: 'A family of eight was subjected to a terrifying 15-kilometer highway chase and brutal assault by a mob after defending a female relative from harassment.',
+    titleMr: 'विनयभंगाचा विरोध; कुटुंबाचा १५ किमी पाठलाग',
+    bodyMr: 'महिला पर्यटकाची छेड काढणाऱ्या टोळक्याचा विरोध केल्याने कुटुंबाच्या गाडीचा तब्बल १५ किलोमीटरपर्यंत थरारक पाठलाग करून मारहाण करण्यात आली.',
+    category: 'City Buzz / शहर वृत्त',
+    image: 'https://images.unsplash.com/photo-1574786198875-49f5d09fe2d2?auto=format&fit=crop&q=80&w=800',
+  },
+  {
+    id: 'short-18',
+    titleEn: 'High-Capacity Stray Dog Sterilisation',
+    bodyEn: 'Nashik Municipal Corporation is ready to launch an advanced stray dog sterilisation facility capable of handling 300 surgeries daily to ensure public safety.',
+    titleMr: 'भटक्या कुत्र्यांच्या नसबंदीसाठी अद्ययावत केंद्र',
+    bodyMr: 'शहरातील भटक्या श्वानांच्या वाढत्या लोकसंख्येवर नियंत्रण ठेवण्यासाठी मनपा दररोज ३०० श्वानांवर निर्बीजीकरण शस्त्रक्रिया करणारे केंद्र सुरू करत आहे.',
+    category: 'City Buzz / शहर वृत्त',
+    image: 'https://lh3.googleusercontent.com/d/1omG5lNJlIkFicj_FXDMnl5UwI5ZvN_SW',
+  },
+  {
+    id: 'short-19',
+    titleEn: '70 Traffic Junctions Redesigned for Kumbh',
+    bodyEn: 'Authorities have finalized a master plan to redesign 70 major traffic junctions across Nashik to eliminate congestion ahead of the 2027 Simhastha Kumbh Mela.',
+    titleMr: 'कुंभमेळा २०२७: ७० प्रमुख चौकांचा कायापालट',
+    bodyMr: '२०२७ मध्ये होणाऱ्या ऐतिहासिक सिंहस्थ कुंभमेळ्याच्या पार्श्वभूमीवर शहरातील ७० प्रमुख वाहतूक चौकांचे पुनर्रचना काम युद्धपातळीवर सुरू झाले आहे.',
+    category: 'Business / व्यवसाय',
+    image: 'https://lh3.googleusercontent.com/d/1VN3y1OQZF4iiiWw6AtL69HfWV1GBJaUH',
+  },
+  {
+    id: 'short-20',
+    titleEn: '28 New Road Projects Sanctioned',
+    bodyEn: 'Maharashtra cabinet has approved 28 new road projects in Nashik to improve regional connectivity and accommodate transit traffic for the upcoming Kumbh Mela.',
+    titleMr: 'पायाभूत सुविधा: २८ नवीन रस्त्यांच्या कामांना मंजुरी',
+    bodyMr: 'कुंभमेळ्यादरम्यान वाहतूक कोंडी टाळण्यासाठी आणि अंतर्गत संपर्क वाढवण्यासाठी राज्य सरकारने नाशिकमधील २८ नवीन रस्त्यांच्या कामांना मान्यता दिली आहे.',
+    category: 'Business / व्यवसाय',
+    image: 'https://lh3.googleusercontent.com/d/1A5UzS69BnTB_A56VB1_m0I8PSkUGkzfj',
+  },
+  {
+    id: 'short-21',
+    titleEn: 'Thackeray Meets Nashik Corporators',
+    bodyEn: 'Sena (UBT) Chief Uddhav Thackeray hosted former corporators and coordinators at Matoshree in Mumbai to reinforce party loyalty ahead of state assembly polls.',
+    titleMr: 'उद्धव ठाकरेंनी घेतली माजी नगरसेवकांची बैठक',
+    bodyMr: 'विधानसभा निवडणुकीच्या पार्श्वभूमीवर शिवसेना पक्षप्रमुख उद्धव ठाकरे यांनी नाशिकच्या माजी नगरसेवकांची मातोश्रीवर बैठक घेत मार्गदर्शन केले.',
+    category: 'Politics / राजकारण',
+    image: 'https://lh3.googleusercontent.com/d/1Abg5KbHsqGB3lu2kjUPtq4dUYKvxdtgV',
+  },
+  {
+    id: 'short-22',
+    titleEn: 'Farmers Protest Highway Land Acquisition',
+    bodyEn: 'Hundreds of farmers along the Ghoti-Trimbakeshwar highway staged protests demanding land compensation rates that align with current market valuations.',
+    titleMr: 'घोटी-त्र्यंबकेश्वर महामार्ग रुंदीकरणाला विरोध',
+    bodyMr: 'प्रस्तावित रस्ता रुंदीकरणात सुपीक जमिनी संपादित करण्यास शेतकऱ्यांनी विरोध दर्शवला असून बाजारभावाप्रमाणे वाढीव मोबदल्याची मागणी केली आहे.',
+    category: 'Business / व्यवसाय',
+    image: 'https://lh3.googleusercontent.com/d/1ks9n8dr39UyTCHrtnw8jHSEnCP24I6rr',
+  },
+  {
+    id: 'short-23',
+    titleEn: 'Orange Alert: Heavy Rain in Nashik',
+    bodyEn: 'IMD has issued an Orange Alert for Nashik district as continuous heavy rainfall has caused a significant rise in water levels across major local reservoirs.',
+    titleMr: 'नाशिक जिल्ह्यासाठी मुसळधार पावसाचा ऑरेंज अलर्ट',
+    bodyMr: 'सतत सुरू असलेल्या पावसामुळे धरणांमधील पाणीसाठा वेगाने वाढला असून गोदावरी नदीकाठच्या रहिवाशांना सावधानतेचा इशारा देण्यात आला आहे.',
+    category: 'City Buzz / शहर वृत्त',
+    image: 'https://images.unsplash.com/photo-1534274988757-a28bf1a57c17?auto=format&fit=crop&q=80&w=800',
+  },
+  {
+    id: 'short-24',
+    titleEn: 'Kumbh Mela Funding Fast-Tracked',
+    bodyEn: 'The Maharashtra state government has directed the immediate release of funds and high-speed execution of critical transport and sanitation projects in Nashik.',
+    titleMr: 'कुंभमेळा विकासकामांसाठी अतिरिक्त निधी मंजूर',
+    bodyMr: 'सिंहस्थ कुंभमेळ्यापूर्वी भाविकांसाठी दर्जेदार पायाभूत सुविधा आणि दळणवळण प्रकल्प वेळेत पूर्ण करण्यासाठी शासनाने गती दिली आहे.',
+    category: 'Business / व्यवसाय',
+    image: 'https://images.unsplash.com/photo-1545128485-c400e7702796?auto=format&fit=crop&q=80&w=800',
+  },
+  {
+    id: 'short-25',
+    titleEn: 'Chargesheet Filed Against Ashok Kharat',
+    bodyEn: 'SIT has filed its first comprehensive chargesheet in the sexual assault case against self-styled godman Ashok Kharat at the Nashik Sessions Court.',
+    titleMr: 'अशोक खरातविरोधात एसआयटीकडून दोषारोपपत्र',
+    bodyMr: 'स्वयंघोषित महाराज अशोक खरात याच्याविरुद्ध सुरू असलेल्या लैंगिक अत्याचार प्रकरणात तपास पथकाने सत्र न्यायालयात भक्कम पुराव्यांसह चार्जशीट दाखल केली.',
+    category: 'Panchavati / पंचवटी',
+    image: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=800',
+  },
+  {
+    id: 'short-26',
+    titleEn: '₹97 Lakh Real Estate Scam at Anandgram',
+    bodyEn: 'Nashik Police has launched a manhunt for three senior sales managers of the Anandgram housing project who absconded after pocketing booking deposits.',
+    titleMr: 'आनंदग्राम गृहप्रकल्पामध्ये ९७ लाखांची फसवणूक',
+    bodyMr: 'बनावर पावत्या बनवून ग्राहकांचे बुकिंगचे लाखो रुपये लाटल्याप्रकरणी आनंदग्रामच्या तीन फरार व्यवस्थापकांविरुद्ध गुन्हा दाखल करण्यात आला आहे.',
+    category: 'Business / व्यवसाय',
+    image: 'https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&q=80&w=800',
+  },
+  {
+    id: 'short-27',
+    titleEn: 'UBT Stages Protest Over Broken Roads',
+    bodyEn: 'Hundreds of Sena (UBT) party workers staged a massive protest outside the NMC headquarters to demand rapid repair of pothole-ridden monsoon roads.',
+    titleMr: 'रस्त्यांच्या दुरवस्थेविरोधात मनपावर भव्य धडक मोर्चा',
+    bodyMr: 'शहरातील खड्डेमय रस्ते आणि विस्कळीत पाणी पुरवठ्याविरोधात शिवसेना UBT कार्यकर्त्यांनी मनपा आयुक्तांना धारेवर धरत उग्र आंदोलनाचा इशारा दिला.',
+    category: 'Politics / राजकारण',
+    image: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&q=80&w=800',
+  },
+  {
+    id: 'short-28',
+    titleEn: 'Actress Fined for Event Absence',
+    bodyEn: 'The Nashik Consumer Court ordered a popular actress to refund booking fees and pay hefty compensation for failing to attend a showroom launch event.',
+    titleMr: 'करार मोडल्याप्रकरणी प्रसिद्ध अभिनेत्रीला मोठा दंड',
+    bodyMr: 'मानधन घेऊनही उद्घाटनाच्या शोरूम कार्यक्रमाला गैरहजर राहिल्याने ग्राहक न्यायालयाने संबंधित अभिनेत्रीला भरपाई देण्याचे आदेश दिले आहेत.',
+    category: 'City Buzz / शहर वृत्त',
+    image: 'https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&q=80&w=800',
+  },
+  {
+    id: 'short-29',
+    titleEn: 'Debate Over MLA Rahul Ahers Absence',
+    bodyEn: 'Local resident groups and opposition leaders in Nashik debate the lack of active intervention by MLA Dr. Rahul Aher on urgent agricultural and civic issues.',
+    titleMr: 'आमदार डॉ. राहुल अहेर यांच्या अनुपस्थितीवरून चर्चा',
+    bodyMr: 'मतदारसंघातील दळणवळण, शेतमालाचे दर आणि इतर प्रलंबित नागरी समस्यांवर स्थानिक लोकप्रतिनिधीच्या शांत भूमिकेमुळे वाद पेटला आहे.',
+    category: 'Politics / राजकारण',
+    image: 'https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?auto=format&fit=crop&w=800&q=80',
+  },
+  {
+    id: 'short-30',
+    titleEn: '5 Search Squads Hunt for Dam Attackers',
+    bodyEn: 'Nashik Rural Police formed five special search squads to capture the remaining suspects accused of assaulting a visiting family near Bhavli Dam.',
+    titleMr: 'भावली धरण हल्ला: उर्वरित आरोपींच्या शोधासाठी ५ पथके',
+    bodyMr: 'पर्यटकांवरील भ्याड हल्ला प्रकरणी फरार असलेल्या इतर सहकाऱ्यांना अटक करण्यासाठी पोलिसांनी शोधमोहीम तीव्र केली असून नाकेबंदी करण्यात आली आहे.',
+    category: 'City Buzz / शहर वृत्त',
+    image: 'https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&q=80&w=800',
   }
 ];
 
@@ -292,7 +427,7 @@ export default function App() {
     const saved = localStorage.getItem('nashik_simulated_day');
     
     // Calculate real world elapsed days since July 5, 2026 to keep date/weather fresh every day
-    const start = new Date('2026-07-05T00:00:00-07:00');
+    const start = new Date('2026-07-04T00:00:00-07:00');
     const now = new Date();
     const diffTime = now.getTime() - start.getTime();
     const realWorldOffset = Math.floor(diffTime / (1000 * 60 * 60 * 24));
@@ -320,7 +455,7 @@ export default function App() {
     if (autopilotEnabled) return;
 
     const syncWithRealWorld = () => {
-      const start = new Date('2026-07-05T00:00:00-07:00');
+      const start = new Date('2026-07-04T00:00:00-07:00');
       const now = new Date();
       const diffTime = now.getTime() - start.getTime();
       const realWorldOffset = Math.floor(diffTime / (1000 * 60 * 60 * 24));
