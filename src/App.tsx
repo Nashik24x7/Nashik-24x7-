@@ -23,6 +23,141 @@ import { Calendar } from 'lucide-react';
 
 const SHORTS_NEWS = [
   {
+    id: 'short-july17-1',
+    titleEn: '₹1 Cr Ganja Seized near Pimpalgaon',
+    bodyEn: 'Nashik Police intercepted a truck carrying 535 kg of premium quality ganja worth over ₹1 crore near the Pimpalgaon toll plaza. The driver has been arrested.',
+    titleMr: 'पिंपळगाव टोल नाक्यावर १ कोटींचा गांजा जप्त',
+    bodyMr: 'नाशिक पोलिसांनी पिंपळगाव टोल नाक्याजवळ तब्बल ५३५ किलो उच्च प्रतीचा गांजा वाहून नेणारा ट्रक जप्त केला असून चालकाला बेड्या ठोकल्या आहेत.',
+    category: 'Drug Bust / अमली पदार्थ',
+    image: 'https://lh3.googleusercontent.com/d/1QE2u347lyq8aGwnmV60k7xYFdFA1dKUz',
+  },
+  {
+    id: 'short-july17-2',
+    titleEn: '3 More Arrested in Bhavali Dam Attack',
+    bodyEn: 'Igatpuri police have arrested three more prime suspects in the shocking tourist assault case near Bhavali Dam, taking the total count of arrests to 12.',
+    titleMr: 'भावली धरण हल्ला: आणखी ३ मुख्य संशयित जेरबंद',
+    bodyMr: 'पर्यटक हल्ला प्रकरणात पोलिसांनी आणखी तीन महत्त्वाच्या आरोपींना अटक केली असून या प्रकरणातील एकूण आरोपींची संख्या आता १२ झाली आहे.',
+    category: 'Crime / गुन्हेगारी',
+    image: 'https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&q=80&w=800',
+  },
+  {
+    id: 'short-july17-3',
+    titleEn: 'NMC Refuses to Roll Back Water Cut',
+    bodyEn: 'Despite heavy pressure from Nashik corporators to lift the 10% water cut, the NMC has declined the request, stating dam levels are still below comfortable thresholds.',
+    titleMr: 'पाणी कपात कायम ठेवण्यावर मनपा ठाम',
+    bodyMr: 'नगरसेवकांनी १०% पाणी कपात मागे घेण्याची मागणी करूनही, महानगरपालिकेने नकार दिला आहे; धरणांमध्ये साठा अजूनही मर्यादित असल्याचे कारण दिले.',
+    category: 'Civic / नागरी',
+    image: 'https://lh3.googleusercontent.com/d/1vsR4jgxazRj523L7FbLv7RbI4242rD6Z',
+  },
+  {
+    id: 'short-july17-4',
+    titleEn: '"Good Days Will Return": Uddhav Thackeray',
+    bodyEn: 'Uddhav Thackeray met Nashik corporators at Matoshree, urging them to build grassroots strength and assuring them that "good days will return soon."',
+    titleMr: '"चांगले दिवस नक्कीच येतील": उद्धव ठाकरे',
+    bodyMr: 'शिवसेना पक्षप्रमुख उद्धव ठाकरे यांनी नाशिकच्या माजी नगरसेवकांशी मातोश्रीवर संवाद साधला; पक्षनिष्ठा मजबूत ठेवण्याचा कार्यकर्त्यांचा निर्धार.',
+    category: 'Politics / राजकारण',
+    image: 'https://lh3.googleusercontent.com/d/1LTNJZp8B8272v0dOeaTFlz1nukW8fidw',
+  },
+  {
+    id: 'short-july17-5',
+    titleEn: 'Heavy Rain Alert Maintained for Nashik',
+    bodyEn: 'IMD keeps a yellow alert for Nashik district with heavy rain warnings in western ghats. Disaster cells are actively monitoring flood-prone riverside zones.',
+    titleMr: 'नाशिकला मुसळधार पावसाचा इशारा कायम',
+    bodyMr: 'हवामान खात्याने नाशिकसाठी सतर्कतेचा इशारा कायम ठेवला आहे; गोदावरी नदीकाठच्या आणि सखल भागांवर आपत्ती व्यवस्थापन विभागाची नजर.',
+    category: 'Weather / हवामान',
+    image: 'https://lh3.googleusercontent.com/d/1p0lc55eY_-6FGxKqc2gKIdGAi3EPgU7j',
+  },
+  {
+    id: 'short-july17-6',
+    titleEn: 'Police Intensify Bhavali Investigation',
+    bodyEn: 'Special squads are conducting technical tracking and raids to round up remaining absconding suspects involved in the Bhavali Dam tourist harassment.',
+    titleMr: 'भावली धरणावरील हल्ल्याचा तपास अधिक वेगवान',
+    bodyMr: 'फरार असलेल्या इतर हल्लेखोरांच्या मुसक्या आवळण्यासाठी ग्रामीण पोलिसांनी शोधमोहीम वेगाने राबवत संशयितांच्या घरी छापे टाकले.',
+    category: 'Crime / गुन्हेगारी',
+    image: 'https://lh3.googleusercontent.com/d/1MRNO-G3WMHv4UAKsZk4B8xL09PK_GxKb',
+  },
+  {
+    id: 'short-july17-7',
+    titleEn: 'Gangapur Dam Levels Improve Slightly',
+    bodyEn: 'Catchment rains have triggered modest inflows into the Gangapur Dam complex. However, Nashik citizens must continue strict water conservation.',
+    titleMr: 'गंगापूर धरणाच्या पाणीसाठ्यात थोडी वाढ',
+    bodyMr: 'गेल्या काही दिवसांतील पावसामुळे गंगापूर धरण समूहात पाणीसाठा अंशत: वाढला असला तरी पाणी बचतीचे नियम मनपाकडून तूर्तास शिथिल होणार नाहीत.',
+    category: 'Civic / नागरी',
+    image: 'https://lh3.googleusercontent.com/d/1DpNILT6dfDvQl624AJ8u5d6X25XHAfin',
+  },
+  {
+    id: 'short-july17-8',
+    titleEn: 'Monsoon Boosts Paddy Transplanting',
+    bodyEn: 'Steady rain across Igatpuri and Trimbakeshwar has accelerated Kharif crop and paddy transplantation, bringing great optimism to local farming families.',
+    titleMr: 'दमदार पावसामुळे भात रोवणीला मोठी गती',
+    bodyMr: 'इगतपुरी आणि त्र्यंबकेश्वरच्या डोंगराळ भागात झालेल्या संततधार पावसामुळे खरीप व भात लावणीच्या कामांना वेग आल्याने बळीराजा उत्साहात.',
+    category: 'Agriculture / शेती',
+    image: 'https://lh3.googleusercontent.com/d/19nO13EbRk1bdWoyUvYJ2ajNGw6lgC_UK',
+  },
+  {
+    id: 'short-july17-9',
+    titleEn: 'Millet Startup Valuation Hits ₹1.5 Cr',
+    bodyEn: 'A Nashik-based engineering graduate scaled his ancient-grain millet startup from a mere investment of ₹3,500 into a healthy business worth ₹1.5 crore.',
+    titleMr: '३,५०० रुपयांच्या घरगुती भांडवलातून १.५ कोटींचे साम्राज्य',
+    bodyMr: 'नाशिकच्या कल्पक इंजिनिअरने पारंपरिक तृणधान्यांच्या आरोग्यदायी पदार्थांचा चवदार स्टार्टअप सुरू करून उत्तम उद्योजकतेची मिसाल उभी केली.',
+    category: 'Business / व्यवसाय',
+    image: 'https://lh3.googleusercontent.com/d/1QMXgwCGiCBBnEnOT7odHXzjVZFWa8jwb',
+  },
+  {
+    id: 'short-july17-10',
+    titleEn: 'Anti-Drug Sweep Extended Across Highways',
+    bodyEn: 'Following the historic ganja seizure near Pimpalgaon, Nashik district police extended anti-drug operations with multi-point highway checkpoints.',
+    titleMr: 'अमली पदार्थ तस्करांविरोधात हायवेवर नाकाबंदी',
+    bodyMr: 'पिंपळगावातील १ कोटींहून अधिक किमतीच्या गांजा जप्तीनंतर पोलिसांनी महामार्गांवर संशयास्पद मालाची तपासणी करणारी पथके तैनात केली आहेत.',
+    category: 'Crime / गुन्हेगारी',
+    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=800',
+  },
+  {
+    id: 'short-july17-11',
+    titleEn: 'Civic Chiefs Convene Preparedness Meet',
+    bodyEn: 'NMC and Traffic departments held an emergency coordination meeting to repair waterlogging hotspots and potholes slowing down city commuters.',
+    titleMr: 'रस्त्यांवरील खड्डे बुजवण्यासाठी मनपाची धावपळ',
+    bodyMr: 'सतत सुरू असलेल्या पावसामुळे शहरात निर्माण झालेली वाहतूक कोंडी व पाणी साचण्याची ठिकाणे दुरुस्त करण्याचे आदेश मनपाने दिले.',
+    category: 'Civic / नागरी',
+    image: 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&q=80&w=800',
+  },
+  {
+    id: 'short-july17-12',
+    titleEn: 'Public Questions Unyielding Water Cut',
+    bodyEn: 'Resident associations are actively debating the municipal decision to keep the 10% water cut active despite substantial rainfall in reservoir zones.',
+    titleMr: 'धरणात पाणी वाढले तरी कपात का? जनतेचा सवाल',
+    bodyMr: 'धरण क्षेत्रात उत्कृष्ट पाऊस पडत असतानाही पाणी कपातीची कठोर भूमिका कायम ठेवल्याबद्दल नागरी मंचांकडून मनपा प्रशासनावर आक्षेप.',
+    category: 'Civic / नागरी',
+    image: 'https://images.unsplash.com/photo-1527192491265-7e15c55b1ed2?auto=format&fit=crop&q=80&w=800',
+  },
+  {
+    id: 'short-july17-13',
+    titleEn: 'Bhavali Case remains High-Priority Matter',
+    bodyEn: 'Assault on tourists near Igatpuri remains a top law-and-order concern, prompting weekly reviews from state police brass and home ministry.',
+    titleMr: 'पर्यटक हल्ला प्रकरणी गृह विभागाची करडी नजर',
+    bodyMr: 'इगतपुरीतील थरारक घटनेचे तीव्र पडसाद उमटले असून, गृहमंत्र्यांकडून तपासाचा व सुरक्षेचा साप्ताहिक आढावा घेतला जात आहे.',
+    category: 'Crime / गुन्हेगारी',
+    image: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=800',
+  },
+  {
+    id: 'short-july17-14',
+    titleEn: 'Public Advisory: Avoid Flooded Spots',
+    bodyEn: 'The Disaster Management Cell warns against traveling to active valleys, deep waterfalls, or walking on flooded causeways around Igatpuri.',
+    titleMr: 'धोकादायक धबधबे आणि नाल्यांपासून लांब राहा',
+    bodyMr: 'आपत्ती व्यवस्थापन विभागाने नागरिकांना पुरात वाहन न घालण्याचे आणि धरण क्षेत्रात बेजबाबदारपणे सेल्फी न काढण्याचे आवाहन केले.',
+    category: 'Safety / सुरक्षा',
+    image: 'https://images.unsplash.com/photo-1481833761820-0509d3217039?auto=format&fit=crop&q=80&w=800',
+  },
+  {
+    id: 'short-july17-15',
+    titleEn: 'Dual Focus: Monsoon and Crime Sweep',
+    bodyEn: 'Mid-July brings a unique combination of intense policing sweeps and monsoon damage control, keeping all municipal and rural units on alert.',
+    titleMr: 'नाशिक प्रशासन कायदा-सुव्यवस्था व पावसात व्यस्त',
+    bodyMr: 'अमली पदार्थांचे रॅकेट उद्ध्वस्त करणे, पर्यटकांवर हल्ला करणाऱ्यांचा तपास आणि संततधार पावसात आपत्ती व्यवस्थापन यामुळे प्रशासन सज्ज.',
+    category: 'Review / आढावा',
+    image: 'https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&q=80&w=800',
+  },
+  {
     id: 'short-1',
     titleEn: 'Bhavli Dam Tourist Harassment',
     bodyEn: 'A family of eight was chased for 15–20 km by a mob after objecting to the harassment of a woman; nine suspects have been arrested.',
@@ -431,7 +566,7 @@ export default function App() {
     const now = new Date();
     const diffTime = now.getTime() - start.getTime();
     const realWorldOffset = Math.floor(diffTime / (1000 * 60 * 60 * 24));
-    const defaultOffset = realWorldOffset > 0 ? realWorldOffset : 0;
+    const defaultOffset = realWorldOffset > 12 ? realWorldOffset : 12; // Force at least July 17, 2026 (Day 12)
 
     if (saved) {
       const parsed = Number(saved);
@@ -459,7 +594,7 @@ export default function App() {
       const now = new Date();
       const diffTime = now.getTime() - start.getTime();
       const realWorldOffset = Math.floor(diffTime / (1000 * 60 * 60 * 24));
-      const targetOffset = realWorldOffset > 0 ? realWorldOffset : 0;
+      const targetOffset = realWorldOffset > 12 ? realWorldOffset : 12; // Force at least July 17, 2026 (Day 12)
       
       setSimulatedDay(prev => Math.max(prev, targetOffset));
     };
