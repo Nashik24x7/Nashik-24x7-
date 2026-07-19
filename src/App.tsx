@@ -23,6 +23,141 @@ import { Calendar } from 'lucide-react';
 
 const SHORTS_NEWS = [
   {
+    id: 'short-july19-1',
+    titleEn: 'Ring Road Land Acquisition Moves Ahead',
+    bodyEn: 'Nashik District administration acquired 100 hectares of land worth ₹410 crore for the Ring Road project, aimed at decongesting city roads.',
+    titleMr: 'रिंग रोड भूसंपादन वेगात, ४१० कोटी वितरित',
+    bodyMr: 'नाशिक जिल्हा प्रशासनाने रिंग रोड प्रकल्पासाठी ४१० कोटी रुपयांचे १०० हेक्टर भूसंपादन पूर्ण केले असून वाहतूक कोंडी सुटण्यास मोठी मदत होणार आहे.',
+    category: 'Civic / नागरी',
+    image: 'https://lh3.googleusercontent.com/d/1XaGng3xnBTOpAHlvP2w8bDBCwDmFM9Ch',
+  },
+  {
+    id: 'short-july19-2',
+    titleEn: 'Nashik Road Flyover Crack Concerns',
+    bodyEn: 'Local residents raised serious safety alarms over cracks, deep potholes, and worsening road surfaces on the busy Nashik Road flyover.',
+    titleMr: 'नाशिक रोड उड्डाणपुलाला तडे, सुरक्षा धोक्यात',
+    bodyMr: 'नाशिक रोड उड्डाणपुलाला पडलेले तडे आणि मोठे खड्डे यामुळे प्रवाशांमध्ये भीतीचे वातावरण; तत्काळ दुरुस्तीची स्थानिकांची मागणी.',
+    category: 'Safety / सुरक्षा',
+    image: 'https://lh3.googleusercontent.com/d/1sJCFbfNfY8uCOTb2uVfSQCPivPmG9QlB',
+  },
+  {
+    id: 'short-july19-3',
+    titleEn: 'Shocking Murder Case in Indiranagar',
+    bodyEn: 'A 21-year-old woman was allegedly murdered in Indiranagar. The prime accused was later found dead; police are conducting a thorough investigation.',
+    titleMr: 'इंदिरानगरमध्ये तरुणीची हत्या, आरोपीही मृतावस्थेत',
+    bodyMr: 'इंदिरानगर परिसरात २१ वर्षीय तरुणीची निर्घृण हत्या झाली, तर संशयित आरोपीचाही मृतदेह आढळल्याने खळबळ उडाली आहे. पोलीस तपास सुरू आहे.',
+    category: 'Crime / गुन्हेगारी',
+    image: 'https://lh3.googleusercontent.com/d/1r89Q8rSUmKk0HOyY0A9VcAjFzerpShLq',
+  },
+  {
+    id: 'short-july19-4',
+    titleEn: 'Ex-Mayor Family Defrauded of 200 Tolas Gold',
+    bodyEn: 'In a stunning cheat case, family members of a former Nashik Mayor were allegedly defrauded of 200 tolas of gold jewelry worth ₹1.5 crore.',
+    titleMr: 'माजी महापौरांच्या कुटुंबाची १.५ कोटींची फसवणूक',
+    bodyMr: 'नाशिकच्या माजी महापौरांच्या कुटुंबाला २०० तोळे सोन्याचे दागिने (किंमत सुमारे १.५ कोटी रुपये) देऊन फसविल्याचा धक्कादायक प्रकार उघडकीस.',
+    category: 'Fraud / फसवणूक',
+    image: 'https://lh3.googleusercontent.com/d/1av_hjQaii4zwGxjxWJMikHTipG1QBU05',
+  },
+  {
+    id: 'short-july19-5',
+    titleEn: 'One-Day Suspension of Water Cut',
+    bodyEn: 'Nashik citizens get temporary relief as the weekly water cut is suspended for one day. Regular water schedules will resume next Saturday.',
+    titleMr: 'नाशिककरांना दिलासा, पाणी कपातीला तात्पुरती स्थगिती',
+    bodyMr: 'नियोजित साप्ताहिक पाणी कपात एका दिवसासाठी मागे घेण्यात आली आहे; पुढील शनिवारपासून नेहमीप्रमाणे पाणी कपात लागू राहील.',
+    category: 'Civic / नागरी',
+    image: 'https://lh3.googleusercontent.com/d/1JKqIan7eBIoEiZd9m531kGwVgdOa9Onl',
+  },
+  {
+    id: 'short-july19-6',
+    titleEn: 'Crackdown Continues in Bhavali Attack',
+    bodyEn: 'Nashik rural police have expanded their investigation and intensified search campaigns to secure remaining accomplices in the tourist attack.',
+    titleMr: 'भावली धरणावरील हल्लेखोरांविरोधात धरपकड सुरू',
+    bodyMr: 'इगतपुरीजवळील पर्यटक मारहाण प्रकरणात पोलिसांनी तपास अधिक सखोल करत अन्य फरार संशयितांचा माग काढण्यासाठी शोधमोहीम तीव्र केली.',
+    category: 'Crime / गुन्हेगारी',
+    image: 'https://lh3.googleusercontent.com/d/1GDaVtYTKtMU94Xpxu_VveM27tFts781X',
+  },
+  {
+    id: 'short-july19-7',
+    titleEn: 'Police Intensify Crime-Control Sweeps',
+    bodyEn: 'Following several high-profile cases reported this week, Nashik district police intensified security patrols and preventative nakabandis.',
+    titleMr: 'नाशिक पोलिसांची गुन्हे नियंत्रण मोहीम तीव्र',
+    bodyMr: 'या आठवड्यात घडलेल्या संवेदनशील घटनांच्या पार्श्वभूमीवर पोलिसांकडून शहरात व महामार्गांवर गस्त व प्रतिबंधात्मक कारवाया वाढवण्यात आल्या आहेत.',
+    category: 'Crime / गुन्हेगारी',
+    image: 'https://lh3.googleusercontent.com/d/1qWZVuhKzNKFvles31_yc6d5tszaAqvFq',
+  },
+  {
+    id: 'short-july19-8',
+    titleEn: 'Ring Road to Reduce Future Congestion',
+    bodyEn: 'The successful completion of the Ring Road acquisition is anticipated to significantly reduce city transit congestion and optimize heavy vehicle bypasses.',
+    titleMr: 'रिंग रोडमुळे भविष्यातील वाहतूक कोंडी फुटणार',
+    bodyMr: 'रिंग रोडचे भूसंपादन पूर्ण झाल्याने भविष्यात जड वाहनांना शहराबाहेरून बायपास मार्ग मिळेल, ज्यामुळे शहरातील अंतर्गत वाहतूक मोकळी होईल.',
+    category: 'Civic / नागरी',
+    image: 'https://lh3.googleusercontent.com/d/1t7V0-xaE64yAu0BJGdVuU7K9Ql_yW0xe',
+  },
+  {
+    id: 'short-july19-9',
+    titleEn: 'Residents Demand Immediate Flyover Repair',
+    bodyEn: 'With heavy rain accelerating damage, residents urge the PWD to initiate repairs on the Nashik Road flyover immediately to prevent accidents.',
+    titleMr: 'नाशिक रोड पुलाच्या तातडीच्या दुरुस्तीची मागणी',
+    bodyMr: 'पावसामुळे उड्डाणपुलाची दुरवस्था अधिक गंभीर होण्यापूर्वी सार्वजनिक बांधकाम विभागाने (PWD) तातडीने डांबरीकरण व दुरुस्ती करावी अशी मागणी.',
+    category: 'Safety / सुरक्षा',
+    image: 'https://lh3.googleusercontent.com/d/1XWlniZV-Y0wWandznuZxJHHqRALA2cNk',
+  },
+  {
+    id: 'short-july19-10',
+    titleEn: 'Indiranagar Case: Witnesses Questioned',
+    bodyEn: 'Police units are actively examining forensic clues, tracking call logs, and questioning neighbors to reconstruct the shocking Indiranagar murder.',
+    titleMr: 'इंदिरानगर हत्याकांड: साक्षीदारांची कसून चौकशी',
+    bodyMr: 'पोलिसांनी फॉरेन्सिक पुरावे गोळा करत आणि कॉल रेकॉर्ड तपासत इंदिरानगरमधील धक्कादायक हत्येच्या घटनाक्रमाचा छडा लावण्यास सुरुवात केली आहे.',
+    category: 'Crime / गुन्हेगारी',
+    image: 'https://lh3.googleusercontent.com/d/18qu6tkA4Ob1e44FmlOouUd_qFlJiBjPI',
+  },
+  {
+    id: 'short-july19-11',
+    titleEn: 'Heavy Monsoon: High Alert in Vulnerable Zones',
+    bodyEn: 'As torrential rain triggers water discharge from local reservoirs, district administrative departments maintain high alerts near flooded banks.',
+    titleMr: 'मुसळधार पाऊस: पूरप्रवण क्षेत्रात हाय अलर्ट',
+    bodyMr: 'नाशिक परिसरात सुरू असलेल्या संततधार पावसामुळे गोदावरी काठच्या व धरणांनजीकच्या गावांना सतर्कतेचा इशारा देण्यात आला आहे.',
+    category: 'Weather / हवामान',
+    image: 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&q=80&w=800',
+  },
+  {
+    id: 'short-july19-12',
+    titleEn: 'Malegaon Students Protest Paper Leaks',
+    bodyEn: 'Student unions in Malegaon staged rallies protesting government exam paper leaks and extended vocal support to climate reformer Sonam Wangchuk.',
+    titleMr: 'मालेगावात पेपर फुटीविरोधात विद्यार्थ्यांचे आंदोलन',
+    bodyMr: 'मालेगाव येथील विद्यार्थ्यांनी पेपर फुटीच्या विरोधात संताप व्यक्त करत आंदोलन केले, तसेच सोनम वांगचुक यांच्या चळवळीला सक्रिय पाठिंबा दर्शविला.',
+    category: 'Protest / आंदोलन',
+    image: 'https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&q=80&w=800',
+  },
+  {
+    id: 'short-july19-13',
+    titleEn: 'Political Shuffling Dominates Local Talks',
+    bodyEn: 'Local leaders and former corporators in Nashik debated political equations and Legislative Council shifts as municipal elections loom closer.',
+    titleMr: 'नाशिकमध्ये राजकीय घडामोडींना वेग',
+    bodyMr: 'विधान परिषद निवडणुकांनंतर आणि स्थानिक महापालिका निवडणुकांच्या आधी नाशिकच्या वर्तुळात राजकीय डावपेच व रणनीतीवर जोरदार खलबते सुरू आहेत.',
+    category: 'Politics / राजकारण',
+    image: 'https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?auto=format&fit=crop&q=80&w=800',
+  },
+  {
+    id: 'short-july19-14',
+    titleEn: 'Civic Body Pushes Urban Infrastructure',
+    bodyEn: 'In preparation for future metropolitan expansions, the NMC accelerated pipeline laying, road widening, and primary sewage works.',
+    titleMr: 'महानगरपालिकेकडून पायाभूत सुविधांवर भर',
+    bodyMr: 'शहराच्या भविष्यातील विकासाच्या गरजा लक्षात घेऊन नाशिक मनपाने पाणी पुरवठा योजना व मलनिःसारण वाहिन्यांच्या कामांचा वेग वाढवला आहे.',
+    category: 'Civic / नागरी',
+    image: 'https://images.unsplash.com/photo-1590069261209-f8e9b8642343?auto=format&fit=crop&q=80&w=800',
+  },
+  {
+    id: 'short-july19-15',
+    titleEn: 'Weekly Focus: Infrastructure & Investigations',
+    bodyEn: 'Nashik remains in the spotlight as city leaders balance extensive land deals, deep policing operations, and monsoon contingency relief.',
+    titleMr: 'साप्ताहिक आढावा: विकासकामे आणि कायदा-सुव्यवस्था',
+    bodyMr: 'नाशिक जिल्हा या आठवड्यात जमीन अधिग्रहण, मोठे गुन्हे उघडकीस आणणे आणि मान्सून व्यवस्थापन यामुळे महाराष्ट्रभरात चर्चेत राहिला.',
+    category: 'Review / आढावा',
+    image: 'https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&q=80&w=800',
+  },
+  {
     id: 'short-july17-1',
     titleEn: '₹1 Cr Ganja Seized near Pimpalgaon',
     bodyEn: 'Nashik Police intercepted a truck carrying 535 kg of premium quality ganja worth over ₹1 crore near the Pimpalgaon toll plaza. The driver has been arrested.',
@@ -566,7 +701,7 @@ export default function App() {
     const now = new Date();
     const diffTime = now.getTime() - start.getTime();
     const realWorldOffset = Math.floor(diffTime / (1000 * 60 * 60 * 24));
-    const defaultOffset = realWorldOffset > 12 ? realWorldOffset : 12; // Force at least July 17, 2026 (Day 12)
+    const defaultOffset = realWorldOffset > 14 ? realWorldOffset : 14; // Force at least July 19, 2026 (Day 14)
 
     if (saved) {
       const parsed = Number(saved);
@@ -594,7 +729,7 @@ export default function App() {
       const now = new Date();
       const diffTime = now.getTime() - start.getTime();
       const realWorldOffset = Math.floor(diffTime / (1000 * 60 * 60 * 24));
-      const targetOffset = realWorldOffset > 12 ? realWorldOffset : 12; // Force at least July 17, 2026 (Day 12)
+      const targetOffset = realWorldOffset > 14 ? realWorldOffset : 14; // Force at least July 19, 2026 (Day 14)
       
       setSimulatedDay(prev => Math.max(prev, targetOffset));
     };
