@@ -40,7 +40,7 @@ export const AdBannerSlot: React.FC<AdBannerSlotProps> = ({
     marathiSubtitle: 'भारताच्या समृद्ध स्ट्रीट-फूड संस्कृतीचा अनोखा संगम; विविध प्रांतांमधील अस्सल चवीच्या कचोऱ्या आता एकाच छताखाली.',
     category: 'City Buzz' as const,
     author: 'Special Food Feature Desk',
-    date: 'July 30, 2026',
+    date: 'August 18, 2026',
     readTime: 4,
     imageUrl: 'https://lh3.googleusercontent.com/d/1A5E4ESNFpdQ5dAnqJnhBUPu3HxQdcFgb',
     likes: 428,
@@ -96,14 +96,14 @@ export const AdBannerSlot: React.FC<AdBannerSlotProps> = ({
               <Sparkles className="w-3.5 h-3.5" />
             </span>
             <span className="text-[11px] font-mono font-bold tracking-wider uppercase">
-              {isMarathi ? 'प्रायोजित विशेषांक • खास खाद्यसंस्कृती' : 'PROMOTIONAL SPECIAL FEATURE • FOOD & CULTURE'}
+              {isMarathi ? 'आजची विशेष बातमी' : 'Special news for today'}
             </span>
             <span className="hidden sm:inline text-amber-500/50">•</span>
             <span className={`hidden sm:inline-flex items-center gap-1 text-[10px] font-sans font-semibold px-2 py-0.5 rounded-full ${
               isDarkMode ? 'bg-zinc-800 text-amber-300' : 'bg-white text-amber-800 border border-amber-200'
             }`}>
               <UtensilsCrossed className="w-3 h-3 text-amber-500" />
-              {isMarathi ? 'नवीन उद्घाटन / खास कट्टा' : 'New Culinary Landmark'}
+              {isMarathi ? 'खाद्यसंस्कृती विशेषांक' : 'Food & Culture Feature'}
             </span>
           </div>
 
@@ -163,27 +163,6 @@ export const AdBannerSlot: React.FC<AdBannerSlotProps> = ({
                     4 Min Read
                   </span>
                 </div>
-              </div>
-
-              {/* Regional Varieties Showcase Pills */}
-              <div className="flex flex-wrap gap-1.5 pt-1">
-                {[
-                  { name: isMarathi ? 'हरिद्वार कचोरी' : 'Haridwar Kachori', color: 'border-orange-500/30 text-orange-600 dark:text-orange-400' },
-                  { name: isMarathi ? 'जोधपूर प्याज कचोरी' : 'Jodhpur Pyaz Kachori', color: 'border-amber-500/30 text-amber-600 dark:text-amber-400' },
-                  { name: isMarathi ? 'कोटा कचोरी' : 'Kota Kachori', color: 'border-yellow-600/30 text-yellow-700 dark:text-yellow-400' },
-                  { name: isMarathi ? 'शेगाव कचोरी' : 'Shegaon Kachori', color: 'border-emerald-500/30 text-emerald-700 dark:text-emerald-400' },
-                  { name: isMarathi ? 'मथुरा बेढई पुरी' : 'Mathura Bedai', color: 'border-rose-500/30 text-rose-600 dark:text-rose-400' },
-                  { name: isMarathi ? 'नाशिक मिसळ कचोरी' : 'Nashik Misal Kachori', color: 'border-indigo-500/30 text-indigo-600 dark:text-indigo-400 font-bold' },
-                  { name: isMarathi ? 'कचोरी सिझलर्स' : 'Kachori Sizzlers', color: 'border-red-500/30 text-red-600 dark:text-red-400' },
-                  { name: isMarathi ? 'अस्सल जलेबी व घेवर' : 'Jalebi & Ghevar', color: 'border-amber-600/30 text-amber-700 dark:text-amber-300' }
-                ].map((item, idx) => (
-                  <span 
-                    key={idx}
-                    className={`text-[10px] font-medium font-sans px-2.5 py-1 rounded-full bg-amber-500/5 border ${item.color}`}
-                  >
-                    • {item.name}
-                  </span>
-                ))}
               </div>
             </div>
 
@@ -296,7 +275,7 @@ export const AdBannerSlot: React.FC<AdBannerSlotProps> = ({
                 </div>
 
                 <div className="flex items-center gap-2 text-[11px] font-mono text-zinc-400">
-                  <span>{isMarathi ? 'दिनांक: ३० जुलै २०२६' : 'Date: July 30, 2026'}</span>
+                  <span>{isMarathi ? 'दिनांक: १८ ऑगस्ट २०२६' : 'Date: August 18, 2026'}</span>
                   <span>•</span>
                   <span>Nashik 24x7 Special</span>
                 </div>

@@ -701,11 +701,11 @@ export default function App() {
     const now = new Date();
     const diffTime = now.getTime() - start.getTime();
     const realWorldOffset = Math.floor(diffTime / (1000 * 60 * 60 * 24));
-    const defaultOffset = 25; // Force Thursday, July 30, 2026 (Day 25)
+    const defaultOffset = realWorldOffset > 44 ? realWorldOffset : 44; // August 18, 2026 (Day 44)
 
     if (saved) {
       const parsed = Number(saved);
-      if (!isNaN(parsed) && parsed <= 25) {
+      if (!isNaN(parsed) && parsed >= 44) {
         return parsed;
       }
     }
@@ -729,9 +729,9 @@ export default function App() {
       const now = new Date();
       const diffTime = now.getTime() - start.getTime();
       const realWorldOffset = Math.floor(diffTime / (1000 * 60 * 60 * 24));
-      const targetOffset = 25; // July 30, 2026 (Thursday)
+      const targetOffset = realWorldOffset > 44 ? realWorldOffset : 44; // August 18, 2026 (Day 44)
       
-      setSimulatedDay(targetOffset);
+      setSimulatedDay(prev => Math.max(prev, targetOffset));
     };
 
     syncWithRealWorld(); // Run immediately
