@@ -7,7 +7,7 @@ import React, { useState, useMemo } from 'react';
 import { 
   Newspaper, Search, ShieldCheck, Heart, CloudSun, Calendar, ArrowRight,
   Sun, Moon, CloudRain, ChevronDown, MapPin, Menu, X, Crown, Info, Volume2,
-  BookOpen, Zap
+  BookOpen, Zap, Eye
 } from 'lucide-react';
 import { getFormattedDate, getMarathiDateString } from '../utils';
 import { NewsCategory } from '../types';

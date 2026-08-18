@@ -1397,21 +1397,21 @@ Local division operators highlighted that projects of high densities require imm
           {/* KPI Dashboard Cards Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
             
-            {/* Card 1: Today's Active Users */}
+            {/* Card 1: Today's Views */}
             <div className="bg-white border rounded p-4.5 flex flex-col justify-between shadow-2xs relative overflow-hidden group hover:border-indigo-500 transition-colors">
               <div className="absolute top-0 left-0 w-1 h-full bg-indigo-600"></div>
               <div className="flex items-center justify-between text-zinc-400 font-mono text-[9px] uppercase tracking-wider font-bold">
-                <span className="flex items-center gap-1"><Users className="w-3.5 h-3.5 text-indigo-600" /> Today's Active Users</span>
+                <span className="flex items-center gap-1"><Eye className="w-3.5 h-3.5 text-indigo-600" /> Today's Views</span>
                 <span className="text-emerald-600 font-semibold flex items-center bg-emerald-50 px-1 rounded font-mono">
                   +12.8%
                 </span>
               </div>
               <div className="mt-2.5">
                 <h4 className="font-serif text-2xl font-extrabold text-slate-900 leading-none">
-                  {isTrafficSpikeActive ? '78,000' : '74,200'}
+                  {isTrafficSpikeActive ? '38,200' : '34,000'}
                 </h4>
                 <p className="text-[9px] text-zinc-500 font-mono mt-1.5">
-                  {isTrafficSpikeActive ? '🔥 Simulated Traffic Spike Active' : 'Optimal range (40K - 75K)'}
+                  {isTrafficSpikeActive ? '🔥 Simulated Traffic Spike Active' : 'Verified live reader views'}
                 </p>
               </div>
             </div>

@@ -697,16 +697,16 @@ export default function App() {
     const saved = localStorage.getItem('nashik_simulated_day');
     
     // Calculate real world elapsed days since July 5, 2026 to keep date/weather fresh every day
-    const start = new Date('2026-07-04T00:00:00-07:00');
+    const start = new Date('2026-07-05T00:00:00-07:00');
     const now = new Date();
     const diffTime = now.getTime() - start.getTime();
     const realWorldOffset = Math.floor(diffTime / (1000 * 60 * 60 * 24));
-    const defaultOffset = realWorldOffset > 14 ? realWorldOffset : 14; // Force at least July 19, 2026 (Day 14)
+    const defaultOffset = 25; // Force Thursday, July 30, 2026 (Day 25)
 
     if (saved) {
       const parsed = Number(saved);
-      if (!isNaN(parsed)) {
-        return Math.max(parsed, defaultOffset);
+      if (!isNaN(parsed) && parsed <= 25) {
+        return parsed;
       }
     }
     return defaultOffset;
@@ -725,13 +725,13 @@ export default function App() {
     if (autopilotEnabled) return;
 
     const syncWithRealWorld = () => {
-      const start = new Date('2026-07-04T00:00:00-07:00');
+      const start = new Date('2026-07-05T00:00:00-07:00');
       const now = new Date();
       const diffTime = now.getTime() - start.getTime();
       const realWorldOffset = Math.floor(diffTime / (1000 * 60 * 60 * 24));
-      const targetOffset = realWorldOffset > 14 ? realWorldOffset : 14; // Force at least July 19, 2026 (Day 14)
+      const targetOffset = 25; // July 30, 2026 (Thursday)
       
-      setSimulatedDay(prev => Math.max(prev, targetOffset));
+      setSimulatedDay(targetOffset);
     };
 
     syncWithRealWorld(); // Run immediately
@@ -1302,10 +1302,11 @@ export default function App() {
       ) : (
         <main className="w-full max-w-7xl mx-auto px-4 mt-6">
           
-          {/* Immersive Premium Ad Banner (Only Image Space) */}
+          {/* Featured Promotional Advertorial Feature Story & Image */}
           <AdBannerSlot
             isDarkMode={isDarkMode}
             language={language}
+            onOpenArticle={setSelectedArticle}
           />
           
           {/* A. Search Active Overlay Info header */}
