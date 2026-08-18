@@ -1302,11 +1302,12 @@ export default function App() {
       ) : (
         <main className="w-full max-w-7xl mx-auto px-4 mt-6">
           
-          {/* Featured Promotional Advertorial Feature Story & Image */}
+          {/* Advertisement & Sponsor Banner Slot */}
           <AdBannerSlot
+            bannerUrl={adBannerUrl}
+            onBannerUpload={handleBannerUpload}
             isDarkMode={isDarkMode}
             language={language}
-            onOpenArticle={setSelectedArticle}
           />
           
           {/* A. Search Active Overlay Info header */}

@@ -3,290 +3,258 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { 
-  Sparkles, ArrowRight, UtensilsCrossed, ChevronDown, 
-  ChevronUp, Heart, BookOpen, MapPin, Share2, Check
+  Upload, Image as ImageIcon, X, ExternalLink, 
+  Sparkles, Megaphone, Check
 } from 'lucide-react';
-import { NewsArticle } from '../types';
-import { DEFAULT_ARTICLES } from '../defaultArticles';
 
 interface AdBannerSlotProps {
   bannerUrl?: string | null;
   onBannerUpload?: (url: string | null) => void;
   isDarkMode: boolean;
   language?: 'en' | 'mr';
-  onOpenArticle?: (article: NewsArticle) => void;
 }
 
 export const AdBannerSlot: React.FC<AdBannerSlotProps> = ({
+  bannerUrl,
+  onBannerUpload,
   isDarkMode,
   language = 'mr',
-  onOpenArticle
 }) => {
   const isMarathi = language === 'mr';
-  const [isExpanded, setIsExpanded] = useState(false);
-  const [isLiked, setIsLiked] = useState(false);
-  const [likeCount, setLikeCount] = useState(428);
-  const [copied, setCopied] = useState(false);
+  const fileInputRef = useRef<HTMLInputElement>(null);
+  const [showUploadModal, setShowUploadModal] = useState(false);
+  const [inputUrl, setInputUrl] = useState('');
+  const [isCopied, setIsCopied] = useState(false);
 
-  // Retrieve the promotional article from default dataset or fallback
-  const promoArticle = DEFAULT_ARTICLES.find(a => a.id === 'promo-kachori-cafe-2026') || {
-    id: 'promo-kachori-cafe-2026',
-    title: 'The Kachori Cafe — One India, Many Kachoris',
-    marathiTitle: 'द कचोरी कॅफे — एक भारत, अनेक कचोऱ्या',
-    marathiSource: 'nashik24x7.com' as const,
-    subtitle: 'India’s food culture is a beautiful reflection of its history, geography and traditions. Discover the diverse world of Indian kachoris under one roof.',
-    marathiSubtitle: 'भारताच्या समृद्ध स्ट्रीट-फूड संस्कृतीचा अनोखा संगम; विविध प्रांतांमधील अस्सल चवीच्या कचोऱ्या आता एकाच छताखाली.',
-    category: 'City Buzz' as const,
-    author: 'Special Food Feature Desk',
-    date: 'August 18, 2026',
-    readTime: 4,
-    imageUrl: 'https://lh3.googleusercontent.com/d/1A5E4ESNFpdQ5dAnqJnhBUPu3HxQdcFgb',
-    likes: 428,
-    comments: [],
-    body: '',
-    marathiBody: ''
-  };
-
-  const handleLike = (e: React.MouseEvent) => {
-    e.stopPropagation();
-    if (isLiked) {
-      setLikeCount(prev => prev - 1);
-      setIsLiked(false);
-    } else {
-      setLikeCount(prev => prev + 1);
-      setIsLiked(true);
+  const handleFileUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = (event) => {
+        const result = event.target?.result as string;
+        if (onBannerUpload) {
+          onBannerUpload(result);
+        }
+        setShowUploadModal(false);
+      };
+      reader.readAsDataURL(file);
     }
   };
 
-  const handleShare = (e: React.MouseEvent) => {
-    e.stopPropagation();
-    navigator.clipboard.writeText(window.location.href);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
+  const handleUrlSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (inputUrl.trim() && onBannerUpload) {
+      onBannerUpload(inputUrl.trim());
+      setInputUrl('');
+      setShowUploadModal(false);
+    }
   };
 
-  const handleCardClick = () => {
-    if (onOpenArticle) {
-      onOpenArticle(promoArticle);
+  const handleRemoveBanner = () => {
+    if (onBannerUpload) {
+      onBannerUpload(null);
     }
+  };
+
+  const handleCopyContact = () => {
+    navigator.clipboard.writeText('ads@nashik24x7.com | +91 98220 00000');
+    setIsCopied(true);
+    setTimeout(() => setIsCopied(false), 2000);
   };
 
   return (
     <section 
-      id="promotional-feature-advertorial"
-      aria-label="Promotional Feature Story"
-      className="w-full mb-10 animate-fade-in"
+      id="advertisement-banner-slot" 
+      aria-label="Advertisement Banner"
+      className="w-full mb-8 animate-fade-in"
     >
-      <div className={`relative w-full rounded-2xl overflow-hidden border transition-all duration-300 shadow-md hover:shadow-xl ${
-        isDarkMode 
-          ? 'bg-gradient-to-b from-[#18181c] via-[#141417] to-[#101013] border-amber-500/25' 
-          : 'bg-gradient-to-b from-[#fffbf5] via-[#fffdfa] to-white border-amber-300/70 shadow-amber-900/5'
-      }`}>
-        
-        {/* Top Header Label Bar */}
-        <div className={`px-4 sm:px-6 py-2.5 flex items-center justify-between border-b flex-wrap gap-2 ${
-          isDarkMode 
-            ? 'bg-amber-500/10 border-amber-500/20 text-amber-400' 
-            : 'bg-amber-500/10 border-amber-500/20 text-amber-900'
+      <div className="flex items-center justify-between px-1 mb-1.5">
+        <span className="text-[10px] uppercase font-mono tracking-wider font-semibold text-zinc-400">
+          {isMarathi ? 'जाहिरात • Sponsored' : 'Advertisement • Sponsored'}
+        </span>
+        <div className="flex items-center gap-2">
+          {bannerUrl && onBannerUpload && (
+            <button
+              onClick={handleRemoveBanner}
+              className={`text-[10px] font-sans px-2 py-0.5 rounded cursor-pointer transition-colors ${
+                isDarkMode ? 'bg-zinc-800 text-zinc-400 hover:text-red-400' : 'bg-gray-100 text-gray-500 hover:text-red-600'
+              }`}
+            >
+              {isMarathi ? 'बॅनर काढा' : 'Remove Banner'}
+            </button>
+          )}
+          {onBannerUpload && (
+            <button
+              onClick={() => setShowUploadModal(true)}
+              className={`text-[10px] font-sans flex items-center gap-1 px-2 py-0.5 rounded cursor-pointer transition-colors ${
+                isDarkMode 
+                  ? 'bg-zinc-800 text-orange-400 hover:bg-zinc-700' 
+                  : 'bg-orange-50 text-orange-600 border border-orange-200 hover:bg-orange-100'
+              }`}
+            >
+              <Upload className="w-2.5 h-2.5" />
+              <span>{bannerUrl ? (isMarathi ? 'बॅनर बदला' : 'Change Banner') : (isMarathi ? 'बॅनर अपलोड' : 'Upload Banner')}</span>
+            </button>
+          )}
+        </div>
+      </div>
+
+      {bannerUrl ? (
+        <div className={`relative w-full rounded-xl overflow-hidden border transition-all duration-300 shadow-sm hover:shadow-md ${
+          isDarkMode ? 'border-zinc-800 bg-zinc-900' : 'border-gray-200 bg-white'
         }`}>
-          <div className="flex items-center gap-2">
-            <span className="flex items-center justify-center p-1 rounded bg-amber-500 text-white shadow-xs">
-              <Sparkles className="w-3.5 h-3.5" />
-            </span>
-            <span className="text-[11px] font-mono font-bold tracking-wider uppercase">
-              {isMarathi ? 'आजची विशेष बातमी' : 'Special news for today'}
-            </span>
-            <span className="hidden sm:inline text-amber-500/50">•</span>
-            <span className={`hidden sm:inline-flex items-center gap-1 text-[10px] font-sans font-semibold px-2 py-0.5 rounded-full ${
-              isDarkMode ? 'bg-zinc-800 text-amber-300' : 'bg-white text-amber-800 border border-amber-200'
-            }`}>
-              <UtensilsCrossed className="w-3 h-3 text-amber-500" />
-              {isMarathi ? 'खाद्यसंस्कृती विशेषांक' : 'Food & Culture Feature'}
-            </span>
+          <img 
+            src={bannerUrl} 
+            alt="Advertisement Banner" 
+            className="w-full h-auto max-h-[180px] sm:max-h-[220px] object-cover object-center block"
+          />
+        </div>
+      ) : (
+        /* Default Sleek Regional Sponsor Space */
+        <div className={`w-full rounded-xl border p-4 sm:p-6 transition-all duration-300 flex flex-col sm:flex-row items-center justify-between gap-4 ${
+          isDarkMode 
+            ? 'bg-gradient-to-r from-zinc-900 via-zinc-900/90 to-zinc-950 border-zinc-800 text-zinc-200' 
+            : 'bg-gradient-to-r from-amber-50/60 via-orange-50/40 to-white border-orange-100 text-zinc-800'
+        }`}>
+          <div className="flex items-center gap-3.5 text-left w-full sm:w-auto">
+            <div className="w-10 h-10 rounded-lg bg-orange-500/10 border border-orange-500/20 flex items-center justify-center shrink-0 text-orange-500">
+              <Megaphone className="w-5 h-5" />
+            </div>
+            <div>
+              <div className="flex items-center gap-2">
+                <span className="font-serif font-bold text-sm sm:text-base">
+                  {isMarathi ? 'नाशिक २४x७ सह आपल्या व्यवसायाची जाहिरात करा' : 'Advertise Your Brand on Nashik 24x7'}
+                </span>
+                <span className="text-[10px] font-mono font-bold uppercase px-1.5 py-0.5 rounded bg-orange-500/15 text-orange-500">
+                  {isMarathi ? 'विशेष जागा' : 'Prime Slot'}
+                </span>
+              </div>
+              <p className="text-xs text-zinc-500 mt-0.5 font-sans">
+                {isMarathi 
+                  ? 'दररोज हजारो नाशिककरांपर्यंत थेट पोहोचण्यासाठी आजच संपर्क साधा.'
+                  : 'Reach thousands of daily readers across Nashik district and North Maharashtra.'}
+              </p>
+            </div>
           </div>
 
-          <div className="flex items-center gap-3 text-xs">
+          <div className="flex items-center gap-2 w-full sm:w-auto justify-end">
             <button
-              onClick={handleShare}
-              className={`flex items-center gap-1 px-2.5 py-1 rounded text-[11px] font-medium transition-colors cursor-pointer ${
-                isDarkMode ? 'hover:bg-zinc-800 text-zinc-400' : 'hover:bg-amber-100 text-zinc-600'
-              }`}
-              title="Share Story"
-            >
-              {copied ? <Check className="w-3 h-3 text-emerald-500" /> : <Share2 className="w-3 h-3" />}
-              <span>{copied ? (isMarathi ? 'लिंक कॉपी केली' : 'Copied!') : (isMarathi ? 'शेअर करा' : 'Share')}</span>
-            </button>
-
-            <button
-              onClick={handleLike}
-              className={`flex items-center gap-1 px-2.5 py-1 rounded text-[11px] font-medium transition-colors cursor-pointer ${
-                isLiked 
-                  ? 'text-rose-500 font-bold' 
-                  : isDarkMode ? 'hover:bg-zinc-800 text-zinc-400' : 'hover:bg-amber-100 text-zinc-600'
+              onClick={handleCopyContact}
+              className={`px-3.5 py-2 rounded-lg text-xs font-medium font-sans flex items-center gap-1.5 transition-colors cursor-pointer shrink-0 ${
+                isDarkMode 
+                  ? 'bg-zinc-800 hover:bg-zinc-700 text-zinc-200 border border-zinc-700' 
+                  : 'bg-white hover:bg-zinc-50 text-zinc-700 border border-zinc-200 shadow-xs'
               }`}
             >
-              <Heart className={`w-3.5 h-3.5 ${isLiked ? 'fill-rose-500 text-rose-500' : ''}`} />
-              <span className="font-mono">{likeCount}</span>
+              {isCopied ? <Check className="w-3.5 h-3.5 text-emerald-500" /> : <ExternalLink className="w-3.5 h-3.5 text-orange-500" />}
+              <span>{isCopied ? (isMarathi ? 'माहिती कॉपी झाली!' : 'Copied!') : (isMarathi ? 'जाहिरातीसाठी संपर्क' : 'Contact for Ads')}</span>
             </button>
+            {onBannerUpload && (
+              <button
+                onClick={() => setShowUploadModal(true)}
+                className="px-3.5 py-2 rounded-lg text-xs font-semibold font-sans bg-orange-500 hover:bg-orange-600 text-white transition-colors cursor-pointer flex items-center gap-1.5 shrink-0 shadow-xs"
+              >
+                <Upload className="w-3.5 h-3.5" />
+                <span>{isMarathi ? 'बॅनर लावा' : 'Place Banner'}</span>
+              </button>
+            )}
           </div>
         </div>
+      )}
 
-        {/* Main Content Layout */}
-        <div className="p-4 sm:p-6 lg:p-7">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-start">
-            
-            {/* Image Column */}
-            <div className="lg:col-span-5 flex flex-col gap-3">
-              <div 
-                onClick={handleCardClick}
-                className="relative rounded-xl overflow-hidden border border-amber-500/30 group cursor-pointer shadow-md"
-              >
-                <img
-                  src="https://lh3.googleusercontent.com/d/1A5E4ESNFpdQ5dAnqJnhBUPu3HxQdcFgb"
-                  alt="The Kachori Cafe — One India, Many Kachoris"
-                  className="w-full h-[240px] sm:h-[300px] lg:h-[340px] object-cover object-center transform group-hover:scale-105 transition-transform duration-700 select-none"
-                  referrerPolicy="no-referrer"
-                  loading="eager"
-                />
-                
-                {/* Gradient vignette */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent pointer-events-none" />
+      {/* Upload Modal */}
+      {showUploadModal && (
+        <div className="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-4">
+          <div className={`w-full max-w-md rounded-2xl p-6 border shadow-2xl relative animate-fade-in ${
+            isDarkMode ? 'bg-zinc-900 border-zinc-800 text-zinc-100' : 'bg-white border-zinc-200 text-zinc-800'
+          }`}>
+            <button
+              onClick={() => setShowUploadModal(false)}
+              className="absolute top-4 right-4 p-1.5 rounded-lg text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-200 cursor-pointer"
+            >
+              <X className="w-5 h-5" />
+            </button>
 
-                {/* Corner Slogan Overlay Badge */}
-                <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between pointer-events-none">
-                  <span className="bg-amber-600/90 backdrop-blur-xs text-white text-[10px] sm:text-[11px] font-bold font-sans px-3 py-1 rounded-md shadow-sm">
-                    {isMarathi ? 'एक भारत • अनेक कचोऱ्या' : 'One India • Many Kachoris'}
-                  </span>
-                  <span className="bg-black/70 backdrop-blur-xs text-zinc-300 text-[10px] font-mono px-2 py-1 rounded">
-                    4 Min Read
-                  </span>
-                </div>
-              </div>
+            <h3 className="text-base font-bold font-serif mb-1 flex items-center gap-2">
+              <ImageIcon className="w-5 h-5 text-orange-500" />
+              {isMarathi ? 'जाहिरात बॅनर जोडा' : 'Add Advertisement Banner'}
+            </h3>
+            <p className="text-xs text-zinc-500 mb-4 font-sans">
+              {isMarathi 
+                ? 'आपल्या संगणकावरून इमेज निवडा किंवा थेट इमेज URL टाका.' 
+                : 'Upload an image from your device or paste an image URL directly.'}
+            </p>
+
+            {/* File Upload Option */}
+            <div 
+              onClick={() => fileInputRef.current?.click()}
+              className={`border-2 border-dashed rounded-xl p-6 text-center cursor-pointer transition-colors mb-4 ${
+                isDarkMode 
+                  ? 'border-zinc-700 hover:border-orange-500 bg-zinc-800/40' 
+                  : 'border-zinc-300 hover:border-orange-500 bg-zinc-50'
+              }`}
+            >
+              <Upload className="w-8 h-8 text-orange-500 mx-auto mb-2" />
+              <p className="text-xs font-semibold font-sans mb-1">
+                {isMarathi ? 'इमेज फाइल निवडा' : 'Choose image file'}
+              </p>
+              <p className="text-[11px] text-zinc-400">
+                PNG, JPG, WEBP, GIF (Max 5MB)
+              </p>
+              <input
+                ref={fileInputRef}
+                type="file"
+                accept="image/*"
+                onChange={handleFileUpload}
+                className="hidden"
+              />
             </div>
 
-            {/* Article Text Column */}
-            <div className="lg:col-span-7 flex flex-col justify-between">
-              <div>
-                {/* Headline */}
-                <h2 
-                  onClick={handleCardClick}
-                  className={`font-serif text-xl sm:text-2xl lg:text-3xl font-extrabold leading-tight tracking-tight mb-2 cursor-pointer transition-colors ${
-                    isDarkMode 
-                      ? 'text-zinc-100 hover:text-amber-400' 
-                      : 'text-zinc-900 hover:text-amber-700'
+            <div className="relative flex py-2 items-center">
+              <div className="grow border-t border-zinc-200 dark:border-zinc-700"></div>
+              <span className="shrink mx-3 text-xs text-zinc-400 font-mono uppercase">
+                {isMarathi ? 'किंवा URL' : 'OR URL'}
+              </span>
+              <div className="grow border-t border-zinc-200 dark:border-zinc-700"></div>
+            </div>
+
+            {/* URL Form */}
+            <form onSubmit={handleUrlSubmit} className="mt-3">
+              <input
+                type="url"
+                placeholder="https://example.com/banner.jpg"
+                value={inputUrl}
+                onChange={(e) => setInputUrl(e.target.value)}
+                className={`w-full text-xs px-3.5 py-2.5 rounded-lg border mb-3 focus:outline-none focus:ring-2 focus:ring-orange-500 ${
+                  isDarkMode 
+                    ? 'bg-zinc-800 border-zinc-700 text-zinc-100 placeholder-zinc-500' 
+                    : 'bg-white border-zinc-300 text-zinc-800 placeholder-zinc-400'
+                }`}
+              />
+              <div className="flex items-center justify-end gap-2">
+                <button
+                  type="button"
+                  onClick={() => setShowUploadModal(false)}
+                  className={`px-3 py-2 rounded-lg text-xs font-sans font-medium transition-colors cursor-pointer ${
+                    isDarkMode ? 'hover:bg-zinc-800 text-zinc-400' : 'hover:bg-zinc-100 text-zinc-600'
                   }`}
                 >
-                  {isMarathi 
-                    ? 'द कचोरी कॅफे — एक भारत, अनेक कचोऱ्या' 
-                    : 'The Kachori Cafe — One India, Many Kachoris'}
-                </h2>
-
-                {/* Subtitle */}
-                <p className={`font-sans text-xs sm:text-sm font-medium leading-relaxed mb-4 ${
-                  isDarkMode ? 'text-amber-400/90' : 'text-amber-900/90'
-                }`}>
-                  {isMarathi
-                    ? 'भारताच्या समृद्ध स्ट्रीट-फूड संस्कृतीचा अनोखा संगम; विविध प्रांतांमधील अस्सल चवीच्या कचोऱ्या आता एकाच छताखाली.'
-                    : 'India’s food culture is a beautiful reflection of its history, geography and traditions. Across the country, different regions have developed their own flavours, ingredients and culinary techniques.'}
-                </p>
-
-                {/* Editorial Body Excerpt */}
-                <div className={`space-y-3 font-serif text-xs sm:text-[13px] leading-relaxed ${
-                  isDarkMode ? 'text-zinc-300' : 'text-zinc-700'
-                }`}>
-                  <p>
-                    {isMarathi
-                      ? `'द कचोरी कॅफे'ची निर्मिती एका साध्या पण अत्यंत महत्त्वाकांक्षी संकल्पनेतून झाली: भारतातील विविध प्रांतांमधील कचोऱ्यांचे वैविध्य एकाच छताखाली आणणे. वेगवेगळ्या प्रांतांमधील अस्सल चवी चाखण्यासाठी शहर दर शहर भटकण्याऐवजी, भारतीय स्ट्रीट-फूडच्या प्रेरणेतून साकारलेल्या एका आधुनिक कॅफेमध्ये एकाच मेन्यूद्वारे संपूर्ण भारताची चव अनुभवता येईल.`
-                      : `The Kachori Cafe was created with a simple yet ambitious idea: to bring the diverse world of Indian kachoris together under one roof. Instead of travelling from city to city to experience different regional varieties, guests can discover the flavours of India through a single menu at a contemporary café inspired by the spirit of Indian street food.`}
-                  </p>
-
-                  <p>
-                    {isMarathi
-                      ? `राजस्थानची प्रसिद्ध 'जोधपूर प्याज कचोरी', कोटा कचोरी, उत्तर भारताची आलू-भाजी कचोरी, मथुरेची 'बेढई पुरी', महाराष्ट्राची खास 'नाशिक मिसळ कचोरी', आणि अनोखे 'कचोरी सिझलर्स'—येथे परंपरेचा आदर आणि आधुनिक नावीन्यता यांचा सुंदर संगम साधला आहे.`
-                      : `Across India, the kachori takes many forms: in Rajasthan, the famous Jodhpur Pyaz Kachori; in Kota, its distinctive spicy identity; in North India, kachori with aloo sabzi; in Mathura, the Bedai; and in Maharashtra, iconic local interpretations including the inventive Nashik Misal Kachori & TKC Fusion Sizzlers.`}
-                  </p>
-
-                  {/* Expanded content when user toggles inline */}
-                  {isExpanded && (
-                    <div className="pt-2 space-y-3 border-t border-dashed border-amber-500/30 animate-fade-in">
-                      <div className="p-3 rounded-lg bg-amber-500/10 border border-amber-500/20 font-sans text-xs">
-                        <strong className="text-amber-600 dark:text-amber-400 block mb-1 font-bold">
-                          {isMarathi ? '🌟 ' + 'तत्वज्ञान:' : '🌟 The Philosophy:'}
-                        </strong>
-                        <p className="italic">
-                          {isMarathi 
-                            ? 'परंपरेचा आदर करा. चव समजून घ्या. मग धाडसाने नवीन प्रयोग करा! अस्सल चव हीच पहिली प्राथमिकता.' 
-                            : 'Respect the tradition. Understand the flavour. Then dare to innovate. Authentic taste comes first.'}
-                        </p>
-                      </div>
-
-                      <p>
-                        {isMarathi
-                          ? `कचोरीसोबतच अस्सल कुरकुरीत जिलेबी, बनारसी थंडाई, मिरची वडा, मेथी मठरी आणि पारंपरिक घेवर अशा अनेक खाद्यपदार्थांचा समावेश असलेला हा मेन्यू म्हणजे संपूर्ण भारताचा एक छोटा खाद्य-नकाशा आहे.`
-                          : `Beyond kachori, the menu celebrates India’s wider snacking culture with authentic crisp Jalebi, rich Banarasi Thandai, Mirchi Bada, Methi Mathri, Nimki, and regal Ghevar.`}
-                      </p>
-
-                      <p className="font-sans font-medium text-amber-700 dark:text-amber-400 text-xs">
-                        {isMarathi 
-                          ? 'द कचोरी कॅफे — एक भारत, अनेक कचोऱ्या, एक अविस्मरणीय खाद्यप्रवास!' 
-                          : 'The Kachori Cafe — One India. Many Kachoris. One unforgettable journey.'}
-                      </p>
-                    </div>
-                  )}
-                </div>
+                  {isMarathi ? 'रद्द करा' : 'Cancel'}
+                </button>
+                <button
+                  type="submit"
+                  disabled={!inputUrl.trim()}
+                  className="px-4 py-2 rounded-lg text-xs font-sans font-semibold bg-orange-500 hover:bg-orange-600 disabled:opacity-50 text-white transition-colors cursor-pointer"
+                >
+                  {isMarathi ? 'बॅनर लागू करा' : 'Apply Banner'}
+                </button>
               </div>
-
-              {/* Action Buttons & Footer Controls */}
-              <div className="mt-5 pt-4 border-t border-amber-500/20 flex flex-wrap items-center justify-between gap-3">
-                <div className="flex items-center gap-2">
-                  {/* Primary Read in Modal Button */}
-                  <button
-                    onClick={handleCardClick}
-                    className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-amber-600 to-orange-600 hover:from-amber-700 hover:to-orange-700 text-white font-sans text-xs sm:text-sm font-bold shadow-md hover:shadow-lg transition-all cursor-pointer"
-                  >
-                    <BookOpen className="w-4 h-4" />
-                    <span>{isMarathi ? 'संपूर्ण लेख वाचा' : 'Read Full Feature'}</span>
-                    <ArrowRight className="w-3.5 h-3.5" />
-                  </button>
-
-                  {/* Inline Quick Expand/Collapse Button */}
-                  <button
-                    onClick={() => setIsExpanded(!isExpanded)}
-                    className={`inline-flex items-center gap-1.5 px-3 py-2 rounded-lg border text-xs font-sans font-semibold transition-colors cursor-pointer ${
-                      isDarkMode 
-                        ? 'border-zinc-700 text-zinc-300 hover:bg-zinc-800' 
-                        : 'border-amber-300 text-amber-900 hover:bg-amber-100/60'
-                    }`}
-                  >
-                    {isExpanded ? (
-                      <>
-                        <span>{isMarathi ? 'संक्षिप्त करा' : 'Show Less'}</span>
-                        <ChevronUp className="w-3.5 h-3.5" />
-                      </>
-                    ) : (
-                      <>
-                        <span>{isMarathi ? 'विस्तारित करा' : 'Quick Preview'}</span>
-                        <ChevronDown className="w-3.5 h-3.5" />
-                      </>
-                    )}
-                  </button>
-                </div>
-
-                <div className="flex items-center gap-2 text-[11px] font-mono text-zinc-400">
-                  <span>{isMarathi ? 'दिनांक: १८ ऑगस्ट २०२६' : 'Date: August 18, 2026'}</span>
-                  <span>•</span>
-                  <span>Nashik 24x7 Special</span>
-                </div>
-              </div>
-
-            </div>
-
+            </form>
           </div>
         </div>
-
-      </div>
+      )}
     </section>
   );
 };
